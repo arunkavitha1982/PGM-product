@@ -2,51 +2,100 @@
     margin: 0;
     padding: 0;
 }
-.home{
-    background-image:linear-gradient(to right, #005dab , #002645); ;
+body{
+    background-image: linear-gradient(to right, #005dab, #002645);
 }
 
+/* Home page */
+
 .navbar {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
+
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    
+    height: 55px;
     background-color: white;
-    padding:0 30px 0 30px;
     justify-content: center;
     border-radius: 50px;
-     
+    padding-left: 10%;
+    padding-right: 2%;
 }
-.navbar-brand{margin-left: 15%;
-    padding: 20px;
-    background-color: white;
-    border-radius: 50%;
-    background-size: 30px;
-    width: 50px; /* Example width */
-    height: 50px; 
-}
+
 
 .nav-links li {
     margin-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
-}  
-.nav-links a {    
-    text-decoration: none;
-    font-size: 18px;    
-} 
-
-
-#logo{
-    color: black;
 }
 
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#button1 {
+    background-color: #fcd500;
+    color: white;
+    font-size: 17px;
+    margin: 10px;
+    padding: auto;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+#button2 {
+    background-color: #005dab;
+    color: white;
+    font-size: 17px;
+    margin: 10px;
+    padding: auto;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+    padding: 10px;  
+}
+.width-50 {    
+    width: 100%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    font-size: 30px;
+    
+    
+}
+.banner-section {
+    width: 100%;
+    margin-top: 30%;
+}
+
+#image{
+	border-radius: 50%;
+	width: 70%;
+    background-color: white;
+    margin-top: 10%;
+}
+/* about page */
+.about{
+    background-color: white;
+}
+
+
+/* service page */
+.service{
+    background-color: #d9e7f2;
+}
