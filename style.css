@@ -84,10 +84,11 @@ body{
 }
 
 #image{
-	border-radius: 50%;
-	width: 70%;
-    background-color: white;
+	width: 80%;
     margin-top: 10%;
+}
+#image_background{
+    background-color: #d9e7f2;
 }
 /* about page */
 .about{
@@ -98,4 +99,17 @@ body{
 /* service page */
 .service{
     background-color: #d9e7f2;
+    
+}
+
+
+.card-title{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 10px;
+
+}
+.btn{
+    margin-left: 35%;
+    margin-top:20px;
 }
