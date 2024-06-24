@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar Example</title>
+  <link rel="stylesheet" href="styles.css">  </head>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #f1f1f1; /* Light gray background for the header */
+  padding: 20px;
+  display: flex; /* Arranges elements horizontally */
+  justify-content: space-between; /* Distributes space between logo and links */
+}
+
+nav {
+  display: flex;
+  list-style: none; /* Removes default styling of list items */
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 20px; /* Space between navigation links */
+}
+
+nav a {
+  text-decoration: none; /* Removes underline from links */
+  color: black;
+  padding: 10px 15px;
+}
+
+nav a:hover { /* Styling for hover effect on links */
+  background-color: #ddd;
+}
+
+  </style>
+<body>
+  <header>
+    <nav>
+      <a href="#">Logo</a>  <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Special</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
