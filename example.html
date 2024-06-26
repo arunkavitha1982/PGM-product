@@ -1,25 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Card</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: aqua;
+    }
+
+    .team-member img {
+      width: 50%;
+      border-radius: 50%;
+    }
+
+    .team-member {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="ticket-card">
-        <div class="ticket-header">
-            <h2>Concert Ticket</h2>
-            <p class="event-date">July 24, 2024</p>
+
+  <section id="team">
+    <h2 class="section-title" style="text-align: center;">Mentors</h2>
+    <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/palani_desk.png" alt="Mr Palaniappan">
+                <h3>Mr Palaniappan</h3>
+                <p>Amazon, USA</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/neels_desk.png" alt="Mr Neelakandan Venkataraman">
+                <h3>Mr Neelakandan Venkataraman</h3>
+                <p>Microsoft, USA</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/meenakshi_desk.png" alt="Dr Meenakshi Sundaram">
+                <h3>Dr Meenakshi Sundaram</h3>
+                <p>Intel, USA</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/shiva_desk.png" alt="Mr Sivakumar">
+                <h3>Mr Sivakumar</h3>
+                <p>Managing Trustee<br>Hope3 India Foundation</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="ticket-body">
-            <p class="event-name">Music Festival 2024</p>
-            <p class="event-location">Central Park, NYC</p>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/palani_desk.png" alt="Mr Palaniappan">
+                <h3>Mr Palaniappan</h3>
+                <p>Amazon, USA</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/neels_desk.png" alt="Mr Neelakandan Venkataraman">
+                <h3>Mr Neelakandan Venkataraman</h3>
+                <p>Microsoft, USA</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/meenakshi_desk.png" alt="Dr Meenakshi Sundaram">
+                <h3>Dr Meenakshi Sundaram</h3>
+                <p>Intel, USA</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="team-member">
+                <img src="https://www.hope3.org/images/shiva_desk.png" alt="Mr Sivakumar">
+                <h3>Mr Sivakumar</h3>
+                <p>Managing Trustee<br>Hope3 India Foundation</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="ticket-footer">
-            <p class="ticket-price">$50.00</p>
-            <p class="ticket-number">Ticket #123456789</p>
-        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
+  </section>
+
 </body>
+
 </html>
