@@ -221,6 +221,7 @@ nav {
     text-align: center;
     padding: 20px;
   }
+  
 
 
 /* Basic styles */
@@ -235,7 +236,7 @@ nav {
 }
 
 .product-image {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
 }
 
