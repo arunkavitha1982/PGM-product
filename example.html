@@ -3,100 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>How PGMechanical Works</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        .input-sty {
-            font-size: 1rem;
-            outline: none;
-            border: solid 1px #d9e7f2;
-            border-radius: 10px;  
-            /* padding: 1rem 5.7rem; */
-            color: #038236;
-            transition: 0.1s ease-out;
+        #blog {
+            background-color: #f9f9f9;
+            padding: 20px 0;
         }
-        .input-sty:focus {
-            border-color: #038236;  
+        .header h1 {
+            color: #fcd500;
+            padding-top: 20px;
         }
-        .input-sty:focus + .label-sty {
-            color: #038236;
-            top: 0;
-            transform: translateY(-50%) scale(.9);
+        .pgm_work {
+            margin-bottom: 40px;
         }
-        /* .input-sty:not(:placeholder-shown) + .label-sty {
-            top: 0;
-            transform: translateY(-50%) scale(.9);
-        } */
-        /* .material-textfield {
-            position: relative;  
-        } */
-        /* .label-sty {
-            position: absolute;
-            font-size: 1rem;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: white;
-            color: gray;
-            padding: 0 0.3rem;
-            margin: 0 0.5rem;
-            transition: .1s ease-out;
-            transform-origin: left top;
-            pointer-events: none;
-            margin-left: 140px;
-        } */
-        #contact_image {
-            margin-bottom: 5%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .steps {
+            width: 200px;
         }
-        #submit_button {
-            background-color: #005dab;
-            color: white;
-            font-size: 20px;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        #title {
+            margin-bottom: 20px;
+            color: #005dab;
         }
-        #submit_button:hover {
-            background-color: #004080;
+        .container img {
+            display: block;
+            margin: 0 auto;
         }
-        /* .container-sty {
-            background-color: white;
-            margin-bottom: 5%;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        } */
     </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="blog">
+        <div class="header text-center">
+            <h1>How PGMechanical Works</h1>
+        </div>
         <div class="row">
-            <div class="col-sm-12 col-xl-6 col-md-12 col-lg-6">
-                <div class="container container-sty m-5 p-5 text-center">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-12 mb-4 text-center">
-                            <img src="image/contact us.png" alt="Contact Us" id="contact_image" class="img-fluid">
-                        </div>
-                        <div class="col-lg-7 col-md-12">
-                            <div class="material-textfield mt-4">
-                                <input id="username" placeholder=" " type="text" class="input-sty">
-                                <label class="label-sty">Name</label>
-                            </div>
-                            <div class="material-textfield mt-4">
-                                <input id="Email" placeholder=" " type="text" class="input-sty">
-                                <label class="label-sty">Email</label>
-                            </div>
-                            <div class="material-textfield mt-4">
-                                <input id="Message" placeholder=" " type="text" class="input-sty">
-                                <label class="label-sty">Message</label>
-                            </div>
-                            <button class="btn btn-primary btn-block" type="button" id="submit_button">Schedule</button>
-                        </div>
+            <div class="container pgm_work">
+                <div class="row align-items-center">
+                    <div class="col-2"></div>
+                    <div class="col-md-2 text-center">
+                        <img src="image/step1.png" alt="" class="steps">
                     </div>
+                    <div class="col-md-6">
+                        <h3 id="title">1. Contact us</h3>
+                        <p>Tat PG Maintenance, we understand the significance of reliable commercial refrigeration. Our
+                            team of highly skilled and certified technicians are dedicated to ensuring your food
+                            products stay fresh and your business operations run smoothly.</p>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8"><img src="image/line.png" alt="" style="margin-left: 10%; margin-bottom: 5%;"></div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="container pgm_work">
+                <div class="row align-items-center">
+                    <div class="col-md-2 order-md-2 text-center">
+                        <img src="image/step2.png" alt="" class="steps">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3 id="title">2. Schedule an Appointment</h3>
+                        <p>Tat PG Maintenance, we understand the significance of reliable commercial refrigeration. Our
+                            team of highly skilled and certified technicians are dedicated to ensuring your food
+                            products stay fresh and your business operations run smoothly.</p>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8"><img src="image/line.png" alt="" style="margin-left: 10%; margin-bottom: 5%;"></div>
+                    <div class="col-2"></div>
+                </div>
+            </div> -->
+            <div class="container pgm_work">
+                <div class="row align-items-center">
+                    <div class="col-2"></div>
+                    <div class="col-md-2 text-center">
+                        <img src="image/step3.png" alt="" class="steps">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 id="title">3. Get Your System Repaired</h3>
+                        <p>Tat PG Maintenance, we understand the significance of reliable commercial refrigeration. Our
+                            team of highly skilled and certified technicians are dedicated to ensuring your food
+                            products stay fresh and your business operations run smoothly.</p>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8"><img src="image/line.png" alt="" style="margin-left: 10%; margin-bottom: 5%;"></div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="container pgm_work">
+                <div class="row align-items-center">
+                    <div class="col-md-2 order-md-2 text-center">
+                        <img src="image/step4.png" alt="" class="steps">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3 id="title">4. Pay Invoice</h3>
+                        <p>Tat PG Maintenance, we understand the significance of reliable commercial refrigeration. Our
+                            team of highly skilled and certified technicians are dedicated to ensuring your food
+                            products stay fresh and your business operations run smoothly.</p>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
             </div>
         </div>
