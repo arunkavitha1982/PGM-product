@@ -174,30 +174,24 @@ nav {
 }
 
 #card {
-    width: 30%;
-    margin-left: 20%;
-    border-radius: 50%;
+    width: 35%;
+    margin-left: 12%;
 }
 
 #card2 {
-    width: 30%;
-    margin-right: 17%;
+    width: 35%;
+    margin-right: 14%;
 }
 
 /* Basic styles for the cards */
 .container.cards {
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .card-container {
-    margin: 20px auto;
-    width: 40%;
+    margin: 2% auto;
+    /* width: 40%; */
 }
-
-.card {
-    border-radius: 20px;
-}
-
 .card-body {
     text-align: center;
 }
@@ -207,8 +201,9 @@ nav {
 }
 
 .card-text {
-    font-size: 0.9em;
-    margin-top: 10px;
+    font-size: 1.0em;
+    margin-top: 1%;
+    text-align: left;
 }
 
 
