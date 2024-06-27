@@ -23,7 +23,12 @@
                 <nav>
                     <ul>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#service">Service</a></li>
+                        <li><a href="#"><select name="Service" id="Service">
+                                    <option value="Service">Service</option>
+                                    <option value="saab">Service</option>
+                                    <option value="opel">Service</option>
+                                    <option value="audi">Service</option>
+                                </select></a></li>
                         <li><a href="#product">Products</a></li>
                         <li><a href="#offer">Special</a></li>
                         <li><a href="#user">Blog</a></li>
@@ -70,15 +75,10 @@
                 Us</b></div>
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                </div>
-                <div class="col-8">
-                    <img src="image/about us.png" alt="" srcset="" width="100%" height="100%">
-                </div>
-                <div class="col-2">
-                </div>
+                <img src="image/about us.png" alt="" srcset="" width="100%" height="100%" id="about_image">
+
             </div>
-            <p style="padding-top: 3%;">When your commercial air conditioning or heating system needs repair, you need a
+            <p style="padding-top: 3%;" id="about_content">When your commercial air conditioning or heating system needs repair, you need a
                 reliable partner who understands the complexities of commercial HVAC systems. At [Your Company Name], we
                 provide expert repair services to ensure your business remains comfortable and operational, no matter
                 the season.
@@ -160,7 +160,7 @@
                                 commercial refrigeration. Our team of highly skilled and certified technicians are
                                 dedicated to ensuring your food products stay fresh and your business operations run
                                 smoothly</p>
-                            <button class="btnr" type="button" id="service_button">Know More</button>
+                            <button class="btn" type="button" id="service_button">Know More</button>
                         </div>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <img src="image/line.png" alt="" class="img-fluid" style="margin-bottom: 5%;"id="line">
+                        <img src="image/line.png" alt="" class="img-fluid" style="margin-bottom: 5%;" id="line">
                     </div>
                 </div>
             </div>
@@ -309,7 +309,7 @@
                 <div class="row align-items-center">
                     <div class="col-2"></div>
                     <div class="col-md-2 order-md-3 text-center">
-                        <img src="image/step2.png" alt="" class="steps img-fluid" width="100%" >
+                        <img src="image/step2.png" alt="" class="steps img-fluid" width="100%">
                     </div>
                     <div class="col-md-5 order-md-1 offset-md-1">
                         <h3 id="title">2. Schedule an Appointment</h3>
@@ -329,7 +329,7 @@
             <div class="container pgm_work">
                 <div class="row align-items-center">
                     <div class="col-md-2 offset-md-2 text-center">
-                        <img src="image/step3.png" alt="" class="steps img-fluid" width="100%" >
+                        <img src="image/step3.png" alt="" class="steps img-fluid" width="100%">
                     </div>
                     <div class="col-md-5 offset-md-1">
                         <h3 id="title">3. Get Your System Repaired</h3>
@@ -368,268 +368,135 @@
 
 
     <!-- PG Offers -->
-
-    <!-- <div class="container-fluid offer">
+    <div class="container-fluid offer">
         <div class="header text-center py-2">
-            <h1>PG Mechanical Speacials</h1>
+            <h1 style="padding-top: 3%;">PG Mechanical Specials</h1>
         </div>
-        <div class="row">
-            <div class="container">
-                <div class="row text-center mb-4">
-                    <h6 class="mx-auto">
-                        Track your progress with the free "My Learning" program here at W3Schools. Log in to your
-                        account, and
-                        start earning points! This is an optional feature.
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="mx-auto text-center">
+                        Unlock year-round comfort with our limited-time HVAC specials! Don't miss out on exclusive
+                        offers and discounts tailored to enhance your home's efficiency and comfort. I am Pardeep. I
+                        want to provide new offers.
                     </h6>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="container">
-                                <div class="row background">
-                                    <div class="col-8">
-                                        <h6 class="offer_title">AIR DUCT WHOLE HOUSE PACKAGE</h6>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="rupees">$99</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-9">
-                            <h5 style="margin-left: -10px;">Track your progress with the free "My Learning" program here
-                                at W3Schools. Log in to your
-                                account</h5>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <!-- Special Offer 1 -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="background p-3">
+                        <div class="row" style="border: 1px solid; background-image: linear-gradient(to right, #005dab, #002645); border-radius: 20px 20px 0 0;">
+                            <div class="col-10">
+                                <h5 style="color: white; padding: 10px; padding-top: 20px;">AIR DUCT WHOLE HOUSE PACKAGE</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 style="color: #fcd500; font-size: 30px; padding: 10px; padding-top: 20px; margin-left: -35px;">$99</h5>
+                            </div>
                         </div>
-                        <div class="col-1"></div>
-                      <div class="col-"></div> 
+                        <div class="row" style="border: 2px solid #005dab; padding: 20px; border-radius: 0 0 20px 20px;">
+                            <p class="pt-2">
+                                AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD
+                            </p>
+                            <ul class="pt-2" style="padding-left: 50px;">
+                                <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                                <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                                <li>FREE A/C check up.</li>
+                            </ul>
+                            <h5 style="text-align: center; padding-top: 2%;">Offer Expires: 06/06/2023</h5>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="container mt-3">
-                    <div class="row">
-                        <div class="col-1">
+    
+                <!-- Special Offer 2 -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="background p-3">
+                        <div class="row" style="border: 1px solid; background-image: linear-gradient(to right, #005dab, #002645); border-radius: 20px 20px 0 0;">
+                            <div class="col-10">
+                                <h5 style="color: white; padding: 10px; padding-top: 20px;">AIR DUCT WHOLE HOUSE PACKAGE</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 style="color: #fcd500; font-size: 30px; padding: 10px; padding-top: 20px; margin-left: -35px;">$99</h5>
+                            </div>
                         </div>
-                        <div class="col-9">
-                            <ul style="margin-left:30px;">
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your
-                                    account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your
-                                    account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your
-                                    account</li>
+                        <div class="row" style="border: 2px solid #005dab; padding: 20px; border-radius: 0 0 20px 20px;">
+                            <p class="pt-2">
+                                AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD
+                            </p>
+                            <ul class="pt-2" style="padding-left: 50px;">
+                                <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                                <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                                <li>FREE A/C check up.</li>
                             </ul>
+                            <h5 style="text-align: center; padding-top: 2%;">Offer Expires: 06/06/2023</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-
-
-    <!-- <div class="container-fluid offer" id="offer">
-        <div class="header text-center py-2">
-            <h1>PG Mechanical Specials</h1>
-        </div>
-        <div class="row">
-            <div class="container">
-                <div class="row text-center mb-4">
-                    <h6 class="mx-auto">
-                        Track your progress with the free "My Learning" program here at W3Schools. Log in to your
-                        account, and start earning points! This is an optional feature.
-                    </h6>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="container">
-                                <div class="row background">
-                                    <div class="col-8">
-                                        <h6 class="offer_title">AIR DUCT WHOLE HOUSE PACKAGE</h6>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="rupees">$99</h6>
-                                    </div>
-                                </div>
+    
+        <div class="container">
+            <div class="row">
+                <!-- Special Offer 3 -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="background p-3">
+                        <div class="row" style="border: 1px solid; background-image: linear-gradient(to right, #005dab, #002645); border-radius: 20px 20px 0 0;">
+                            <div class="col-10">
+                                <h5 style="color: white; padding: 10px; padding-top: 20px;">AIR DUCT WHOLE HOUSE PACKAGE</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 style="color: #fcd500; font-size: 30px; padding: 10px; padding-top: 20px; margin-left: -35px;">$99</h5>
                             </div>
                         </div>
+                        <div class="row" style="border: 2px solid #005dab; padding: 20px; border-radius: 0 0 20px 20px;">
+                            <p class="pt-2">
+                                AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD
+                            </p>
+                            <ul class="pt-2" style="padding-left: 50px;">
+                                <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                                <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                                <li>FREE A/C check up.</li>
+                            </ul>
+                            <h5 style="text-align: center; padding-top: 2%;">Offer Expires: 06/06/2023</h5>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="container">
-                                <div class="row background">
-                                    <div class="col-8">
-                                        <h6 class="offer_title">AIR DUCT WHOLE HOUSE PACKAGE</h6>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="rupees">$199</h6>
-                                    </div>
-                                </div>
+                </div>
+    
+                <!-- Special Offer 4 -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="background p-3">
+                        <div class="row" style="border: 1px solid; background-image: linear-gradient(to right, #005dab, #002645); border-radius: 20px 20px 0 0;">
+                            <div class="col-10">
+                                <h5 style="color: white; padding: 10px; padding-top: 20px;">AIR DUCT WHOLE HOUSE PACKAGE</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 style="color: #fcd500; font-size: 30px; padding: 10px; padding-top: 20px; margin-left: -35px;">$99</h5>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-9">
-                            <h5 style="margin-left: -10px;">Track your progress with the free "My Learning" program here
-                                at W3Schools. Log in to your account</h5>
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
-                </div>
-
-                <div class="container mt-3">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-9">
-                            <ul style="margin-left:30px;">
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
+                        <div class="row" style="border: 2px solid #005dab; padding: 20px; border-radius: 0 0 20px 20px;">
+                            <p class="pt-2">
+                                AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD
+                            </p>
+                            <ul class="pt-2" style="padding-left: 50px;">
+                                <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                                <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                                <li>FREE A/C check up.</li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-9">
-                            <h5 style="margin-left: -10px;">Track your progress with the free "My Learning" program here
-                                at W3Schools. Log in to your account</h5>
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
-                </div>
-
-                <div class="container mt-3">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-9">
-                            <ul style="margin-left:30px;">
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                            </ul>
+                            <h5 style="text-align: center; padding-top: 2%;">Offer Expires: 06/06/2023</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
+    
 
-        <div class="row">
-            <div class="container mt-5">
-                <div class="row text-center mb-4">
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="container">
-                                <div class="row background">
-                                    <div class="col-8">
-                                        <h6 class="offer_title">AIR DUCT WHOLE HOUSE PACKAGE</h6>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="rupees">$99</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="container">
-                                <div class="row background">
-                                    <div class="col-8">
-                                        <h6 class="offer_title">AIR DUCT WHOLE HOUSE PACKAGE</h6>
-                                    </div>
-                                    <div class="col-4">
-                                        <h6 class="rupees">$199</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-9">
-                            <h5 style="margin-left: -10px;">Track your progress with the free "My Learning" program here
-                                at W3Schools. Log in to your account</h5>
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
-                </div>
-
-                <div class="container mt-3">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-9">
-                            <ul style="margin-left:30px;">
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-9">
-                            <h5 style="margin-left: -10px;">Track your progress with the free "My Learning" program here
-                                at W3Schools. Log in to your account</h5>
-                        </div>
-                        <div class="col-1"></div>
-                    </div>
-                </div>
-
-                <div class="container mt-3">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-9">
-                            <ul style="margin-left:30px;">
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                                <li>Track your progress with the free "My Learning" program here at W3Schools. Log in to
-                                    your account</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- User testimonial -->
 
@@ -783,18 +650,6 @@
             Unit In Peak Condition. Don't let your air conditioner leave you hot and bothered!
             Regular maintenance is essential to keep your system running smoothly</p>
     </div>
-
-
-
-    <script>
-        document.getElementById('menu-icon').addEventListener('click', function () {
-            var navList = document.getElementById('nav-list');
-            navList.classList.toggle('show');
-        });
-    </script>
-
-
-
 </body>
 
 </html>
