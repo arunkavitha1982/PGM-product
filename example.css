@@ -1,0 +1,224 @@
+/* Nav-link active style */
+.breadcrumps {
+    color: #0078bd !important;
+}
+
+body{
+    background-color: #005dab;
+}
+.nav-hope-logo {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#button1 {
+    background-color: #fcd500;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    padding: auto;
+    padding-top: px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+#button2 {
+    background-color: #005dab;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    padding: auto;
+    padding-top: px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+#mrgnav {
+    margin-top: -30px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-left: 40px;
+    margin-left: 8%;
+    border-radius: 20px;
+}
+
+/* website team name style */
+.modal-body > ul {
+    font-weight: 700;
+    background-image: linear-gradient(to right, #0e76bd, #4bb84f, #de4d4d, #0e76bd);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Joinus Donate button */
+@media (max-width: 768px) {
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #nav-bar-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 0.5;
+        font-size: 3vw;
+        margin-top:40px;
+        /* margin-right: 4vw; */
+        padding: 0.3vw 2vw;
+    }
+
+    .navbutton {
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+
+    .navbar {
+        /* margin-top: 30px; */
+    }
+
+    .bluebar {
+        background-color: #d7f3ee;
+        color: #6e6d72;
+        font-weight: bolder;
+        
+    }
+
+    .people {
+        /* margin-bottom: 1rem; */
+    }
+}
+
+@media (max-width: 767px) {
+    .navbutton > .navbtn {
+        padding: .7em 1.5em;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .navrow {
+        margin: .5rem .2rem .2rem .5rem;
+    }
+
+    .navbutton {
+        margin-left: 3rem;
+    }
+
+    .mspace {
+        margin-left: 1.5rem;
+    }
+
+    #mrgnav {
+        margin-top: 2.3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbutton {
+        margin-top: 2.9em !important;
+    }
+}
+
+@media (min-width: 1245px) {
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem !important;
+        padding-left: .5rem !important;
+    }
+
+    .navbar-expand-custom .navbar-collapse {
+        display: flex !important;
+    }
+
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+    .navbar-hope-logo {
+        margin-left: 30%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 818px) {
+    .navbutton > .navbtn {
+        font-size: .56rem !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1290px) {
+    #nav-bar-button {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 340px) {
+    .nav-hope-logo {
+        /* transform: translate(-4em, -1.5em); */
+        position: absolute;
+        margin-top: -20px;
+    }
+
+    #nav-bar-button {
+        /* margin-top: 1vh !important; */
+        margin-bottom: 50%;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 768px) {
+    #nav-bar-button {
+        margin-top: 3vh !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .nav-hope-logo {
+        margin-left: 30%;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 425px) {
+    #nav-bar-button {
+        position: relative;
+        bottom: 50px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    #nav-bar-button {
+        position: relative !important;
+        top: 7px !important;
+        font-size: .5rem;
+    }
+}
