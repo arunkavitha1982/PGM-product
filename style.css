@@ -5,7 +5,7 @@
 
 body {
     background-image: linear-gradient(to right, #005dab, #002645);
-    
+
 }
 
 .home {
@@ -41,7 +41,8 @@ nav {
     margin-top: 4%;
     margin-bottom: 4%;
 }
-.menu-icon{
+
+.menu-icon {
     display: none;
 }
 
@@ -91,7 +92,7 @@ nav {
     background-color: white;
 }
 
-#about_image{
+#about_image {
     width: 60%;
     margin-left: 20%;
 }
@@ -348,9 +349,7 @@ nav {
     padding-bottom: 2%;
 }
 
-@media (max-width: 1300px) {
-    
-}
+@media (max-width: 1300px) {}
 
 .content {
 
@@ -534,59 +533,61 @@ nav {
         display: none;
     }
 
-    #about_content{
+    #about_content {
         font-size: 14px;
     }
 
-    #offer_title{
+    #offer_title {
         font-size: 14px;
-        
+
     }
-    #offer_rupees{
+
+    #offer_rupees {
         font-size: 20px;
     }
 
-    
-#about_image{
-    width: 100%;
-    margin-left: 0%;
-}
+
+    #about_image {
+        width: 100%;
+        margin-left: 0%;
+    }
 
 }
 
 
 
 @media (max-width:1295px) {
-    nav ul{
+    nav ul {
         position: absolute;
         top: 130px;
         left: 0;
-        right: 0;   
+        right: 0;
     }
-    
+
 }
 
-.border_header{
+.border_header {
     -webkit-mask:
-    radial-gradient(circle 00px at top    left ,#0000 98%,#000) top    left,
-    radial-gradient(circle 0px at top    right,#0000 98%,#000) top    right,
-    radial-gradient(circle 30px at bottom left ,#0000 98%,#000) bottom left,
-    radial-gradient(circle 30px at bottom right,#0000 98%,#000) bottom right;
-  -webkit-mask-size:51% 51%;
-  -webkit-mask-repeat:no-repeat;
-  border-bottom:2px dashed white;
-  padding-left: 30px;
-  padding-right: 30px; 
-  background-image: linear-gradient(to right, #005dab, #002645); border-radius: 20px 20px 0 0; 
+        radial-gradient(circle 00px at top left, #0000 98%, #000) top left,
+        radial-gradient(circle 0px at top right, #0000 98%, #000) top right,
+        radial-gradient(circle 30px at bottom left, #0000 98%, #000) bottom left,
+        radial-gradient(circle 30px at bottom right, #0000 98%, #000) bottom right;
+    -webkit-mask-size: 51% 51%;
+    -webkit-mask-repeat: no-repeat;
+    border-bottom: 2px dashed white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: linear-gradient(to right, #005dab, #002645);
+    border-radius: 20px 20px 0 0;
 }
 
-.border_content{
+.border_content {
     -webkit-mask:
-    radial-gradient(circle 30px at top    left ,#0000 98%,#000) top    left,
-    radial-gradient(circle 30px at top    right,#0000 98%,#000) top    right,
-    radial-gradient(circle 0px at bottom left ,#0000 98%,#000) bottom left,
-    radial-gradient(circle 0px at bottom right,#0000 98%,#000) bottom right;
-    -webkit-mask-size:51% 51%;
-  -webkit-mask-repeat:no-repeat;
-  
+        radial-gradient(circle 30px at top left, #0000 98%, #000) top left,
+        radial-gradient(circle 30px at top right, #0000 98%, #000) top right,
+        radial-gradient(circle 0px at bottom left, #0000 98%, #000) bottom left,
+        radial-gradient(circle 0px at bottom right, #0000 98%, #000) bottom right;
+    -webkit-mask-size: 51% 51%;
+    -webkit-mask-repeat: no-repeat;
+
 }
