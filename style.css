@@ -11,6 +11,7 @@ body {
 .home {
     margin-left: 2%;
 }
+
 .navbar-brand img {
     margin-left: 20px;
 }
@@ -84,9 +85,10 @@ body {
     #button2 {
         width: 100%;
         margin-top: 2px;
-        margin-left: px;
+        margin-left: 0px;
     }
-    #button2{
+
+    #button2 {
         margin-left: 12px;
     }
 }
@@ -110,6 +112,7 @@ body {
         margin-top: 10px;
     }
 }
+
 /* 
 @media(max-width:1200px) {
     #navbarSupportedContent {
@@ -686,6 +689,7 @@ body {
     #button2 {
         margin-right: 0;
     }
+
     #coupon_3 {
         margin-left: 0px;
         margin-right: 0px;
@@ -717,20 +721,22 @@ body {
         margin-top: 20px;
         margin-right: 0;
     }
-    
-    .user_content{
+
+    .user_content {
         font-size: 13px;
     }
-    #offer_header{
+
+    #offer_header {
         margin-top: 20px;
     }
 
-    #dropdown-menu{
+    #dropdown-menu {
         text-align: center;
     }
-    #dropdown-item{
+
+    #dropdown-item {
         margin-top: 2px;
-        font-size:15px;
+        font-size: 15px;
         font-weight: bold;
     }
 }
