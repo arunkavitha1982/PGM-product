@@ -1,0 +1,137 @@
+#offer_header {
+    color: #005dab;
+    font-weight: bold;
+}
+
+.offer-body{
+    background-color: white;
+}
+
+.content{
+    color: black;
+}
+
+.user_content{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 17px;
+}
+.offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coupon {
+    border-radius: 15px;
+    width: 450px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+#coupon_2 {
+    margin-left: -20px;
+}
+
+.offer_title {
+    background-image: linear-gradient(to right, #005dab, #002645);
+    color: white;
+    padding: 17px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px dashed #ffffff;
+}
+
+.offer_title h2 {
+    margin: 0;
+    font-size: 14px;
+}
+
+#coupon_2 {
+    margin-left: 40px;
+}
+
+#coupon_3 {
+    margin-right: 40px;
+}
+
+
+.price {
+    color: #fcd500;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.content {
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.content p {
+    font-size: 13px;
+    margin: 0;
+    padding-left: 14px;
+    padding-top: 13px;
+}
+
+.content ul {
+    padding: 0;
+    margin: 10px 0 0 0;
+    padding-top: 13px;
+    padding-left: 30px;
+}
+
+.content ul li {
+    margin: 5px 0;
+
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.offer_title::before,
+.offer_title::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 60%;
+    border: 2px solid #005dab;
+}
+
+.offer_title::before {
+    left: -15px;
+}
+
+.offer_title::after {
+    right: -15px;
+}
+
+#offer_header {
+    text-align: center;
+}
+
+.dropdown-item{
+    font-size: 24px;
+}
+@media (max-width:955px) {
+    
+    
+}

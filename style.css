@@ -256,7 +256,6 @@ nav ul li {
 
 #message {
     resize: none;
-    /* Prevents resizing */
 }
 
 /* Button styles */
@@ -268,63 +267,6 @@ nav ul li {
     margin-left: -2%;
     width: 100%;
 }
-
-/* 
-.user {
-    background-color: #d9e7f2;
-}
-
-#paragraph {
-    padding: 20px;
-    background-color: white;
-    border-radius: 15px;
-    margin: 5px 0;
-}
-
-#user_logo {
-    background-color: #fcd500;
-    border-radius: 50%;
-    color: white;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-}
-
-#user_name {
-    margin-bottom: 10px;
-}
-
-#user_star {
-    width: 20px;
-}
-
-.user_credit {
-    padding-top: 15px;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-25%);
-    }
-    50% {
-        transform: translateX(-50%);
-    }
-    75% {
-        transform: translateX(-75%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-.user-stars {
-    display: flex;
-} */
-
 
 .user {
     background-color: #d9e7f2;
@@ -379,23 +321,8 @@ nav ul li {
     padding: 20px;
 }
 
-/* offer page*/
 
-.offer {
-    background-color: white;
-}
 
-.offer_title {
-    margin-right: -15%;
-}
-
-.rupees {
-    margin-left: -50%;
-}
-
-.mx-auto {
-    padding-bottom: 2%;
-}
 
 /* @media (max-width: 1300px) {} */
 
@@ -454,7 +381,24 @@ nav ul li {
     margin-bottom: 2%;
     font-size: 15px;
 }
+
 .about_header {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2%;
+    font-weight: bold;
+    color: black;
+}
+
+#service_header {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: bold;
+}
+
+.product_header {
     text-align: center;
     font-size: 40px;
     padding-top: 3%;
@@ -466,9 +410,6 @@ nav ul li {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
 
-    #schedule_button {
-        
-    }
 
     .card-container {
         width: 50%;
@@ -561,9 +502,6 @@ nav ul li {
         font-size: 25px;
     }
 
-    #offer_header {
-        font-size: 23px;
-    }
 
     .user_content {
         font-size: 15px;
@@ -586,33 +524,43 @@ nav ul li {
         margin-bottom: -30px;
     }
 
-    .home_content1{
+    .home_content1 {
         font-size: 25px;
-        
+
     }
-    #home_content2{
+
+    #home_content2 {
         font-size: 25px;
         margin-top: -6px;
     }
-    #home_content3{
+
+    #home_content3 {
         font-size: 15px;
         margin-top: -2px;
     }
-    #schedule_button{
+
+    #schedule_button {
         margin-bottom: 20px;
         font-size: 15px;
     }
 
-    #product_contect{
+    #product_contect {
         font-size: 14px;
     }
 
-    #product_name{
+    #product_name {
         font-size: 15px;
     }
 
-    #buy_now{
+    #buy_now {
         font-size: 15px;
+    }
+
+    #service_header {
+        padding-top: 12px;
+        margin-bottom: -3px;
+        font-size: 23px;
+        font-weight: bold;
     }
 
     .about_header {
@@ -643,6 +591,8 @@ nav ul li {
         margin-bottom: -10px;
     }
 
+
+
     #title {
         text-align: center;
     }
@@ -669,14 +619,6 @@ nav ul li {
         font-size: 14px;
     }
 
-    #offer_title {
-        font-size: 14px;
-
-    }
-
-    #offer_rupees {
-        font-size: 20px;
-    }
 
 
     #about_image {
@@ -684,45 +626,67 @@ nav ul li {
         margin-left: 0%;
     }
 
+    #experience {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+
+    #button2 {
+        margin-right: 0;
+    }
 }
 
-/* 
-@media (max-width:1200px) {
-    .navbar-toggler{
-        margin-left: 80%;
-    }
-} */
+#dropdown-item {
+    font-size: 15px;
+    color: #005dab;
+    padding-left: 0px;
+}
 
-/* @media (max-width:1026px) {
-    .navbar-nav{
-        width: 100%;
-        margin-left:20%;
+@media (max-width:992px) {
+    #schedule_button {
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
-    .navbar-toggler{
-        margin-bottom: 40px;
+
+    .me-auto {
+        text-align: center;
     }
-    #logo_icon{
-        width: 80px;
+
+    #button2 {
+        margin-top: 20px;
+        margin-right: 0;
     }
-    #navbar_name{
-        font-size: 30px;
+    #coupon_3 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #coupon_2 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .user_content{
+        font-size: 13px;
+    }
+    #offer_header{
+        margin-top: 20px;
+    }
+
+    #dropdown-menu{
+        text-align: center;
+    }
+    #dropdown-item{
+        margin-top: 2px;
+        font-size:15px;
         font-weight: bold;
-        border: none;
-        color: #007bff;
-        padding: 0;
-        margin: 0;
     }
-    .nav-item{
-        margin: 0px;
-    }
-
-} */
+}
 
 
-
-
+/* 
 .border_header {
-    -webkit-mask:
+    /* -webkit-mask:
         radial-gradient(circle 00px at top left, #0000 98%, #000) top left,
         radial-gradient(circle 0px at top right, #0000 98%, #000) top right,
         radial-gradient(circle 30px at bottom left, #0000 98%, #000) bottom left,
@@ -733,8 +697,8 @@ nav ul li {
     padding-left: 30px;
     padding-right: 30px;
     background-image: linear-gradient(to right, #005dab, #002645);
-    border-radius: 20px 20px 0 0;
-}
+    border-radius: 20px 20px 0 0; */
+/* }
 
 .border_content {
     -webkit-mask:
@@ -743,7 +707,36 @@ nav ul li {
         radial-gradient(circle 0px at bottom left, #0000 98%, #000) bottom left,
         radial-gradient(circle 0px at bottom right, #0000 98%, #000) bottom right;
     -webkit-mask-size: 51% 51%;
-    -webkit-mask-repeat: no-repeat;
-    background-color: #fcd500;
+    -webkit-mask-repeat: no-repeat; */
+/* background-color: #fcd500; */
+/* 
+    /* Top left corner */
+/* background:
+        radial-gradient(40px at 0px 0px, #0000 calc(0px), blue 10%, #0000) 0px 0px; */
+/* Top left corner */
+/* background: radial-gradient(40px at 0px 0px, transparent 0%, blue 10%, transparent 100%); */
 
+
+/* } */
+
+/* 
+.border_header::before,
+.border_header::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid red;
+    opacity: 0.5;
 }
+
+.header::before {
+    left: -10px;
+}
+
+.header::after {
+    right: -10px;
+/* } */
