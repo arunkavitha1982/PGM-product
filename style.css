@@ -707,6 +707,14 @@ body {
     padding-left: 0px;
 }
 
+#schedule_button{
+    background-color: #fcd500;
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    padding-left: 50px;
+    padding-right: 52px;
+}
 @media (max-width:992px) {
     #schedule_button {
         margin-bottom: 20px;
