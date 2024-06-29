@@ -635,6 +635,15 @@ nav ul li {
     #button2 {
         margin-right: 0;
     }
+    #coupon_3 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #coupon_2 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 #dropdown-item {
@@ -657,15 +666,7 @@ nav ul li {
         margin-top: 20px;
         margin-right: 0;
     }
-    #coupon_3 {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    #coupon_2 {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+    
     .user_content{
         font-size: 13px;
     }

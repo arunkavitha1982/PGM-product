@@ -131,7 +131,13 @@
 .dropdown-item{
     font-size: 24px;
 }
-@media (max-width:955px) {
+
+@media (max-width:950px){
+    #coupon_2 {
+        margin-left: 00px;
+    }
     
-    
+    #coupon_3 {
+        margin-right: 0px;
+    }
 }
