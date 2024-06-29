@@ -68,10 +68,10 @@ body {
     padding-bottom: 8px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     #navbarSupportedContent {
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 10px;
     }
 
     .navbar-nav .nav-item {
