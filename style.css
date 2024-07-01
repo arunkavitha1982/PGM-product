@@ -671,6 +671,9 @@ body {
     #button2 {
         margin-top: 10px;
     }
+    #button2{
+        margin-top: 10px;
+    }
 }
 
 @media (max-width:992px) {
@@ -722,7 +725,6 @@ body {
 
     #button1,
     #button2 {
-        margin-top: 2px;
         margin-left: 0px;
     }
 
