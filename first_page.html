@@ -32,7 +32,8 @@
         border-width: 1px;
         border-style: solid;
     }
-    button:focus:not(:focus-visible){
+
+    button:focus:not(:focus-visible) {
         color: transparent;
     }
 </style>
@@ -41,8 +42,8 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="image/new.png" alt="Logo" width="100px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
                 <i class="material-icons">menu</i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -71,10 +72,11 @@
                         <a class="nav-link" aria-current="page" href="#user">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact us</a>
+                        <a class="nav-link" href="#contect" tabindex="-1" aria-disabled="true">Contact us</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn" id="button1">Schedule</button>
+                        <a href="https://pgmechllc.com/customer.html"><button class="btn"
+                                id="button1">Schedule</button></a>
                     </li>
                     <li class="nav-item">
                         <button class="btn" id="button2">(469) 274-6424</button>
@@ -83,7 +85,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- home page -->
 
     <div class="container">
@@ -92,7 +94,8 @@
                 <div class="banner-section" id="icon">
                     <h1><span class="span-col home_content1" style="color: white;">Your Comfort,</span></h1>
                     <h1 style="color: #fcd500;" id="home_content2"><span class="span-col ">Our Priority</span></h1>
-                    <h5 style="color: white;" id="home_content3">Experience top-notch HVAC services tailored to your needs, ensuring
+                    <h5 style="color: white;" id="home_content3">Experience top-notch HVAC services tailored to your
+                        needs, ensuring
                         comfort in every season</h5>
                     <button class="btn" type="button" id="schedule_button" style="text-align: center;">Schedule</button>
                 </div>
@@ -118,19 +121,14 @@
                 <img src="image/about us.png" alt="" id="about_image">
 
             </div>
-            <p style="padding-top: 3%;" id="about_content">When your commercial air conditioning or heating system needs
-                repair, you need a
-                reliable partner who understands the complexities of commercial HVAC systems. At [Your Company Name], we
-                provide expert repair services to ensure your business remains comfortable and operational, no matter
-                the season.
-                Skilled Professionals
-                Our team consists of highly trained and certified professionals who are adept at handling commercial
-                HVAC systems of all types and sizes. Whether it's a minor issue or a major malfunction, we have the
-                expertise to service all major brands, including Lennox, Carrier, York, Bryant, Comfort Air, Rheem, and
-                more
-                .</p>
+            <p style="padding-top: 3%;" id="about_content">At PG Mechanical LLC, we're your trusted experts in heating,
+                ventilation, air conditioning, and refrigeration. With years of experience serving both residential and
+                commercial clients, we provide top-quality HVAC and refrigeration solutions tailored to your needs. We
+                pride ourselves on our skilled technicians, prompt service, and commitment to energy-efficient
+                solutions. Whether you're a homeowner or business owner, we're dedicated to keeping you comfortable and
+                your systems running smoothly year-round.</p>
         </div>
-        <div class="container text-center pb-4" >
+        <div class="container text-center pb-4">
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <h1 id="experience" style="color: #005dab; margin-bottom: -10px;padding-bottom: 10px;">20+</h1>
@@ -198,7 +196,7 @@
                         <div class="card-body">
                             <h6 class="card-title" id="color">Commercial Refrigeration</h6>
                             <p class="card-text">Tat PG Maintenance, we understand the significance of reliable
-                                commercial refrigeration. Our team of  and certified technicians are
+                                commercial refrigeration. Our team of and certified technicians are
                                 dedicated to ensuring your food products stay fresh and your business operations run
                                 smoothly</p>
                             <button class="btn" type="button" id="service_button">Know More</button>
@@ -231,7 +229,8 @@
                     <img src="image/pngwing.com (1).png" alt="" class="product-image">
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-12">
-                    <p id="product_contect">Track your progress with the free "My Learning" program here at W3Schools. Log in to your
+                    <p id="product_contect">Track your progress with the free "My Learning" program here at W3Schools.
+                        Log in to your
                         account, and start earning points! This is an optional feature. You can study at W3Schools
                         without using My Learning.</p>
                 </div>
@@ -321,7 +320,7 @@
     </div>
 
     <!-- PGM work -->
-    <div class="container-fluid" id="blog">
+    <div class="container-fluid">
         <div class="header text-center">
             <h1 style="color: #fcd500; padding-top: 20px;" id="blog_header">How PGMechanical Works</h1>
         </div>
@@ -507,14 +506,14 @@
             </div>
         </div>
     </div>
-    
+
     <!-- User testimonial -->
 
     <div class="container-fluid user" id="user">
         <div class="header text-center py-4">
             <h1>User Testimonial</h1>
         </div>
-        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="1500">
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row justify-content-center">
@@ -820,14 +819,7 @@
                 </div>
                 <!-- Add more carousel items as needed -->
             </div>
-            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
         </div>
     </div>
 
@@ -851,7 +843,7 @@
                     <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
                 </div>
                 <div class="col-lg-5 col-md-12">
-                    <form class="form">
+                    <form class="form" action="">
                         <div class="form-group">
                             <input type="text" id="name" class="form-control mb-3" placeholder=" " required>
                             <label for="name">Your Name</label>
@@ -873,7 +865,7 @@
     </div>
 
 
-    
+
 
 
 
