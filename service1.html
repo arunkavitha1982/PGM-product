@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Service</title>
+    <style>
+        .navbar-brand img {
+            margin-left: 20px;
+        }
+
+        #navbarSupportedContent {
+            background-color: white;
+            padding: 15px 0;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1024px;
+        }
+
+        .navbar-nav .nav-item {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #005dab;
+        }
+
+        .dropdown-item {
+            font-size: 24px;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .material-icons {
+            font-size: 34px;
+            color: white;
+        }
+
+        #button1 {
+            background-color: #fcd500;
+            color: white;
+            font-size: 20px;
+        }
+
+        #button2 {
+            background-color: #005dab;
+            color: white;
+            font-size: 17px;
+            margin-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        #main_section {
+            background-image: url('service 2/main.png');
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #main_header {
+            padding-top: 5%;
+            text-align: center;
+        }
+
+        #main_header h1 {
+            color: #005dab;
+            font-size: 46px;
+            padding: 1.4%;
+        }
+
+        #main_header p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #card,
+        #card_top,
+        #card2,
+        #card3 {
+            margin-top: -15%;
+        }
+
+        #card_head {
+            text-align: center;
+            padding-top: 2%;
+        }
+
+        .card-custom {
+            border: 2px outset;
+            height: 480px;
+        }
+
+        .card-img-custom {
+            width: 80%;
+            display: block;
+            margin: 4% auto 0 auto;
+        }
+
+        .service_image_header {
+            padding-top: 5%;
+            padding-bottom: 3%;
+            text-align: center;
+            color: black;
+            font-size: 42px;
+        }
+
+        #icon {
+            margin-top: 12%;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10%;
+        }
+
+        #icon_head {
+            text-align: center;
+            padding-bottom: 25%;
+        }
+
+        .form-group label {
+            position: absolute;
+            top: 0.75rem;
+            left: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+            padding: 0 0.25rem;
+            color: #666;
+            pointer-events: none;
+        }
+
+        .form-group input:focus+label,
+        .form-group input:not(:placeholder-shown)+label,
+        .form-group textarea:focus+label,
+        .form-group textarea:not(:placeholder-shown)+label {
+            top: -0.75rem;
+            left: 0.75rem;
+            font-size: 0.75rem;
+            color: gray;
+            font-size: 15px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 1rem;
+            padding-top: 1.5rem;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: grey;
+            box-shadow: 0 0 0px;
+        }
+
+        .contect {
+            background-color: white;
+            margin-bottom: 5%;
+        }
+
+        /* Image styles */
+        #contact_image {
+            margin-bottom: 5%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar-toggler {
+            border-color: white !important;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        button:focus:not(:focus-visible) {
+            color: transparent;
+        }
+
+
+        /* Form input styles */
+        #name,
+        #email,
+        #message {
+            padding: 10px;
+            border-radius: 5px;
+            border: solid 1px rgb(176, 175, 175);
+        }
+
+        #message {
+            resize: none;
+        }
+
+        /* Button styles */
+        #submit_button {
+            background-color: #005dab;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            margin-left: 0%;
+            width: 100%;
+        }
+
+        .fooder_para {
+            text-align: center;
+            padding-left: 8%;
+            padding-right: 8%;
+            color: white;
+            margin-top: -3%;
+            margin-bottom: 2%;
+            font-size: 15px;
+        }
+
+        #service_page {
+            background-color: #F2F2F2;
+            padding-bottom: 5%;
+        }
+
+        @media(max-width:992px) {
+            .card-custom {
+                height: auto;
+            }
+
+            #card_top {
+                margin-top: 21%;
+            }
+
+            #card {
+                margin-top: 0px;
+            }
+
+            #card2,
+            #card3 {
+                margin-top: 18px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            #main_header h1 {
+                font-size: 24px;
+                padding: 1.2%;
+            }
+
+            #mani_header {
+                padding-top: 15%;
+            }
+
+            #main_header p {
+                font-size: 13px;
+            }
+
+            .card-custom {
+                height: auto;
+            }
+
+            .card-img-custom {
+                width: 70%;
+            }
+
+            .service_image_header {
+                font-size: 32px;
+            }
+
+            #icon {
+                width: 60%;
+                margin-top: 10%;
+            }
+
+            #icon_head {
+                padding-bottom: 15%;
+            }
+
+            .form-group label {
+                font-size: 12px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                padding: 0.75rem;
+                padding-top: 1.25rem;
+            }
+
+            .form-group input:focus+label,
+            .form-group input:not(:placeholder-shown)+label,
+            .form-group textarea:focus+label,
+            .form-group textarea:not(:placeholder-shown)+label {
+                top: -0.5rem;
+                left: 0.5rem;
+                font-size: 0.6rem;
+            }
+
+            .contect .header h1 {
+                font-size: 24px;
+            }
+
+            #submit_button {
+                font-size: 16px;
+                margin-bottom: 5%;
+            }
+
+            #card_top {
+                margin-top: -21%;
+            }
+
+            #card {
+                margin-top: 0px;
+            }
+
+            #card2,
+            #card3 {
+                margin-top: 18px;
+            }
+
+            .navbar-nav .nav-item {
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+            }
+
+            #navbarSupportedContent {
+                padding: 15px 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            #button1,
+            #button2 {
+                margin-top: 10px;
+            }
+
+            #button2 {
+                margin-top: 10px;
+                margin-left: 4%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            #navbarSupportedContent {
+                margin-left: 0;
+                margin-right: 10px;
+            }
+
+            .navbar-nav .nav-item {
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+            }
+
+            #button1,
+            #button2 {
+                margin-left: 0px;
+            }
+
+            #button2 {
+                margin-left: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(to right, #005dab, #002645);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image/new.png" alt="Logo" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about" style="color: #005dab;">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#service" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#service">Action</a></li>
+                            <li><a class="dropdown-item" href="#service">Action</a></li>
+                            <li><a class="dropdown-item" href="#service">Action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special" tabindex="-1" aria-disabled="true">Special</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#user">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contect" tabindex="-1" aria-disabled="true">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://pgmechllc.com/customer.html"><button class="btn"
+                                id="button1">Schedule</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn" id="button2">(469) 274-6424</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-0" id="main_section">
+        <div id="main_header">
+            <div class="container">
+                <div class="row" style="background-color: white;">
+                    <h1>Commercial Air conditioning and heating</h1>
+                    <p>Commercial Air conditioning and heating When your commercial air conditioning or heating system
+                        needs
+                        repair, you need a reliable partner who understands the complexities of commercial HVAC systems.
+                        At
+                        [Your Company Name], we provide expert repair services to ensure your business remains
+                        comfortable and
+                        operational, no matter the season.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-n5" style="margin-bottom: 5%;">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" id="card_top">
+                <div class="card card-custom">
+                    <img class="card-img-top card-img-custom" src="service 1/1.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title" id="card_head">Comprehensive Service</h4>
+                        <p class="card-text">From minor fixes to major overhauls, no job is too big or too small for us.
+                            Relax and let us get your AC system back on its feet quickly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" id="card2">
+                <div class="card card-custom" id="a">
+                    <img class="card-img-top card-img-custom" src="service 1/3.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title" id="card_head">Expert Technicians</h4>
+                        <p class="card-text">Our team of certified professionals can repair any air conditioner,
+                            regardless of the brand or where you purchased it. We service all major brands, including
+                            Lennox, Carrier, York, Bryant, Comfort Air, Rheem, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" id="card3">
+                <div class="card card-custom">
+                    <img class="card-img-top card-img-custom" src="service 1/2.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title" id="card_head">Customer-Centric Approach</h4>
+                        <p class="card-text">Our technicians are not just skilled; they genuinely care about your
+                            comfort and satisfaction. They go above and beyond, often performing good deeds for free,
+                            because we believe in making a positive impact in our community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="service_page">
+        <div>
+            <h2 class="service_image_header">Our Services Include</h2>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img src="image/icon1.png" alt="" id="icon">
+                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img src="image/icon2.png" alt="" id="icon">
+                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img src="image/icon3.png" alt="" id="icon">
+                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img src="image/icon4.png" alt="" id="icon">
+                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img src="image/icon5.png" alt="" id="icon">
+                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img src="image/icon6.png" alt="" id="icon">
+                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="margin-left: 3%;">
+                <h2 class="service_image_header">Industries We Serve</h2>
+
+                <div class="col-4"><img src="service 2/1.png" alt="" style="width: 80%;"></div>
+                <div class="col-4"><img src="service 2/2.png" alt="" style="width: 80%;"></div>
+                <div class="col-4"><img src="service 2/3.png" alt="" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row" style="margin-left: 3%;">
+                <div class="col-4"><img src="service 2/4.png" alt="" style="width: 80%;"></div>
+                <div class="col-4"><img src="service 2/5.png" alt="" style="width: 80%;"></div>
+                <div class="col-4"><img src="service 2/6.png" alt="" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contect" id="contect">
+        <div class="header text-center py-3">
+            <h1 style="font-weight: bold;color: #005dab;">Get in touch</h1>
+        </div>
+        <div class="row text-center mb-4">
+            <h6 class="mx-auto">
+                Track your progress with the free "My Learning" program here at W3Schools. Log in to your account, and
+                start earning points! This is an optional feature.
+            </h6>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-1"></div>
+                    <div class="col-lg-5 col-md-12 mb-4 text-center">
+                        <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="91631ac7-26e5-4657-84a8-25556e8a3843">
+                            <div class="form-group position-relative mb-3">
+                                <input type="text" id="name" class="form-control" name="name" placeholder=" " required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group position-relative mb-3">
+                                <input type="email" id="email" class="form-control" name="email" placeholder=" "
+                                    style="margin-top: 6%;" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group position-relative mb-3">
+                                <textarea id="message" class="form-control" rows="6" name="message" placeholder=" "
+                                    required style="margin-top: 6%;"></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button class="btn btn-primary btn-block" type="submit" id="submit_button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
