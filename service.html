@@ -77,7 +77,7 @@
         }
 
         #main_section {
-            background-image: url('image/main.png');
+            background-image: url('service 1/main.png');
             height: 100%;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -99,7 +99,9 @@
         }
 
         #card,
-        #card_top {
+        #card_top,
+        #card2,
+        #card3 {
             margin-top: -15%;
         }
 
@@ -133,11 +135,6 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 10%;
-        }
-
-        #service_page {
-            background-color: #F2F2F2;
-            /* margin-top: 5%; */
         }
 
         #icon_head {
@@ -192,6 +189,17 @@
             height: auto;
         }
 
+        .navbar-toggler {
+            border-color: white !important;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        button:focus:not(:focus-visible) {
+            color: transparent;
+        }
+
+
         /* Form input styles */
         #name,
         #email,
@@ -225,48 +233,37 @@
             font-size: 15px;
         }
 
-        .navbar-toggler {
-            border-color: white !important;
-            border-width: 1px;
-            border-style: solid;
+        #service_page {
+            background-color: #F2F2F2;
+            padding-bottom: 5%;
         }
 
-        button:focus:not(:focus-visible) {
-            color: transparent;
+        #image_service{
+            width: 80%;
         }
 
-        .fooder_para {
-            text-align: center;
-            padding-left: 8%;
-            padding-right: 8%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            color: white;
-            font-size: 15px;
-        }
-        .fooder{
-            background-color: #005dab;
-            /* padding: 2%; */
-        }
-
-        @media(max-width:992px) {
+        /* @media(max-width:992px) {
             .card-custom {
                 height: auto;
             }
 
             #card_top {
-                margin-top: 21%;
+                margin-top: 4%;
             }
 
             #card {
                 margin-top: 0px;
+                height: 30px;
+            }
+            #card3{
+                margin-top: 5%;
             }
 
             #card2,
             #card3 {
                 margin-top: 18px;
-            }
-        }
+            } 
+        } */
 
         @media (max-width: 769px) {
             #main_header h1 {
@@ -292,6 +289,11 @@
 
             .service_image_header {
                 font-size: 32px;
+            }
+
+            #image_service{
+                width: 130%;
+                margin-left: -15px;
             }
 
             #icon {
