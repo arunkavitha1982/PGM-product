@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Urbanist", sans-serif
 }
 
 body {
     background-image: linear-gradient(to right, #005dab, #002645);
-
+    
 }
 
 
@@ -13,6 +14,10 @@ body {
     font-size: 15px;
     color: #005dab;
     padding-left: 0px;
+}
+
+#card{
+    border-radius: 50px;
 }
 
 #schedule_button{
@@ -29,7 +34,11 @@ body {
 }
 
 .navbar-brand img {
-    margin-left: 20px;
+    margin-left: 40px;
+}
+
+#navbarDropdown:hover{
+color: #005dab;
 }
 
 #navbarSupportedContent {
@@ -44,16 +53,18 @@ body {
 .navbar-nav .nav-item {
     font-size: 20px;
     font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 9px;
+    padding-right: 21px;
 }
 
 .navbar-nav .nav-link {
     color: #005dab;
 }
 
-.dropdown-item {
-    font-size: 24px;
+
+#dropDown{
+    font-size: 18px;
+    color: #005dab;
 }
 
 .navbar-toggler {
@@ -74,13 +85,15 @@ body {
     background-color: #fcd500;
     color: white;
     font-size: 20px;
+    font-weight: bold;
+
 }
 
 #button2 {
     background-color: #005dab;
     color: white;
     font-size: 17px;
-    margin-right: 20px;
+    font-weight: bold;
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -94,6 +107,13 @@ body {
     background-color: #d9e7f2;
 }
 
+
+.home_content1{
+    color: white; font-family: montserrat;font-weight: 600;
+}
+#aboutNav{
+padding-left: 14px;
+}
 /* about page */
 .about {
     background-color: white;
@@ -116,6 +136,7 @@ body {
 #service_button {
     margin-left: 5%;
     margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -156,25 +177,28 @@ body {
 
 
 /* Basic styles for the cards */
-.container.cards {
+/* .container.cards {
     margin-top: 20px;
 
-}
+} */
 
 .card-container {
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 #card {
-    width: 30%;
-    margin-left: 20%;
-    border-radius: 50%;
-    padding-bottom: 2%;
+    width: 35%;
+    /* height: 50%; */
+    margin-left: 14%;
+    /* padding-bottom: 2%; */
+    
 }
 
 #card2 {
-    width: 30%;
-    margin-right: 17%;
+    width: 35%;
+    padding-left: 3%;
+    margin-right: 16%;
+    margin-bottom: 30px;
 }
 
 .card-body {
@@ -186,9 +210,10 @@ body {
 }
 
 .card-text {
-    font-size: 0.9em;
+    font-size: 16px;
     margin-top: 10px;
-    text-align: left;
+    padding: 10px 10px 0px 10px;
+    text-align: justify;
 }
 
 
@@ -212,7 +237,6 @@ body {
 .header {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .product-image {
@@ -246,6 +270,9 @@ body {
     margin-bottom: 5%;
 }
 
+/* .home_content1{
+    font-size: 40px;
+} */
 
 /* Container styles */
 .contect {
@@ -390,7 +417,7 @@ body {
     color: white;
     margin-top: -3%;
     margin-bottom: 2%;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .about_header {
@@ -404,8 +431,8 @@ body {
 #service_header {
     text-align: center;
     font-size: 40px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    /* padding-top:%; */
+    /* padding-bottom: 3%; */
     font-weight: bold;
 }
 
@@ -425,6 +452,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+    }
+    #aboutNav{
+        padding-left: 0px;
     }
 
     #card {
@@ -533,15 +563,15 @@ body {
         margin-bottom: -30px;
     }
 
-    .home_content1 {
+    #home_content1 {
         font-size: 25px;
 
     }
 
-    #home_content2 {
+    /* #home_content2 {
         font-size: 25px;
         margin-top: -6px;
-    }
+    } */
 
     #home_content3 {
         font-size: 15px;
@@ -706,7 +736,7 @@ body {
         text-align: center;
     }
 
-    #dropdown-item {
+    .dropdown-item {        
         margin-top: 2px;
         font-size: 15px;
         font-weight: bold;

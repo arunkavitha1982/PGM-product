@@ -72,7 +72,7 @@
 
 .content {
     padding: 10px;
-    border: 2px solid #007BFF;
+    border: 2px solid #01427a;
     border-top: none;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -113,7 +113,7 @@
     height: 30px;
     background: white;
     border-radius: 60%;
-    border: 2px solid #005dab;
+    border: 2px solid #01427a;
 }
 
 .offer_title::before {
