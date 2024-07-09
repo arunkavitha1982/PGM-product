@@ -4,297 +4,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Service</title>
+    <title>PG Mechanical Specials</title>
     <style>
-        body,
-        html {
-            height: 100%;
+        .container-fluid {
+            max-width: 1200px;
+            margin: auto;
         }
 
-        #main_section {
-            background-image: url('image/main.png');
-            height: 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        #main_header {
-            padding-top: 5%;
+        .text-center {
             text-align: center;
         }
 
-        #main_header h1 {
-            background-color: white;
-            opacity: 0.75;
-            color: #005dab;
-            margin: 0 15%;
-            font-size: 46px;
-            padding: 1.4%;
+        .py-2 {
+            padding: 2% 0;
         }
 
-        #card,
-        #card_top {
-            margin-top: -15%;
+        .offer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
         }
 
-        #card_head {
-            text-align: center;
-            padding-top: 2%;
+        .coupon {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            width: 450px;
+            overflow: hidden;
+            margin-bottom: 20px;
         }
 
-        .card-custom {
-            border: 2px outset;
-            height: 480px;
+        .offer_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to right, #005dab, #002645);
+            color: white;
+            padding: 17px 20px 10px;
+            border-bottom: 2px dashed #ffffff;
+            position: relative;
         }
 
-        .card-img-custom {
-            width: 80%;
-            display: block;
-            margin: 4% auto 0 auto;
+        .offer_title h2 {
+            margin: 0;
+            font-size: 14px;
         }
 
-        .service_image_header {
-            padding-top: 5%;
-            padding-bottom: 3%;
-            text-align: center;
+        .price {
+            color: #fcd500;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+
+        .content {
+            padding: 10px;
+            border: 2px solid #007BFF;
+            border-top: none;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
             color: black;
-            font-size: 42px;
         }
 
-        #icon {
-            margin-top: 12%;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 10%;
+        .content p {
+            font-size: 13px;
+            margin: 0;
+            padding-left: 14px;
+            padding-top: 13px;
         }
 
-        #Service_page {
-            background-color: #F2F2F2;
+        .content ul {
+            padding: 0;
+            margin: 10px 0 0;
+            padding-top: 13px;
+            padding-left: 30px;
+            list-style: none;
         }
 
-        #icon_head {
+        .content ul li {
+            margin: 5px 0;
+        }
+
+        .footer {
             text-align: center;
-            padding-bottom: 25%;
+            font-size: 0.9em;
+            padding: 20px 0;
+            font-weight: bold;
         }
 
-        .form-group label {
+        .offer_title::before,
+        .offer_title::after {
+            content: '';
             position: absolute;
-            top: 0.75rem;
-            left: 1rem;
-            transition: all 0.3s ease;
+            top: 50px;
+            width: 30px;
+            height: 30px;
             background: white;
-            padding: 0 0.25rem;
-            color: #666;
-            pointer-events: none;
+            border-radius: 60%;
+            border: 2px solid #005dab;
         }
 
-        .form-group input:focus+label,
-        .form-group input:not(:placeholder-shown)+label,
-        .form-group textarea:focus+label,
-        .form-group textarea:not(:placeholder-shown)+label {
-            top: -0.75rem;
-            left: 0.75rem;
-            font-size: 0.75rem;
-            color: gray;
-            font-size: 15px;
+        .offer_title::before {
+            left: -15px;
         }
 
-        .form-group input,
-        .form-group textarea {
-            padding: 1rem;
-            padding-top: 1.5rem;
+        .offer_title::after {
+            right: -15px;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: grey;
-            box-shadow: 0 0 0px;
-        }
-
-        .contect {
-            background-color: white;
-            margin-bottom: 5%;
-        }
-
-        /* Image styles */
-        #contact_image {
-            margin-bottom: 5%;
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Form input styles */
-        #name,
-        #email,
-        #message {
-            padding: 10px;
-            border-radius: 5px;
-            border: solid 1px rgb(176, 175, 175);
-        }
-
-        #message {
-            resize: none;
-        }
-
-        /* Button styles */
-        #submit_button {
-            background-color: #005dab;
-            color: white;
-            font-size: 20px;
-            padding: 10px;
-            margin-left: 0%;
-            width: 100%;
-        }
-
-        .fooder_para {
+        .user_content {
+            padding: 20px;
+            font-size: 17px;
             text-align: center;
-            padding-left: 8%;
-            padding-right: 8%;
-            color: white;
-            margin-top: -3%;
-            margin-bottom: 2%;
-            font-size: 15px;
         }
 
-        @media (max-width: 768px) {
-            .service_image_header {
-                font-size: 32px;
-            }
+        #offer_header {
+            color: #005dab;
+            font-weight: bold;
+            text-align: center;
+        }
 
-            #icon {
-                width: 60%;
-                margin-top: 10%;
-            }
+        @media (max-width: 950px) {
 
-            #icon_head {
-                padding-bottom: 15%;
+            #coupon_2,
+            #coupon_3 {
+                margin: 0;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid p-0" id="main_section">
-        <div id="main_header">
-            <h1>Residential Air Conditioning and Heating</h1>
+    <div class="container-fluid offer-body" id="special">
+        <div class="text-center py-2">
+            <h1 id="offer_header">PG Mechanical Specials</h1>
         </div>
-    </div>
-
-    <div class="container mt-n5">
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6" id="card_top">
-                <div class="card card-custom">
-                    <img class="card-img-top card-img-custom" src="image/1.png" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title" id="card_head">Comprehensive Service</h4>
-                        <p class="card-text">From minor fixes to major overhauls, no job is too big or too small for us.
-                            Relax and let us get your AC system back on its feet quickly and efficiently.</p>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <p class="user_content">
+                            Unlock year-round comfort with our limited-time HVAC specials! Don't miss out on exclusive
+                            offers and discounts tailored to enhance your home's efficiency and comfort. I am Pardeep. I
+                            want to provide new offers.
+                        </p>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+            <div class="container offer">
+                <!-- Special Offer 1 -->
+                <div class="coupon" id="coupon_1">
+                    <div class="offer_title">
+                        <h2 class="offer_title_1">AIR DUCT WHOLE HOUSE PACKAGE</h2>
+                        <div class="price price1">$99</div>
+                    </div>
+                    <div class="content offer_content_1">
+                        <p>AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD</p>
+                        <ul>
+                            <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                            <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                            <li>FREE A/C check up.</li>
+                        </ul>
+                        <div class="footer">Offer Expires: 06/06/2023</div>
+                    </div>
+                </div>
+                <!-- Special Offer 2 -->
+                <div class="coupon" id="coupon_2">
+                    <div class="offer_title">
+                        <h2 class="offer_title_2">AIR DUCT WHOLE HOUSE PACKAGE</h2>
+                        <div class="price price2">$99</div>
+                    </div>
+                    <div class="content offer_content_2">
+                        <p>AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD</p>
+                        <ul>
+                            <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                            <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                            <li>FREE A/C check up.</li>
+                        </ul>
+                        <div class="footer">Offer Expires: 06/06/2023</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6" id="card">
-                <div class="card card-custom">
-                    <img class="card-img-top card-img-custom" src="image/3.png" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title" id="card_head">Expert Technicians</h4>
-                        <p class="card-text">Our team of certified professionals can repair any air conditioner,
-                            regardless of the brand or where you purchased it. We service all major brands, including
-                            Lennox, Carrier, York, Bryant, Comfort Air, Rheem, and more.</p>
+            <div class="container offer">
+                <!-- Special Offer 3 -->
+                <div class="coupon" id="coupon_3">
+                    <div class="offer_title">
+                        <h2 class="offer_title_3">AIR DUCT WHOLE HOUSE PACKAGE</h2>
+                        <div class="price price3">$99</div>
+                    </div>
+                    <div class="content offer_content_3">
+                        <p>AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD</p>
+                        <ul>
+                            <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                            <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                            <li>FREE A/C check up.</li>
+                        </ul>
+                        <div class="footer">Offer Expires: 06/06/2023</div>
+                    </div>
+                </div>
+                <!-- Special Offer 4 -->
+                <div class="coupon" id="coupon_4">
+                    <div class="offer_title">
+                        <h2 class="offer_title_4">AIR DUCT WHOLE HOUSE PACKAGE</h2>
+                        <div class="price price4">$99</div>
+                    </div>
+                    <div class="content offer_content_4">
+                        <p>AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD</p>
+                        <ul>
+                            <li>Sanitizing & Deodorizing of the cleaned system.</li>
+                            <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
+                            <li>FREE A/C check up.</li>
+                        </ul>
+                        <div class="footer">Offer Expires: 06/06/2023</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6" id="card">
-                <div class="card card-custom">
-                    <img class="card-img-top card-img-custom" src="image/2.png" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title" id="card_head">Customer-Centric Approach</h4>
-                        <p class="card-text">Our technicians are not just skilled; they genuinely care about your
-                            comfort and satisfaction. They go above and beyond, often performing good deeds for free,
-                            because we believe in making a positive impact in our community.</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+    <script>
+        // Example function to change the content
+        function updateOffers() {
+            document.getElementById("offer_header").innerText = "New PG Mechanical Specials";
 
-    <div class="container-fluid" id="Service_page">
-        <div>
-            <h2 class="service_image_header">Our Services Include</h2>
-        </div>
-        <div class="row text-center">
-            <div class="col-lg-2 col-md-4 col-6 mb-4">
-                <img src="image/icon1.png" alt="" id="icon">
-                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mb-4">
-                <img src="image/icon2.png" alt="" id="icon">
-                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mb-4">
-                <img src="image/icon3.png" alt="" id="icon">
-                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mb-4">
-                <img src="image/icon4.png" alt="" id="icon">
-                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mb-4">
-                <img src="image/icon5.png" alt="" id="icon">
-                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
-            </div>
-            <div class="col-lg-2 col-md-4 col-6 mb-4">
-                <img src="image/icon6.png" alt="" id="icon">
-                <h6 id="icon_head">Diagnostic and Troubleshooting</h6>
-            </div>
-        </div>
-    </div>
+            let userContent = document.querySelector(".user_content");
+            userContent.innerText = "Explore our latest HVAC specials and enjoy superior comfort and savings! Pardeep has updated the offers just for you.";
 
-    <div class="container-fluid contect" id="contect">
-        <div class="header text-center py-3">
-            <b>Get in touch</b>
-        </div>
-        <div class="row text-center mb-4">
-            <h6 class="mx-auto">
-                Track your progress with the free "My Learning" program here at W3Schools. Log in to your account, and start earning points! This is an optional feature.
-            </h6>
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 mb-4 text-center">
-                    <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
-                </div>
-                <div class="col-lg-5 col-md-12">
-                    <form class="form">
-                        <div class="form-group position-relative mb-3">
-                            <input type="text" id="name" class="form-control" placeholder=" " required>
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-group position-relative mb-3">
-                            <input type="email" id="email" class="form-control" placeholder=" " required>
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="form-group position-relative mb-3">
-                            <textarea id="message" class="form-control" rows="4" placeholder=" " required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                        <button class="btn btn-primary btn-block" type="button" id="submit_button">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+            // Update Offer 1
+            let offerTitle1 = document.querySelector(".offer_title_1");
+            let price1 = document.querySelector(".price1");
+            let offerContent1 = document.querySelector(".offer_content_1");
+            offerTitle1.innerText = "NEW AIR DUCT CLEANING PACKAGE";
+            price1.innerText = "$89";
+            offerContent1.innerHTML = `
+            <p>Advanced AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE LATEST HEPA AIR METHOD</p>
+            <ul>
+                <li>Enhanced Sanitizing & Deodorizing of the cleaned system.</li>
+                <li>Thorough Disinfecting & wiping of all air conditioning vents/grills.</li>
+                <li>FREE A/C check up and consultation.</li>
+            </ul>
+            <div class="footer">Offer Expires: 12/31/2024</div>
+        `;
 
-    <footer>
-        <div class="container-fluid footer-section">
-            <p class="fooder_para">Address: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        </div>
-    </footer>
+            // Update Offer 2
+            let offerTitle2 = document.querySelector(".offer_title_2");
+            let price2 = document.querySelector(".price2");
+            let offerContent2 = document.querySelector(".offer_content_2");
+            offerTitle2.innerText = "SUMMER HVAC TUNE-UP SPECIAL";
+            price2.innerText = "$59";
+            offerContent2.innerHTML = `
+            <p>Comprehensive inspection and tune-up of your HVAC system for optimal performance.</p>
+            <ul>
+                <li>Detailed inspection of all HVAC components.</li>
+                <li>Cleaning and adjusting of system settings for peak efficiency.</li>
+                <li>FREE replacement of standard air filters.</li>
+            </ul>
+            <div class="footer">Offer Expires: 09/30/2024</div>
+        `;
 
+            // Update Offer 3
+            let offerTitle3 = document.querySelector(".offer_title_3");
+            
+            let offerContent3 = document.querySelector(".offer_content_3");
+            offerTitle3.innerText = "WINTER HEATING SYSTEM CHECK-UP";
+            price3.innerText = "$79";
+            offerContent3.innerHTML = `
+            <p>Ensure your heating system is ready for winter with our thorough check-up and maintenance package.</p>
+            <ul>
+                <li>Inspection of all heating system components.</li>
+                <li>Cleaning and adjustment of system settings.</li>
+                <li>FREE emergency call service.</li>
+            </ul>
+            <div class="footer">Offer Expires: 01/31/2025</div>
+        `;
+
+            // Update Offer 4
+            let offerTitle4 = document.querySelector(".offer_title_4");
+            let price4 = document.querySelector(".price4");
+            let offerContent4 = document.querySelector(".offer_content_4");
+            offerTitle4.innerText = "SPRING AIR CONDITIONING TUNE-UP";
+            price4.innerText = "$69";
+            offerContent4.innerHTML = `
+            <p>Get your air conditioning system ready for the summer with our spring tune-up package.</p>
+            <ul>
+                <li>Comprehensive inspection of all AC components.</li>
+                <li>Cleaning and adjustment of system settings.</li>
+                <li>FREE replacement of standard air filters.</li>
+            </ul>
+            <div class="footer">Offer Expires: 05/31/2025</div>
+        `;
+        }
+
+        // Call the function to update offers
+        updateOffers();
+    </script>
 </body>
 
 </html>
