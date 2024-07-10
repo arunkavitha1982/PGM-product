@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="offer.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="icon" href="image/new.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- favicon -->
@@ -38,12 +43,55 @@
     button:focus:not(:focus-visible) {
         color: transparent;
     }
+
+    @media (max-width: 1022px) {
+        .navbar-brand img {
+            margin-left: 20px;
+            width: 80px;
+            /* Adjust as necessary */
+        }
+
+        .navbar-nav .nav-item {
+            font-size: 18px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            color: #005dab;
+        }
+
+        #button1 {
+            font-size: 18px;
+            padding-left: 30px;
+            padding-right: 32px;
+        }
+
+        #button2 {
+            font-size: 15px;
+        }
+
+        .material-icons {
+            font-size: 30px;
+        }
+
+        .navbar-toggler {
+            font-size: 24px;
+        }
+
+        #navbarSupportedContent {
+            padding: 10px 0;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+    }
 </style>
 
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="image/new.png" alt="Logo" width="100px"></a>
+            <a class="navbar-brand" href="#"><img src="image/new.png" alt="Logo" width="100px" ></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
                 <i class="material-icons">menu</i>
@@ -51,17 +99,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about" style="color: #005dab;">About</a>
+                        <a class="nav-link active" aria-current="page" href="#about" style="color: #005dab;"
+                            id="aboutNav">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#service" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Service
+                            Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#service">Action</a></li>
-                            <li><a class="dropdown-item" href="#service">Action</a></li>
-                            <li><a class="dropdown-item" href="#service">Action</a></li>
+                            <li><a class="dropdown-item" href="service.html" id="dropDown">Residential AC</a></li>
+                            <li><a class="dropdown-item" href="service1.html" id="dropDown">Commercial AC</a></li>
+                            <li><a class="dropdown-item" href="service3.html" id="dropDown">Commercial Refrigeration</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -71,7 +121,7 @@
                         <a class="nav-link" href="#special" tabindex="-1" aria-disabled="true">Special</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#user">Blog</a>
+                        <a class="nav-link" aria-current="page" href="blog2.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contect" tabindex="-1" aria-disabled="true">Contact us</a>
@@ -81,7 +131,7 @@
                                 id="button1">Schedule</button></a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn" id="button2">(469) 274-6424</button>
+                       <a href="tel:(469) 274-6424"> <button class="btn" id="button2">(469) 274-6424</button></a>
                     </li>
                 </ul>
             </div>
@@ -94,17 +144,19 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 text-center ">
                 <div class="banner-section" id="icon">
-                    <h1><span class="span-col home_content1" style="color: white;">Your Comfort,</span></h1>
-                    <h1 style="color: #fcd500;" id="home_content2"><span class="span-col ">Our Priority</span></h1>
-                    <h5 style="color: white;" id="home_content3">Experience top-notch HVAC services tailored to your
+                    <h1 class="home_content1" id="home_content1">Keeping North Texas <br><span style="color: #fcd500;">
+                            Cool, Comfortable & Fresh</span></h1>
+                    <h5 style="color: white;font-weight: normal;padding-top: 10px;padding-bottom: 20px;text-align: center;"
+                        id="home_content3">Experience top-notch HVAC services tailored to your
                         needs, ensuring
                         comfort in every season</h5>
-                    <button class="btn" type="button" id="schedule_button" style="text-align: center;">Schedule</button>
+                    <a href="https://pgmechllc.com/customer.html"><button class="btn" type="button" id="schedule_button"
+                            style="text-align: center;font-weight: bold;">Schedule</button></a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 text-center">
-                <div class="image-container" id="image_background" style="border-radius: 50%;">
-                    <img src="image/hero section.png" id="image" class="img-fluid" style="margin-top: 5%;">
+                <div class="image-container">
+                    <img src="image/Group 88.png" class="img-fluid" style="margin-top: 5%;">
                 </div>
             </div>
         </div>
@@ -132,17 +184,17 @@
         </div>
         <div class="container text-center pb-4">
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <h1 id="experience" style="color: #005dab; margin-bottom: -10px;padding-bottom: 10px;">20+</h1>
-                    <h6 id="experience">Year experience</h6>
+                <div class="col-lg-3 col-md-4 col-sm-6" id="customer">
+                    <h1 id="experience" class="exa">20+</h1>
+                    <h6>Year experience</h6>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <h1 id="experience" style="color: #005dab; margin-bottom: -10px;padding-bottom: 10px;">10,000+</h1>
-                    <h6 id="experience">Happy customers</h6>
+                <div class="col-lg-3 col-md-4 col-sm-6" id="customer">
+                    <h1 id="experience" class="exa">10,000+</h1>
+                    <h6>Happy customers</h6>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <h1 id="experience" style="color: #005dab; margin-bottom: -10px;padding-bottom: 10px;">10+</h1>
-                    <h6 id="experience">Services</h6>
+                <div class="col-lg-3 col-md-4 col-sm-6" id="year">
+                    <h1 id="experience" class="exa">10+</h1>
+                    <h6>Services</h6>
                 </div>
             </div>
         </div>
@@ -155,8 +207,9 @@
         <div class="header service_header" id="service_header">Our Services</div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8 col-sm-12">
-                    <p style="text-align: center;">Providing top-quality HVAC solutions with exceptional value and
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <p style="text-align: center;margin-bottom: 4%;">Providing top-quality HVAC solutions with
+                        exceptional value and
                         reliability, Trust our expertise and partnerships for all your heating and cooling needs.</p>
                 </div>
             </div>
@@ -164,28 +217,35 @@
         <div class="container cards">
             <div class="row">
                 <div class="col-md-6 card-container" id="card">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service3.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h6 class="card-title" id="color">Residential Air Conditioning and Heating</h6>
+                            <img class="card-img-top" src="image/service3.png" alt="Card image" id="images">
+                            <h6 class="card-title" style="color: #005dab;">Residential Air Conditioning and Heating</h6>
                             <p class="card-text">Expert Technicians: Our team of certified professionals can repair any
                                 air conditioner, regardless of the brand or where you purchased it. We service all major
-                                brands, including Lennox, Carrier, York, Bryant, Comfort Air</p>
-                            <button class="btn" type="button" id="service_button">Know More</button>
-                        </div>
+                                brands, including Lennox, Carrier, York, Bryant, Comfort Air, Rheem, and more.
+
+                            </p>
+                            <a href="service.html"><button class="btn " type="button" id="service_button">Know
+                                    More</button></a>
+
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 card-container" id="card2">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service4.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h4 class="card-title" id="color">Commercial Air conditioning and heating</h4>
+                            <img class="card-img-top" src="image/service4.png" alt="Card image" id="images">
+                            <h4 class="card-title"  style="padding-top: 2.5%;color: #005dab;">Commercial Air conditioning and heating</h4>
                             <p class="card-text">When your commercial air conditioning or heating system needs repair,
                                 you need a reliable partner who understands the complexities of commercial HVAC systems.
                                 At [Your Company Name], we provide expert repair services.</p>
-                            <button class="btn" type="button" id="service_button">Know More</button>
+                            <a href="service1.html"><button class="btn" type="button" id="service_button">Know
+                                    More</button></a>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -193,29 +253,33 @@
         <div class="container cards">
             <div class="row">
                 <div class="col-md-6 card-container" id="card">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service1.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h6 class="card-title" id="color">Commercial Refrigeration</h6>
+                            <img class="card-img-top" src="image/service1.png" alt="Card image" id="images">
+                            <h6 class="card-title" style="color: #005dab;">Commercial Refrigeration</h6>
                             <p class="card-text">Tat PG Maintenance, we understand the significance of reliable
                                 commercial refrigeration. Our team of and certified technicians are
                                 dedicated to ensuring your food products stay fresh and your business operations run
                                 smoothly</p>
-                            <button class="btn" type="button" id="service_button">Know More</button>
+                            <a href="service3.html"><button class="btn " type="button" id="service_button">Know
+                                    More</button></a>
+
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
                 <div class="col-md-6 card-container" id="card2">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service2.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h4 class="card-title" id="color">Maintenance</h4>
-                            <p class="card-text">Thorough & Comprehensive Air Conditioner Maintenance That Keep Your
+                            <img class="card-img-top" src="image/service2.png" alt="Card image" id="images">
+                            <h4 class="card-title" id="color" style="padding-top: 2%;color: #005dab;">Maintenance</h4>
+                            <p class="card-text" >Thorough & Comprehensive Air Conditioner Maintenance That Keep Your
                                 Unit In Peak Condition. Don't let your air conditioner leave you hot and bothered!
                                 Regular maintenance is essential to keep your system running smoothly </p>
-                            <button class="btn " type="button" id="service_button">Know More</button>
+                            <a href=""><button class="btn" type="button" id="service_button">Know More</button></a>
                         </div>
-                    </div>
+                    <!-- </div>  -->
                 </div>
             </div>
         </div>
@@ -231,15 +295,13 @@
                     <img src="image/pngwing.com (1).png" alt="" class="product-image">
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-12">
-                    <p id="product_contect">Track your progress with the free "My Learning" program here at W3Schools.
-                        Log in to your
-                        account, and start earning points! This is an optional feature. You can study at W3Schools
-                        without using My Learning.</p>
+                    <p id="product_contect">As a Trane Certified dealer, our high sales volume ensures the best pricing
+                        from suppliers, allowing us to offer you top-quality HVAC solutions at exceptional value.</p>
                 </div>
             </div>
         </div>
 
-<!-- Desktop view in carousel  -->
+        <!-- Desktop view in carousel  -->
         <section id="team" class="d-none d-lg-block d-md-block d-xxl-block">
             <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -249,30 +311,38 @@
                                 <div class="team-member">
                                     <span
                                         style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        <img src="product/air-conditioner-xv18-lg-259x300.png" alt="Product Image"
+                                            style="padding-top: 19%;width: 40%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XR16 Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="team-member">
                                     <span
                                         style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        <img src="product/air-conditioner-xv20i-lg-259x300.png" alt="Product Image"
+                                            style="padding-top: 19%;width: 42%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XL17i Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="team-member">
                                     <span
-                                        style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        style="background-color: #fcd500;padding-left: 30px;padding-right: 30px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
+                                        <img src="product/xl17i-air-conditioner-216x300.png" alt="Product Image"
+                                            style="padding-top: 19%;width: 35%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XL15i Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
                                 </div>
                             </div>
                         </div>
@@ -283,30 +353,39 @@
                                 <div class="team-member">
                                     <span
                                         style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        <img src="product/xr16-air-conditioners-lg-259x300.png" alt="Product Image"
+                                            style="padding-top: 19%;width: 40%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XR13 Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="team-member">
                                     <span
                                         style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        <img src="product/XV17_AC_HP-1-261x300.png" alt="Product Image"
+                                            style="padding-top: 19%;width: 40%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XR14 Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
                                 </div>
                             </div>
                             <div class="col-md-4 col-12">
                                 <div class="team-member">
                                     <span
-                                        style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        style="background-color: #fcd500;padding-left: 24px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
+                                        <img src="product/air-conditioner-system-xr16-low-profile-lg-242x300.png"
+                                            alt="Product Image" style="padding-top: 12%;width: 45%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XR15 Low Profile Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
                                 </div>
                             </div>
                         </div>
@@ -321,7 +400,7 @@
             </div>
         </section>
 
-<!-- mobile view in carousel  -->
+        <!-- mobile view in carousel  -->
         <section id="team" class="d-sm-block d-lg-none d-md-none d-xxl-none">
             <div id="teamMobileView" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -331,10 +410,13 @@
                                 <div class="team-member">
                                     <span
                                         style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        <img src="product/air-conditioner-xv18-lg-259x300.png" alt="Product Image"
+                                            style="padding-top: 19%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XL17i Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
                                 </div>
                             </div>
                         </div>
@@ -345,14 +427,90 @@
                                 <div class="team-member">
                                     <span
                                         style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
-                                        <img src="image/productg.png" alt="Product Image" style="padding-top: 19%;">
+                                        <img src="product/air-conditioner-xv20i-lg-259x300.png" alt="Product Image"
+                                            style="padding-top: 19%;">
                                     </span>
-                                    <h5 id="product_name">XV17 TruComport Variable Speeds Air Conditioner</h5>
-                                    <button class="btn" id="buy_now">Buy Now</button>
+                                    <h5 id="product_name">XL15i Air Conditioner</h5>
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="team-member">
+                                    <span
+                                        style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
+                                        <img src="product/air-conditioner-xv20i-lg-259x300.png" alt="Product Image"
+                                            style="padding-top: 19%;">
+                                    </span>
+                                    <h5 id="product_name">XL15i Air Conditioner</h5>
+
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="team-member">
+                                    <span
+                                        style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
+                                        <img src="product/xl17i-air-conditioner-216x300.png" alt="Product Image"
+                                            style="padding-top: 19%;">
+                                    </span>
+                                    <h5 id="product_name">XR13 Air Conditioner</h5>
+
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="team-member">
+                                    <span
+                                        style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
+                                        <img src="product/XV17_AC_HP-1-261x300.png" alt="Product Image"
+                                            style="padding-top: 19%;">
+                                    </span>
+                                    <h5 id="product_name">XR14 Air Conditioner</h5>
+
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="team-member">
+                                    <span
+                                        style="background-color: #fcd500;padding-left: 20px;padding-right: 20px;padding-top: 30%;padding-bottom: 20%;border-radius: 50%;">
+                                        <img src="product/air-conditioner-system-xr16-low-profile-lg-242x300.png"
+                                            alt="Product Image" style="padding-top: 19%;">
+                                    </span>
+                                    <h5 id="product_name">XR15 Low Profile Air Conditioner</h5>
+
+                                    <a href="https://www.trane.com/residential/en/products/air-conditioners/"><button
+                                            class="btn" id="buy_now">Buy Now</button></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Add more carousel items as needed -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#teamMobileView"
@@ -377,21 +535,20 @@
             <div class="container pgm_work">
                 <div class="row align-items-center">
                     <div class="col-md-2 offset-md-2 text-center">
-                        <img src="image/step3.png" alt="" class="steps img-fluid" width="100%">
+                        <img src="image/step1.png" alt="" class="steps img-fluid" width="100%">
                     </div>
                     <div class="col-md-5 offset-md-1">
                         <h3 id="title">1. Contact us</h3>
-                        <p id="title_content">At PG Maintenance, we understand the significance of reliable commercial
-                            refrigeration. Our
-                            team of highly skilled and certified technicians are dedicated to ensuring your food
-                            products stay fresh and your business operations run smoothly.</p>
+                        <p id="title_content">Reach out to us via phone at [Your Phone Number] or email at [Your Email
+                            Address], or use our online contact form. Provide your contact details and a brief
+                            description of the issue you're experiencing with your HVAC system.</p>
                     </div>
                 </div>
             </div>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <img src="image/line.png" alt="" class="img-fluid" style="margin-bottom: 5%;" id="line">
+                        <img src="image/line.png" alt="" class="img-fluid" id="line">
                     </div>
                 </div>
             </div>
@@ -403,17 +560,16 @@
                     </div>
                     <div class="col-md-5 order-md-1 offset-md-1">
                         <h3 id="title">2. Schedule an Appointment</h3>
-                        <p id="title_content">At PG Maintenance, we understand the significance of reliable commercial
-                            refrigeration. Our
-                            team of highly skilled and certified technicians are dedicated to ensuring your food
-                            products stay fresh and your business operations run smoothly.</p>
+                        <p id="title_content">Reach out to us via phone at [Your Phone Number] or email at [Your Email
+                            Address], or use our online contact form. Provide your contact details and a brief
+                            description of the issue you're experiencing with your HVAC system.</p>
                     </div>
                 </div>
             </div>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <img src="image/Vector 17.png" alt="" class="img-fluid" style="margin-bottom: 5%;" id="line">
+                        <img src="image/Vector 17.png" alt="" class="img-fluid" id="line">
                     </div>
                 </div>
             </div>
@@ -424,17 +580,16 @@
                     </div>
                     <div class="col-md-5 offset-md-1">
                         <h3 id="title">3. Get Your System Repaired</h3>
-                        <p id="title_content">At PG Maintenance, we understand the significance of reliable commercial
-                            refrigeration. Our
-                            team of highly skilled and certified technicians are dedicated to ensuring your food
-                            products stay fresh and your business operations run smoothly.</p>
+                        <p id="title_content">Reach out to us via phone at [Your Phone Number] or email at [Your Email
+                            Address], or use our online contact form. Provide your contact details and a brief
+                            description of the issue you're experiencing with your HVAC system.</p>
                     </div>
                 </div>
             </div>
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <img src="image/line.png" alt="" class="img-fluid" style="margin-bottom: 5%;" id="line">
+                        <img src="image/line.png" alt="" class="img-fluid" id="line">
                     </div>
                 </div>
             </div>
@@ -446,10 +601,9 @@
                     </div>
                     <div class="col-md-5 order-md-1 offset-md-1">
                         <h3 id="title">4. Pay Invoice</h3>
-                        <p id="title_content">At PG Maintenance, we understand the significance of reliable commercial
-                            refrigeration. Our
-                            team of highly skilled and certified technicians are dedicated to ensuring your food
-                            products stay fresh and your business operations run smoothly.</p>
+                        <p id="title_content">Once the repair is completed, we'll provide a detailed invoice. Choose
+                            from a variety of convenient payment options to settle the bill. Our goal is to make the
+                            payment process smooth and hassle-free for you..</p>
                     </div>
                 </div>
             </div>
@@ -467,9 +621,10 @@
                     <div class="col-1"></div>
                     <div class="col-10">
                         <p class="user_content" style="text-align: center;">
-                            Unlock year-round comfort with our limited-time HVAC specials! Don't miss out on exclusive
-                            offers and discounts tailored to enhance your home's efficiency and comfort. I am Pardeep. I
-                            want to provide new offers.
+                            Unlock year-round comfort with our limited-time HVAC specials! Don't miss out on
+                            exclusive offers and discounts tailored to enhance your home's efficiency and comfort. I am
+                            Pardeep. I want
+                            to provide new offers.
                         </p>
                     </div>
                     <div class="col-1"></div>
@@ -489,7 +644,7 @@
                             <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
                             <li>FREE A/C check up.</li>
                         </ul>
-                        <div class="footer footer1"></div>
+                        <div class="footer footer1">Offer Expires: 16/07/2023</div>
                     </div>
 
                 </div>
@@ -507,7 +662,7 @@
                             <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
                             <li>FREE A/C check up.</li>
                         </ul>
-                        <div class="footer footer2">Offer Expires: 06/06/2023</div>
+                        <div class="footer footer2">Offer Expires: 16/07/2023</div>
                     </div>
 
                 </div>
@@ -526,7 +681,7 @@
                             <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
                             <li>FREE A/C check up.</li>
                         </ul>
-                        <div class="footer footer3">Offer Expires: 06/06/2023</div>
+                        <div class="footer footer3">Offer Expires: 26/08/2023</div>
                     </div>
                 </div>
 
@@ -543,7 +698,7 @@
                             <li>Disinfecting & wiping of all air conditioning vents/grills.</li>
                             <li>FREE A/C check up.</li>
                         </ul>
-                        <div class="footer footer4">Offer Expires: 06/06/2023</div>
+                        <div class="footer footer4">Offer Expires: 07/08/2023</div>
                     </div>
 
                 </div>
@@ -560,7 +715,7 @@
 
         <!-- Desktop view  -->
         <div id="testimonialCarousel" class="carousel slide d-none d-md-block d-xxl-block" data-ride="carousel"
-            data-interval="2000">
+            data-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row justify-content-center">
@@ -604,11 +759,6 @@
 
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph" class="user_para3">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
@@ -628,11 +778,6 @@
                         </div>
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph" class="user_para4">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
@@ -656,19 +801,16 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                            <p id="paragraph">Our data center requires precise temperature control 24/7. PG Mechanical's
+                                expertise in commercial HVAC has been crucial to our operations. Pradeep Gosal and his
+                                team provide reliable service.
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">J</h1>
+                                    <h1 id="user_logo" class="userIcon5">H</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5">John Smith</h6>
+                                    <h6 id="user_name" class="user5">Hiroshi Tanaka</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -682,18 +824,16 @@
 
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                                PG Mechanical transformed the refrigeration system in our multi-story restaurant.
+                                Pradeep's approach not only improved efficiency but all kitchen space. Their
+                                maintenance keeps everything smoothly.
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon6">J</h1>
+                                    <h1 id="user_logo" class="userIcon6">I</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user6">John Smith</h6>
+                                    <h6 id="user_name" class="user6">Isabella Rossi</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -706,18 +846,16 @@
                         </div>
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                                As new homeowners, we were clueless about HVAC maintenance. Pradeep from PG Mechanical
+                                took the time to educate us and set up a preventive maintenance plan. We're grateful for
+                                their patient, informative service.
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
                                     <h1 id="user_logo" class="userIcon7">J</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user7">John Smith</h6>
+                                    <h6 id="user_name" class="user7">Vikram</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -730,18 +868,16 @@
                         </div>
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                                Pradeep from PG Mechanical was a lifesaver when our AC broke during a heatwave. He came
+                                promptly, fixed the issue, and even gave us tips on maintaining our system. Highly
+                                recommend!
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon8">J</h1>
+                                    <h1 id="user_logo" class="userIcon8">M</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user8">John Smith</h6>
+                                    <h6 id="user_name" class="user8">Mani</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -759,25 +895,21 @@
         </div>
 
         <!-- Tab and mobile view  -->
-         <div id="testimonialCarousel" class="carousel slide d-sm-block d-md-none d-xxl-none" data-ride="carousel"
-            data-interval="2000">
+        <div id="testimonialCarousel" class="carousel slide d-sm-block d-md-none d-xxl-none">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row justify-content-center">
                         <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                            <p id="paragraph">Pradeep from PG Mechanical was a lifesaver when our AC broke during a
+                                heatwave. He came promptly, fixed the issue, and even gave us tips on maintaining our
+                                system. Highly recommend!
                             </p>
-                            <div class="row user_credit align-items-center">
+                            <div class="row user_credit align-items-justify">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">J</h1>
+                                    <h1 id="user_logo" class="userIco5">S</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5">John Smith</h6>
+                                    <h6 id="user_name" class="use5">Samantha Lee</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -795,19 +927,16 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                            <p id="paragraph">We've been using PG Mechanical for our annual HVAC checkups for years.
+                                Pradeep and his team are always punctual, professional, and thorough. Our energy bills
+                                have never been lower!
                             </p>
-                            <div class="row user_credit align-items-center">
+                            <div class="row user_credit align-items-justify">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">J</h1>
+                                    <h1 id="user_logo" class="userIco5">A</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5">John Smith</h6>
+                                    <h6 id="user_name" class="use5">Ahmed Hassan</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -825,19 +954,16 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                            <p id="paragraph">After struggling with an inefficient heating system, we called PG
+                                Mechanical. Pradeep suggested a new, energy-efficient model and handled the installation
+                                flawlessly. Our home has never been more comfortable
                             </p>
-                            <div class="row user_credit align-items-center">
+                            <div class="row user_credit align-items-justify">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">J</h1>
+                                    <h1 id="user_logo" class="usercon5">E</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5">John Smith</h6>
+                                    <h6 id="user_name" class="uer5"> Elena Kovac</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -853,47 +979,50 @@
                 </div>
 
             </div>
-        </div> 
+        </div>
     </div>
 
-        <!-- contect page -->
-        <div class="container-fluid contect" id="contect">
-            <div class="header text-center py-3">
-                <b>Get in touch</b>
-            </div>
-            <div class="row text-center mb-4">
-                <h6 class="mx-auto">
-                    Track your progress with the free "My Learning" program here at W3Schools. Log in to your account,
-                    and
-                    start earning points! This is an optional feature.
-                </h6>
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-12 mb-4 text-center">
-                        <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
+
+
+
+    <!-- contect page -->
+    <div class="container-fluid contect" id="contect">
+        <div class="header text-center py-3">
+            <b>Get in touch</b>
+        </div>
+        <div class="row text-center mb-4">
+            <h6 class="mx-auto">
+                Have questions or need service? Contact us today and let our experts assist you with all your HVAC needs!
+            </h6>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 mb-4 text-center">
+                    <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
+                </div>
+                <div class="col-lg-5 col-md-12">
+
+                    <input type="hidden" name="access_key" value="91631ac7-26e5-4657-84a8-25556e8a3843">
+                    <div class="form-group position-relative mb-3">
+                        <input type="text" id="name" class="form-control" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
                     </div>
-                    <div class="col-lg-5 col-md-12">
-                        <form class="form" action="">
-                            <div class="form-group">
-                                <input type="text" id="name" class="form-control mb-3" placeholder=" " required>
-                                <label for="name">Your Name</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" class="form-control mb-3" placeholder=" " required>
-                                <label for="email">Your Email</label>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" class="form-control mb-3" rows="4" placeholder=" "
-                                    required></textarea>
-                                <label for="message">Your Message</label>
-                            </div>
-                            <button class="btn btn-primary btn-block" type="button" id="submit_button">Submit</button>
-                        </form>
+                    <div class="form-group position-relative mb-3">
+                        <input type="email" id="email" class="form-control" name="email" placeholder=" "
+                            style="margin-top: 6%;" required>
+                        <label for="email">Your Email</label>
                     </div>
+                    <div class="form-group position-relative mb-3">
+                        <textarea id="message" class="form-control" rows="6" name="message" placeholder=" " required
+                            style="margin-top: 6%;"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button class="btn btn-primary btn-block" type="submit" id="submit_button">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
@@ -901,16 +1030,16 @@
 
 
 
-        <!-- fooder -->
+    <!-- fooder -->
 
-        <div class="fooder">
-            <p class="fooder_para">Thorough & Comprehensive Air Conditioner Maintenance That Keep Your
-                Unit In Peak Condition. Don't let your air conditioner leave you hot and bothered!
-                Regular maintenance is essential to keep your system running smoothly</p>
-        </div>
+    <div class="fooder">
+        <p class="fooder_para">TDLR LICENCE NO <b>TACLB51418C</b> REGULATED BY THE TEXAS DEPARTMENT OF LICENSING AND
+            REGULATION P.O.BOX 1215 AUSTIN, TX 78711,1-800-803-9202, 512-463-6599 <a href="www.tdlr.texas.gov"
+                style="text-decoration: none;color: white;">www.tdlr.texas.gov</a> </p>
+    </div>
 
-        <script src="offerPage.js"></script>
-        <script src="userInput.js"></script>
+    <script src="offerPage.js"></script>
+    <script src="userInput.js"></script>
 </body>
 
 </html>
