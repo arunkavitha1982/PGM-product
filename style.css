@@ -18,6 +18,7 @@ body {
 
 #card {
     border-radius: 50px;
+    height: auto;
 }
 
 #schedule_button {
@@ -85,6 +86,7 @@ body {
 #aboutNav {
     padding-left: 14px;
 }
+
 #button1 {
     background-color: #fcd500;
     color: white;
@@ -138,14 +140,6 @@ body {
 }
 
 
-
-#service_button {
-    margin-left: 5%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
 .button {
     background-color: #005dab;
 }
@@ -167,34 +161,28 @@ body {
 #service_button {
     background-color: #005dab;
     color: white;
+    margin-bottom: 20px;
+
 }
 
 #images {
     width: 30%;
-    margin-left: 35%;
     margin-top: 5%;
-}
-
-#color {
-    color: #005dab;
+    padding-bottom: 4%;
 }
 
 
 
 
-/* Basic styles for the cards */
-/* .container.cards {
-    margin-top: 20px;
-
-} */
 
 .card-container {
     margin: 10px auto;
+
 }
 
 #card {
     width: 35%;
-    /* height: 50%; */
+
     margin-left: 14%;
     /* padding-bottom: 2%; */
 
@@ -202,27 +190,38 @@ body {
 
 #card2 {
     width: 35%;
+
     padding-left: 3%;
     margin-right: 16%;
     margin-bottom: 30px;
 }
 
 .card-body {
+    height: fit-content;
     text-align: center;
+    border-radius: 20px;
+    background-color: white;
+
 }
 
+
+
 .card-title {
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 15%;
+    padding-right: 18%;
+    color: #005dab;
 }
 
 .card-text {
     font-size: 16px;
-    margin-top: 10px;
-    padding: 10px 10px 0px 10px;
+    padding: 32px;
     text-align: justify;
 }
 
-#team{
+#team {
     margin-top: 4%;
 }
 
@@ -328,6 +327,7 @@ body {
     background-color: white;
     border-radius: 15px;
     margin: 5px 0;
+    text-align: justify;
 }
 
 #user_logo {
@@ -458,8 +458,14 @@ body {
     padding-bottom: 10px;
 }
 
-#product_image{
+
+
+#product_image {
     width: 40%;
+}
+
+.card-img-top {
+    margin-top: 10%;
 }
 
 /* Media query for responsiveness */
@@ -475,11 +481,11 @@ body {
         padding-left: 0px;
     }
 
-    .exa{
+    .exa {
         font-size: 34px;
     }
 
-    #card {
+    /* #card {
         width: 100%;
         margin-left: 0%;
     }
@@ -498,7 +504,7 @@ body {
 
     .card-text {
         font-size: 0.9em;
-    }
+    } */
 
     .btn {
         margin-top: 15px;
@@ -589,7 +595,7 @@ body {
         font-size: 25px;
 
     }
-    
+
     #home_content3 {
         font-size: 15px;
         margin-top: -2px;
@@ -688,17 +694,19 @@ body {
         font-weight: bold;
     }
 
-    #customer{
+    #customer {
         padding-top: 3%;
     }
 
-    #year{
+    #year {
         padding-top: 3%;
     }
 
 
     #button2 {
         margin-right: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     #coupon_3 {
@@ -729,9 +737,77 @@ body {
     }
 
     #button2 {
+        padding-top: 3px;
+        padding-bottom: 8px;
+        margin-top: 10px;
+    }
+
+    .fooder_para {
+        font-size: 12px;
+    }
+
+    #card,
+    #card2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    #images {
+        width: 15%;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card-text {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .card-img-top {
+        margin-top: 5%;
+    }
+
+    #service_button {
+        /* width: 100%; */
         margin-top: 10px;
     }
 }
+
+@media (max-width: 1200px) and (min-width: 991px) {
+    #card {
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #card2{ 
+        width: 40%;
+        margin-left: -1%;
+        margin-right: 1%;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .card-text {
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .card-img-top {
+        margin-top: 5%;
+    }
+}
+
 
 @media (max-width:991px) {
     #submit_button {
@@ -750,6 +826,8 @@ body {
     #button2 {
         margin-top: 20px;
         margin-right: 0;
+        padding-top: 10px;
+        padding-bottom: 18px;
     }
 
     .user_content {
@@ -769,12 +847,44 @@ body {
         font-size: 15px;
         font-weight: bold;
     }
+
+    #card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #card2 {        
+        width: 100%;
+        margin-left: -0.5%;
+    }
+
+    #color {
+        
+        margin-top: -3%;
+    }
+
+    #images{
+        width: 20%;
+    }
+    .card-title{
+        margin: 0px;
+        padding: 0;
+    }
+}
+
+@media(max-width:497px){
+    #card2{
+        margin-left: 0%;
+    }
 }
 
 @media (max-width: 1200px) {
-    #line{
+    #line {
         width: 50%;
     }
+
     .navbar-brand img {
         margin-left: 20px;
     }
@@ -801,6 +911,7 @@ body {
 
     #button2 {
         font-size: 16px;
-        padding: 6px 8px;
+        padding: 9px 8px;
     }
 }
+

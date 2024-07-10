@@ -43,6 +43,49 @@
     button:focus:not(:focus-visible) {
         color: transparent;
     }
+
+    @media (max-width: 1022px) {
+        .navbar-brand img {
+            margin-left: 20px;
+            width: 80px;
+            /* Adjust as necessary */
+        }
+
+        .navbar-nav .nav-item {
+            font-size: 18px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            color: #005dab;
+        }
+
+        #button1 {
+            font-size: 18px;
+            padding-left: 30px;
+            padding-right: 32px;
+        }
+
+        #button2 {
+            font-size: 15px;
+        }
+
+        .material-icons {
+            font-size: 30px;
+        }
+
+        .navbar-toggler {
+            font-size: 24px;
+        }
+
+        #navbarSupportedContent {
+            padding: 10px 0;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+    }
 </style>
 
 <body>
@@ -141,8 +184,8 @@
         </div>
         <div class="container text-center pb-4">
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4 col-sm-6" id="exa">
-                    <h1 id="experience" class="">20+</h1>
+                <div class="col-lg-3 col-md-4 col-sm-6" id="customer">
+                    <h1 id="experience" class="exa">20+</h1>
                     <h6>Year experience</h6>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6" id="customer">
@@ -174,31 +217,35 @@
         <div class="container cards">
             <div class="row">
                 <div class="col-md-6 card-container" id="card">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service3.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h6 class="card-title" id="color">Residential Air Conditioning and Heating</h6>
+                            <img class="card-img-top" src="image/service3.png" alt="Card image" id="images">
+                            <h6 class="card-title" style="color: #005dab;">Residential Air Conditioning and Heating</h6>
                             <p class="card-text">Expert Technicians: Our team of certified professionals can repair any
                                 air conditioner, regardless of the brand or where you purchased it. We service all major
-                                brands, including Lennox, Carrier, York, Bryant, Comfort Air</p>
+                                brands, including Lennox, Carrier, York, Bryant, Comfort Air, Rheem, and more.
+
+                            </p>
                             <a href="service.html"><button class="btn " type="button" id="service_button">Know
                                     More</button></a>
 
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 card-container" id="card2">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service4.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h4 class="card-title" id="color">Commercial Air conditioning and heating</h4>
+                            <img class="card-img-top" src="image/service4.png" alt="Card image" id="images">
+                            <h4 class="card-title"  style="padding-top: 2.5%;color: #005dab;">Commercial Air conditioning and heating</h4>
                             <p class="card-text">When your commercial air conditioning or heating system needs repair,
                                 you need a reliable partner who understands the complexities of commercial HVAC systems.
                                 At [Your Company Name], we provide expert repair services.</p>
                             <a href="service1.html"><button class="btn" type="button" id="service_button">Know
                                     More</button></a>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -206,10 +253,11 @@
         <div class="container cards">
             <div class="row">
                 <div class="col-md-6 card-container" id="card">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service1.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h6 class="card-title" id="color">Commercial Refrigeration</h6>
+                            <img class="card-img-top" src="image/service1.png" alt="Card image" id="images">
+                            <h6 class="card-title" style="color: #005dab;">Commercial Refrigeration</h6>
                             <p class="card-text">Tat PG Maintenance, we understand the significance of reliable
                                 commercial refrigeration. Our team of and certified technicians are
                                 dedicated to ensuring your food products stay fresh and your business operations run
@@ -218,19 +266,20 @@
                                     More</button></a>
 
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
                 <div class="col-md-6 card-container" id="card2">
-                    <div class="card">
-                        <img class="card-img-top" src="image/service2.png" alt="Card image" id="images">
+                    <!-- <div class="card"> -->
+                        
                         <div class="card-body">
-                            <h4 class="card-title" id="color">Maintenance</h4>
-                            <p class="card-text">Thorough & Comprehensive Air Conditioner Maintenance That Keep Your
+                            <img class="card-img-top" src="image/service2.png" alt="Card image" id="images">
+                            <h4 class="card-title" id="color" style="padding-top: 2%;color: #005dab;">Maintenance</h4>
+                            <p class="card-text" >Thorough & Comprehensive Air Conditioner Maintenance That Keep Your
                                 Unit In Peak Condition. Don't let your air conditioner leave you hot and bothered!
                                 Regular maintenance is essential to keep your system running smoothly </p>
-                            <a href=""><button class="btn " type="button" id="service_button">Know More</button></a>
+                            <a href=""><button class="btn" type="button" id="service_button">Know More</button></a>
                         </div>
-                    </div>
+                    <!-- </div>  -->
                 </div>
             </div>
         </div>
@@ -666,7 +715,7 @@
 
         <!-- Desktop view  -->
         <div id="testimonialCarousel" class="carousel slide d-none d-md-block d-xxl-block" data-ride="carousel"
-            data-interval="4000">
+            data-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row justify-content-center">
@@ -710,11 +759,6 @@
 
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph" class="user_para3">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
@@ -734,11 +778,6 @@
                         </div>
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph" class="user_para4">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
@@ -762,19 +801,16 @@
                 <div class="carousel-item">
                     <div class="row justify-content-center">
                         <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                            <p id="paragraph">Our data center requires precise temperature control 24/7. PG Mechanical's
+                                expertise in commercial HVAC has been crucial to our operations. Pradeep Gosal and his
+                                team provide reliable service.
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">J</h1>
+                                    <h1 id="user_logo" class="userIcon5">H</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5">John Smith</h6>
+                                    <h6 id="user_name" class="user5">Hiroshi Tanaka</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -788,18 +824,16 @@
 
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                                PG Mechanical transformed the refrigeration system in our multi-story restaurant.
+                                Pradeep's approach not only improved efficiency but all kitchen space. Their
+                                maintenance keeps everything smoothly.
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon6">J</h1>
+                                    <h1 id="user_logo" class="userIcon6">I</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user6">John Smith</h6>
+                                    <h6 id="user_name" class="user6">Isabella Rossi</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -812,18 +846,16 @@
                         </div>
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                                As new homeowners, we were clueless about HVAC maintenance. Pradeep from PG Mechanical
+                                took the time to educate us and set up a preventive maintenance plan. We're grateful for
+                                their patient, informative service.
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
                                     <h1 id="user_logo" class="userIcon7">J</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user7">John Smith</h6>
+                                    <h6 id="user_name" class="user7">Vikram</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -836,18 +868,16 @@
                         </div>
                         <div class="col-md-3 col-sm-6 mb-4">
                             <p id="paragraph">
-                                PGMechanical exceeded my expectations! Their team was prompt, professional, and
-                                knowledgeable. They
-                                diagnosed and fixed my air conditioning issues quickly, and now my home is cool and
-                                comfortable
-                                again. I highly recommend their services!
+                                Pradeep from PG Mechanical was a lifesaver when our AC broke during a heatwave. He came
+                                promptly, fixed the issue, and even gave us tips on maintaining our system. Highly
+                                recommend!
                             </p>
                             <div class="row user_credit align-items-center">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon8">J</h1>
+                                    <h1 id="user_logo" class="userIcon8">M</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user8">John Smith</h6>
+                                    <h6 id="user_name" class="user8">Mani</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -877,10 +907,10 @@
                             </p>
                             <div class="row user_credit align-items-justify">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">S</h1>
+                                    <h1 id="user_logo" class="userIco5">S</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5">Samantha Lee</h6>
+                                    <h6 id="user_name" class="use5">Samantha Lee</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -904,10 +934,10 @@
                             </p>
                             <div class="row user_credit align-items-justify">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">A</h1>
+                                    <h1 id="user_logo" class="userIco5">A</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5">Ahmed Hassan</h6>
+                                    <h6 id="user_name" class="use5">Ahmed Hassan</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">
@@ -931,10 +961,10 @@
                             </p>
                             <div class="row user_credit align-items-justify">
                                 <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">E</h1>
+                                    <h1 id="user_logo" class="usercon5">E</h1>
                                 </div>
                                 <div class="col-9">
-                                    <h6 id="user_name" class="user5"> Elena Kovac</h6>
+                                    <h6 id="user_name" class="uer5"> Elena Kovac</h6>
                                     <div class="user-stars">
                                         <img src="image/star.png" alt="" id="user_star">
                                         <img src="image/star.png" alt="" id="user_star">

@@ -88,7 +88,7 @@ function user() {
 
     userName6.textContent = "Isabella Rossi";
     userLogo6.textContent = "I"
-    user_comment6.textContent = "PG Mechanical transformed the refrigeration system in our multi-story restaurant. Pradeep's innovative approach not only improved efficiency but also freed up valuable kitchen space. Their ongoing maintenance keeps everything running smoothly."
+    user_comment6.textContent = "PG Mechanical transformed the refrigeration system in our multi-story restaurant. Pradeep's innovative approach not only improved efficiency but also  kitchen space. Their maintenance keeps everything smoothly."
     const user6={
         Name : userName6,
         logo : userLogo6,

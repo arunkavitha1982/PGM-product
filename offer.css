@@ -141,3 +141,37 @@
         margin-right: 0px;
     }
 }
+@media (max-width:963px) {
+    #coupon_3 {
+        margin-right: 20px;
+    }
+    #coupon_2 {
+        margin-left: 20px;
+    }
+}
+
+@media(min-width:943px){
+    #coupon_2 {
+        margin-left: 10px;
+    }
+    #coupon_3 {
+        margin-right: 10px;
+    }
+}
+@media (max-width:942px) {
+    #coupon_2 {
+        margin-left:0px
+    }
+    #coupon_3 {
+        margin-right: -2px;
+    }
+}
+
+@media screen and (max-width:930px){
+    #coupon_2 {
+        margin-left: 6px;
+    }
+    #coupon_3 {
+        margin-right: 6px;
+    }
+}
