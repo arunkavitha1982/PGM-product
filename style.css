@@ -16,10 +16,6 @@ body {
     padding-left: 0px;
 }
 
-#card {
-    border-radius: 50px;
-    height: auto;
-}
 
 #schedule_button {
     background-color: #fcd500;
@@ -32,81 +28,6 @@ body {
 
 .home {
     margin-left: 2%;
-}
-
-.navbar-brand img {
-    margin-left: 40%;
-}
-
-#navbarDropdown:hover {
-    color: #005dab;
-}
-
-#navbarSupportedContent {
-    background-color: white;
-    padding: 15px 0;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1024px;
-}
-
-.navbar-nav .nav-item {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 9px;
-    padding-right: 21px;
-}
-
-.navbar-nav .nav-link {
-    color: #005dab;
-}
-
-
-#dropDown {
-    font-size: 18px;
-    color: #005dab;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.material-icons {
-    font-size: 34px;
-    color: white;
-}
-
-
-#aboutNav {
-    padding-left: 14px;
-}
-
-#button1 {
-    background-color: #fcd500;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-
-}
-
-#button2 {
-    background-color: #005dab;
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-#image {
-    width: 80%;
-
 }
 
 #image_background {
@@ -477,35 +398,15 @@ body {
         margin-bottom: 20px;
     }
 
-    #aboutNav {
+    /* #aboutNav {
         padding-left: 0px;
-    }
+    } */
 
     .exa {
         font-size: 34px;
     }
 
-    /* #card {
-        width: 100%;
-        margin-left: 0%;
-    }
-
-    #card2 {
-        width: 100%;
-    }
-
-    .card-img-top {
-        width: 30%;
-    }
-
-    .card-title {
-        font-size: 1.1em;
-    }
-
-    .card-text {
-        font-size: 0.9em;
-    } */
-
+  
     .btn {
         margin-top: 15px;
 
@@ -703,11 +604,7 @@ body {
     }
 
 
-    #button2 {
-        margin-right: 0;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
+    
 
     #coupon_3 {
         margin-left: 0px;
@@ -718,13 +615,17 @@ body {
         margin-left: 0px;
         margin-right: 0px;
     }
-
+/* 
     .navbar-nav .nav-item {
         margin-left: 0;
         margin-right: 0;
         text-align: center;
     }
-
+    #button2 {
+        margin-right: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
     #navbarSupportedContent {
         padding: 15px 0;
         margin-left: 0;
@@ -740,7 +641,7 @@ body {
         padding-top: 3px;
         padding-bottom: 8px;
         margin-top: 10px;
-    }
+    } */
 
     .fooder_para {
         font-size: 12px;
@@ -823,12 +724,6 @@ body {
         text-align: center;
     }
 
-    #button2 {
-        margin-top: 20px;
-        margin-right: 0;
-        padding-top: 10px;
-        padding-bottom: 18px;
-    }
 
     .user_content {
         font-size: 13px;
@@ -872,6 +767,14 @@ body {
         margin: 0px;
         padding: 0;
     }
+
+    
+    #button2 {
+        margin-top: 20px;
+        margin-right: 0;
+        padding-top: 10px;
+        padding-bottom: 18px;
+    }
 }
 
 @media(max-width:497px){
@@ -880,38 +783,14 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
-    #line {
-        width: 50%;
-    }
 
-    .navbar-brand img {
-        margin-left: 20px;
-    }
-
-    #navbarSupportedContent {
-        padding: 10px 0;
-        max-width: 100%;
-    }
-
-    .navbar-nav .nav-item {
-        font-size: 18px;
-        padding-left: 5px;
-        padding-right: 15px;
-    }
-
-    .material-icons {
-        font-size: 30px;
-    }
-
-    #button1 {
-        font-size: 18px;
-        padding: 8px 10px;
-    }
-
-    #button2 {
-        font-size: 16px;
-        padding: 9px 8px;
-    }
+/* .navbar-toggler {
+    border-color: white !important;
+    border-width: 1px;
+    border-style: solid;
 }
+
+button:focus:not(:focus-visible) {
+    color: transparent;
+} */
 
