@@ -6,7 +6,7 @@
 
 body {
     background-image: linear-gradient(to right, #005dab, #002645);
-    
+
 }
 
 
@@ -16,11 +16,11 @@ body {
     padding-left: 0px;
 }
 
-#card{
+#card {
     border-radius: 50px;
 }
 
-#schedule_button{
+#schedule_button {
     background-color: #fcd500;
     color: white;
     font-size: 20px;
@@ -37,8 +37,8 @@ body {
     margin-left: 40px;
 }
 
-#navbarDropdown:hover{
-color: #005dab;
+#navbarDropdown:hover {
+    color: #005dab;
 }
 
 #navbarSupportedContent {
@@ -62,7 +62,7 @@ color: #005dab;
 }
 
 
-#dropDown{
+#dropDown {
     font-size: 18px;
     color: #005dab;
 }
@@ -108,12 +108,16 @@ color: #005dab;
 }
 
 
-.home_content1{
-    color: white; font-family: montserrat;font-weight: 600;
+.home_content1 {
+    color: white;
+    font-family: montserrat;
+    font-weight: 600;
 }
-#aboutNav{
-padding-left: 14px;
+
+#aboutNav {
+    padding-left: 14px;
 }
+
 /* about page */
 .about {
     background-color: white;
@@ -191,7 +195,7 @@ padding-left: 14px;
     /* height: 50%; */
     margin-left: 14%;
     /* padding-bottom: 2%; */
-    
+
 }
 
 #card2 {
@@ -444,6 +448,12 @@ padding-left: 14px;
     font-weight: bold;
 }
 
+#experience {
+    color: #005dab;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+}
+
 
 /* Media query for responsiveness */
 @media (max-width: 769px) {
@@ -453,8 +463,13 @@ padding-left: 14px;
         margin-right: auto;
         margin-bottom: 20px;
     }
-    #aboutNav{
+
+    #aboutNav {
         padding-left: 0px;
+    }
+
+    .exa{
+        font-size: 34px;
     }
 
     #card {
@@ -567,12 +582,7 @@ padding-left: 14px;
         font-size: 25px;
 
     }
-
-    /* #home_content2 {
-        font-size: 25px;
-        margin-top: -6px;
-    } */
-
+    
     #home_content3 {
         font-size: 15px;
         margin-top: -2px;
@@ -615,7 +625,7 @@ padding-left: 14px;
     #submit_button {
         font-size: 18px;
         margin-bottom: 3%;
-       
+
     }
 
     .steps {
@@ -656,6 +666,7 @@ padding-left: 14px;
 
     #about_content {
         font-size: 14px;
+        text-align: justify;
     }
 
 
@@ -666,8 +677,16 @@ padding-left: 14px;
     }
 
     #experience {
-        font-size: 19px;
+        font-size: 32px;
         font-weight: bold;
+    }
+
+    #customer{
+        padding-top: 3%;
+    }
+
+    #year{
+        padding-top: 3%;
     }
 
 
@@ -701,15 +720,17 @@ padding-left: 14px;
     #button2 {
         margin-top: 10px;
     }
-    #button2{
+
+    #button2 {
         margin-top: 10px;
     }
 }
 
 @media (max-width:991px) {
-    #submit_button{
+    #submit_button {
         margin-bottom: 2%;
     }
+
     #schedule_button {
         margin-bottom: 20px;
         margin-top: 10px;
@@ -736,7 +757,7 @@ padding-left: 14px;
         text-align: center;
     }
 
-    .dropdown-item {        
+    .dropdown-item {
         margin-top: 2px;
         font-size: 15px;
         font-weight: bold;
@@ -765,4 +786,3 @@ padding-left: 14px;
         margin-left: 12px;
     }
 }
-

@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="offer.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
     <link rel="icon" href="image/new.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- favicon -->
@@ -56,8 +51,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about" style="color: #005dab;"
-                            id="aboutNav">About</a>
+                        <a class="nav-link active" aria-current="page" href="#about" style="color: #005dab;">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#service" id="navbarDropdown" role="button"
@@ -65,10 +59,9 @@
                             Service
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="service.html" id="dropDown">Residential AC</a></li>
-                            <li><a class="dropdown-item" href="service1.html" id="dropDown">Commercial AC</a></li>
-                            <li><a class="dropdown-item" href="service3.html" id="dropDown">Commercial Refrigeration</a>
-                            </li>
+                            <li><a class="dropdown-item" href="#service">Action</a></li>
+                            <li><a class="dropdown-item" href="#service">Action</a></li>
+                            <li><a class="dropdown-item" href="#service">Action</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -101,19 +94,17 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 text-center ">
                 <div class="banner-section" id="icon">
-                    <h1 class="home_content1" id="home_content1">Keeping North Texas <br><span style="color: #fcd500;">
-                            Cool, Comfortable & Fresh</span></h1>
-                    <h5 style="color: white;font-weight: normal;padding-top: 10px;padding-bottom: 20px;text-align: center;"
-                        id="home_content3">Experience top-notch HVAC services tailored to your
+                    <h1><span class="span-col home_content1" style="color: white;">Your Comfort,</span></h1>
+                    <h1 style="color: #fcd500;" id="home_content2"><span class="span-col ">Our Priority</span></h1>
+                    <h5 style="color: white;" id="home_content3">Experience top-notch HVAC services tailored to your
                         needs, ensuring
                         comfort in every season</h5>
-                    <a href="https://pgmechllc.com/customer.html"><button class="btn" type="button" id="schedule_button"
-                            style="text-align: center;font-weight: bold;">Schedule</button></a>
+                    <button class="btn" type="button" id="schedule_button" style="text-align: center;">Schedule</button>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 text-center">
-                <div class="image-container">
-                    <img src="image/Group 88.png" class="img-fluid" style="margin-top: 5%;">
+                <div class="image-container" id="image_background" style="border-radius: 50%;">
+                    <img src="image/hero section.png" id="image" class="img-fluid" style="margin-top: 5%;">
                 </div>
             </div>
         </div>
@@ -141,17 +132,17 @@
         </div>
         <div class="container text-center pb-4">
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4 col-sm-6" id="exa">
-                    <h1 id="experience" class="">20+</h1>
-                    <h6>Year experience</h6>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h1 id="experience" style="color: #005dab; margin-bottom: -10px;padding-bottom: 10px;">20+</h1>
+                    <h6 id="experience">Year experience</h6>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="customer">
-                    <h1 id="experience" class="exa">10,000+</h1>
-                    <h6>Happy customers</h6>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h1 id="experience" style="color: #005dab; margin-bottom: -10px;padding-bottom: 10px;">10,000+</h1>
+                    <h6 id="experience">Happy customers</h6>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6" id="year">
-                    <h1 id="experience" class="exa">10+</h1>
-                    <h6>Services</h6>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h1 id="experience" style="color: #005dab; margin-bottom: -10px;padding-bottom: 10px;">10+</h1>
+                    <h6 id="experience">Services</h6>
                 </div>
             </div>
         </div>
@@ -248,7 +239,7 @@
             </div>
         </div>
 
-        <!-- Desktop view in carousel  -->
+<!-- Desktop view in carousel  -->
         <section id="team" class="d-none d-lg-block d-md-block d-xxl-block">
             <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -330,7 +321,7 @@
             </div>
         </section>
 
-        <!-- mobile view in carousel  -->
+<!-- mobile view in carousel  -->
         <section id="team" class="d-sm-block d-lg-none d-md-none d-xxl-none">
             <div id="teamMobileView" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -386,7 +377,7 @@
             <div class="container pgm_work">
                 <div class="row align-items-center">
                     <div class="col-md-2 offset-md-2 text-center">
-                        <img src="image/step1.png" alt="" class="steps img-fluid" width="100%">
+                        <img src="image/step3.png" alt="" class="steps img-fluid" width="100%">
                     </div>
                     <div class="col-md-5 offset-md-1">
                         <h3 id="title">1. Contact us</h3>
@@ -400,7 +391,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <img src="image/line.png" alt="" class="img-fluid" id="line">
+                        <img src="image/line.png" alt="" class="img-fluid" style="margin-bottom: 5%;" id="line">
                     </div>
                 </div>
             </div>
@@ -422,7 +413,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <img src="image/Vector 17.png" alt="" class="img-fluid" id="line">
+                        <img src="image/Vector 17.png" alt="" class="img-fluid" style="margin-bottom: 5%;" id="line">
                     </div>
                 </div>
             </div>
@@ -443,7 +434,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
-                        <img src="image/line.png" alt="" class="img-fluid" id="line">
+                        <img src="image/line.png" alt="" class="img-fluid" style="margin-bottom: 5%;" id="line">
                     </div>
                 </div>
             </div>
@@ -768,7 +759,7 @@
         </div>
 
         <!-- Tab and mobile view  -->
-        <div id="testimonialCarousel" class="carousel slide d-sm-block d-md-none d-xxl-none" data-ride="carousel"
+         <div id="testimonialCarousel" class="carousel slide d-sm-block d-md-none d-xxl-none" data-ride="carousel"
             data-interval="2000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -862,51 +853,47 @@
                 </div>
 
             </div>
-        </div>
+        </div> 
     </div>
 
-
-
-
-    <!-- contect page -->
-    <div class="container-fluid contect" id="contect">
-        <div class="header text-center py-3">
-            <b>Get in touch</b>
-        </div>
-        <div class="row text-center mb-4">
-            <h6 class="mx-auto">
-                Track your progress with the free "My Learning" program here at W3Schools. Log in to your account, and
-                start earning points! This is an optional feature.
-            </h6>
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 mb-4 text-center">
-                    <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
-                </div>
-                <div class="col-lg-5 col-md-12">
-
-                    <input type="hidden" name="access_key" value="91631ac7-26e5-4657-84a8-25556e8a3843">
-                    <div class="form-group position-relative mb-3">
-                        <input type="text" id="name" class="form-control" name="name" placeholder=" " required>
-                        <label for="name">Your Name</label>
+        <!-- contect page -->
+        <div class="container-fluid contect" id="contect">
+            <div class="header text-center py-3">
+                <b>Get in touch</b>
+            </div>
+            <div class="row text-center mb-4">
+                <h6 class="mx-auto">
+                    Track your progress with the free "My Learning" program here at W3Schools. Log in to your account,
+                    and
+                    start earning points! This is an optional feature.
+                </h6>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 mb-4 text-center">
+                        <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
                     </div>
-                    <div class="form-group position-relative mb-3">
-                        <input type="email" id="email" class="form-control" name="email" placeholder=" "
-                            style="margin-top: 6%;" required>
-                        <label for="email">Your Email</label>
+                    <div class="col-lg-5 col-md-12">
+                        <form class="form" action="">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control mb-3" placeholder=" " required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control mb-3" placeholder=" " required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control mb-3" rows="4" placeholder=" "
+                                    required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button class="btn btn-primary btn-block" type="button" id="submit_button">Submit</button>
+                        </form>
                     </div>
-                    <div class="form-group position-relative mb-3">
-                        <textarea id="message" class="form-control" rows="6" name="message" placeholder=" " required
-                            style="margin-top: 6%;"></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    <button class="btn btn-primary btn-block" type="submit" id="submit_button">Submit</button>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
@@ -914,16 +901,16 @@
 
 
 
-    <!-- fooder -->
+        <!-- fooder -->
 
-    <div class="fooder">
-        <p class="fooder_para">TDLR LICENCE NO <b>TACLB51418C</b> REGULATED BY THE TEXAS DEPARTMENT OF LICENSING AND
-            REGULATION P.O.BOX 1215 AUSTIN, TX 78711,1-800-803-9202, 512-463-6599 <a href="www.tdlr.texas.gov"
-                style="text-decoration: none;color: white;">www.tdlr.texas.gov</a> </p>
-    </div>
+        <div class="fooder">
+            <p class="fooder_para">Thorough & Comprehensive Air Conditioner Maintenance That Keep Your
+                Unit In Peak Condition. Don't let your air conditioner leave you hot and bothered!
+                Regular maintenance is essential to keep your system running smoothly</p>
+        </div>
 
-    <script src="offerPage.js"></script>
-    <script src="userInput.js"></script>
+        <script src="offerPage.js"></script>
+        <script src="userInput.js"></script>
 </body>
 
 </html>
