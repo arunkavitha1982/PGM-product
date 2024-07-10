@@ -81,6 +81,10 @@ body {
     color: white;
 }
 
+
+#aboutNav {
+    padding-left: 14px;
+}
 #button1 {
     background-color: #fcd500;
     color: white;
@@ -114,9 +118,6 @@ body {
     font-weight: 600;
 }
 
-#aboutNav {
-    padding-left: 14px;
-}
 
 /* about page */
 .about {
@@ -764,25 +765,33 @@ body {
     }
 }
 
-
 @media (max-width: 1200px) {
+    .navbar-brand img {
+        margin-left: 20px;
+    }
+
     #navbarSupportedContent {
-        margin-left: 0;
-        margin-right: 10px;
+        padding: 10px 0;
+        max-width: 100%;
     }
 
     .navbar-nav .nav-item {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
+        font-size: 18px;
+        padding-left: 5px;
+        padding-right: 15px;
     }
 
-    #button1,
-    #button2 {
-        margin-left: 0px;
+    .material-icons {
+        font-size: 30px;
+    }
+
+    #button1 {
+        font-size: 18px;
+        padding: 8px 10px;
     }
 
     #button2 {
-        margin-left: 12px;
+        font-size: 16px;
+        padding: 6px 8px;
     }
 }
