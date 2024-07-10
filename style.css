@@ -221,10 +221,12 @@ body {
     text-align: justify;
 }
 
+#team{
+    margin-top: 4%;
+}
 
 .team-member img {
     width: 50%;
-    border-radius: 50%;
 }
 
 .team-member {
@@ -455,6 +457,9 @@ body {
     padding-bottom: 10px;
 }
 
+#product_image{
+    width: 40%;
+}
 
 /* Media query for responsiveness */
 @media (max-width: 769px) {
@@ -766,6 +771,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+    #line{
+        width: 50%;
+    }
     .navbar-brand img {
         margin-left: 20px;
     }
