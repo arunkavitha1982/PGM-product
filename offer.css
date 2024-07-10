@@ -131,43 +131,42 @@
 .dropdown-item{
     font-size: 24px;
 }
-
-@media (max-width:950px){
-    #coupon_2 {
-        margin-left: 00px;
-    }
-    
-    #coupon_3 {
-        margin-right: 0px;
-    }
-}
-@media (max-width:963px) {
-    #coupon_3 {
-        margin-right: 20px;
-    }
-    #coupon_2 {
-        margin-left: 20px;
-    }
-}
-
-@media(min-width:943px){
+@media (max-width:780px) {
     #coupon_2 {
         margin-left: 10px;
     }
     #coupon_3 {
-        margin-right: 10px;
+        margin-right: 0px;
     }
 }
-@media (max-width:942px) {
+@media (max-width: 963px) {
     #coupon_2 {
-        margin-left:0px
+        margin-left: 20px;
+    }
+    #coupon_3 {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    #coupon_2 {
+        margin-left: 0;
+    }
+    #coupon_3 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 942px) {
+    #coupon_2 {
+        margin-left: 0;
     }
     #coupon_3 {
         margin-right: -2px;
     }
 }
 
-@media screen and (max-width:930px){
+@media (max-width: 930px) {
     #coupon_2 {
         margin-left: 6px;
     }
@@ -175,3 +174,13 @@
         margin-right: 6px;
     }
 }
+
+@media (min-width: 943px) {
+    #coupon_2 {
+        margin-left: 10px;
+    }
+    #coupon_3 {
+        margin-right: 10px;
+    }
+}
+
