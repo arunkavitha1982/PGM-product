@@ -18,24 +18,25 @@
         .navbar-brand img {
             margin-left: 20px;
         }
-        nav{
+
+        nav {
             background-color: #005dab;
         }
 
         .footer {
-        background-color: #005dab;
-        margin-bottom: -1.5%;
-        padding: 1% 0;
-        color: white;
-        text-align: center;
-    }
+            background-color: #005dab;
+            margin-bottom: -1.5%;
+            padding: 1% 0;
+            color: white;
+            text-align: center;
+        }
 
-    .footer-para {
-        padding: 0 8%;
-        font-size: 15px;
-        margin: 0;
-    }
-        
+        .footer-para {
+            padding: 0 8%;
+            font-size: 15px;
+            margin: 0;
+        }
+
 
         body,
         html {
@@ -80,7 +81,7 @@
 
         .card-custom {
             box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
-            
+
             /* border: 2px outset; */
             height: 480px;
         }
@@ -207,11 +208,12 @@
             background-color: #F2F2F2;
             padding-bottom: 5%;
         }
+
         .dropdown-item {
-    font-size: 20px;
-    color: #005dab;
-    padding-left: 8px;
-}
+            font-size: 20px;
+            color: #005dab;
+            padding-left: 8px;
+        }
 
         @media(max-width:992px) {
             .card-custom {
@@ -219,7 +221,9 @@
             }
 
             #card_top {
-                margin-top: 21%;
+                margin-top: 0.5%;
+                padding-bottom: 5%;
+                
             }
 
             #card {
@@ -228,11 +232,15 @@
 
             #card2,
             #card3 {
-                margin-top: 18px;
+                margin-top: 1px;
             }
-            #main_header{
-                padding-top: 39%;
 
+            #main_header {
+                padding-top: 29%;
+
+            }
+            #main_header h1{
+                font-size: 20px;
             }
         }
 
@@ -242,8 +250,8 @@
                 padding: 1.2%;
             }
 
-            #mani_header {
-                padding-top: 15%;
+            #main_header {
+                padding-top: 25%;
             }
 
             #main_header p {
@@ -312,38 +320,51 @@
                 margin-top: 18px;
             }
 
-            
+
         }
 
         @media (max-width:690px) {
-            #main_header{
+            #main_header {
                 padding-top: 19%;
 
             }
-            #logo{
+
+            #logo {
                 width: 60px;
             }
         }
 
-        @media (max-width:550px){
-            #main_header{
-                padding-top: 29%;
+        @media (max-width:550px) {
+            #main_header {
+                padding-top:29%;
 
             }
-            #logo{
+
+            #logo {
                 width: 60px;
             }
         }
 
-        @media (max-width:380px){
-            #logo{
+        @media (max-width:380px) {
+            #logo {
                 width: 60px;
             }
-            #main_header{
-                padding-top: 50%;
+
+            #main_header {
+                padding-top: 40%;
 
             }
         }
+
+        .navbar-toggler {
+    border-color: white !important;
+    border-width: 1px;
+    border-style: solid;
+}
+
+button:focus:not(:focus-visible) {
+    color: transparent;
+}
     </style>
 </head>
 
@@ -402,7 +423,7 @@
         </div>
     </nav>
 
-    
+
     <div class="container-fluid p-0" id="main_section">
         <div id="main_header">
             <div class="container">
@@ -513,7 +534,8 @@
         </div>
         <div class="row text-center mb-4">
             <h6 class="mx-auto">
-                Have questions or need service? Contact us today and let our experts assist you with all your HVAC needs!
+                Have questions or need service? Contact us today and let our experts assist you with all your HVAC
+                needs!
 
             </h6>
         </div>
