@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="image/new.png">
+    <link rel="stylesheet" href="nav2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Maintenance</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Urbanist", sans-serif
+    }
+
+    #main_section {
+        background-image: url(maintenance/main.png);
+        height: 800px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #main_header {
+        padding-top: 15%;
+        text-align: center;
+    }
+
+    #main_header h1 {
+        color: #005dab;
+        font-size: 46px;
+        padding: 1.4%;
+    }
+
+    #main_header p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .form-group label {
+        position: absolute;
+        top: 0.75rem;
+        left: 1rem;
+        transition: all 0.3s ease;
+        background: white;
+        padding: 0 0.25rem;
+        color: #666;
+        pointer-events: none;
+    }
+
+    .form-group input:focus+label,
+    .form-group input:not(:placeholder-shown)+label,
+    .form-group textarea:focus+label,
+    .form-group textarea:not(:placeholder-shown)+label {
+        top: -0.75rem;
+        left: 0.75rem;
+        font-size: 0.75rem;
+        color: gray;
+        font-size: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: grey;
+        box-shadow: 0 0 0px;
+    }
+
+    .contect {
+        background-color: white;
+        margin-bottom: 5%;
+    }
+
+    /* Image styles */
+    #contact_image {
+        margin-bottom: 5%;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    button:focus:not(:focus-visible) {
+        color: transparent;
+    }
+
+
+    /* Form input styles */
+    #name,
+    #email,
+    #message {
+        padding: 10px;
+        border-radius: 5px;
+        border: solid 1px rgb(176, 175, 175);
+    }
+
+    #message {
+        resize: none;
+    }
+
+    /* Button styles */
+    #submit_button {
+        background-color: #005dab;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .fooder_para {
+        text-align: center;
+        padding-left: 8%;
+        padding-right: 8%;
+        color: white;
+        margin-top: -3%;
+        /* margin-bottom: 2%; */
+        font-size: 15px;
+    }
+
+    .fooder_para {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .fooder {
+        background-color: #005dab;
+    }
+
+    @media (max-width: 1199px) and (min-width: 991px) {
+        #main_section {
+            height: 600px;
+            /* Adjust height as needed */
+        }
+
+        #main_header {
+            padding-top: 20%;
+            /* Adjust padding as needed */
+        }
+
+        #main_header h1 {
+            font-size: 36px;
+            /* Adjust font size as needed */
+            padding: 1%;
+        }
+
+        #main_header p {
+            font-size: 16px;
+            /* Adjust font size as needed */
+        }
+
+        .maintenance-title {
+            font-size: 32px;
+        }
+
+        .maintenance-description {
+            padding: 0 8%;
+            font-size: 18px;
+        }
+
+        .maintenance-content {
+            font-size: 15px;
+            padding: 0 4%;
+        }
+
+        .maintenance-summary {
+            padding: 2% 10%;
+            font-size: 15px;
+        }
+
+
+        
+
+        .maintenance-description {
+            padding: 0 8%;
+            font-size: 18px;
+        }
+
+        .maintenance-text {
+            font-size: 16px;
+        }
+
+        .advantage-text {
+            font-size: 16px;
+        }
+
+
+        .section-title {
+            font-size: 32px;
+        }
+
+        .section-description {
+            padding: 0 8%;
+            font-size: 18px;
+        }
+
+        .maintenance-text {
+            font-size: 16px;
+        }
+    }
+
+    /* Responsive styling for below 991px */
+    @media (max-width: 991px) {
+        #main_section {
+            height: 400px;
+            /* Adjust height as needed */
+        }
+
+        #main_header {
+            padding-top: 25%;
+            /* Adjust padding as needed */
+        }
+
+        #main_header h1 {
+            font-size: 28px;
+            /* Adjust font size as needed */
+            padding: 0.8%;
+        }
+
+        #main_header p {
+            font-size: 14px;
+            /* Adjust font size as needed */
+        }
+
+
+        .maintenance-title {
+            font-size: 28px;
+        }
+
+        .maintenance-description {
+            padding: 0 5%;
+            font-size: 16px;
+        }
+
+        .maintenance-content {
+            font-size: 14px;
+            padding: 0 2%;
+        }
+
+        .maintenance-summary {
+            padding: 2% 5%;
+            font-size: 14px;
+        }
+
+
+        
+
+        .maintenance-description {
+            padding: 0 5%;
+            font-size: 16px;
+        }
+
+        .maintenance-text {
+            font-size: 14px;
+        }
+
+        .advantage-text {
+            font-size: 14px;
+        }
+
+        .section-title {
+            font-size: 28px;
+        }
+
+        .section-description {
+            padding: 0 5%;
+            font-size: 16px;
+        }
+
+        .maintenance-text {
+            font-size: 14px;
+        }
+    }
+
+
+    /* Base Styles */
+    .container-fluid {
+        padding: 0 15px;
+    }
+
+    .maintenance-title {
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #005dab;
+    }
+
+    .maintenance-description {
+        padding: 0 10%;
+        text-align: center;
+        padding-top: 2%;
+        font-size: 20px;
+    }
+
+    .maintenance-content {
+        margin-top: 3%;
+        font-size: 17px;
+        padding: 0 5%;
+    }
+
+    .maintenance-content .maintenance-image {
+        width: 100%;
+        height: auto;
+        margin-top: 8%;
+    }
+
+    .maintenance-subtitle {
+        text-align: center;
+    }
+
+    .maintenance-text {
+        padding-top: 2%;
+        font-size: 16px;
+    }
+
+    .highlight {
+        color: #005dab;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .maintenance-summary {
+        padding: 2% 15%;
+        font-size: 16px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    /* Media Queries */
+
+
+
+    @media (max-width: 767px) {
+        .maintenance-title {
+            font-size: 24px;
+        }
+
+        .maintenance-description {
+            padding: 0 3%;
+            font-size: 14px;
+        }
+
+        .maintenance-content {
+            font-size: 12px;
+            padding: 0 1%;
+        }
+
+        .maintenance-summary {
+            padding: 2% 3%;
+            font-size: 12px;
+        }
+
+        .maintenance-heading {
+            font-size: 24px;
+        }
+
+        .maintenance-description {
+            padding: 0 3%;
+            font-size: 14px;
+        }
+
+        .maintenance-text {
+            font-size: 12px;
+        }
+
+        .advantage-text {
+            font-size: 12px;
+        }
+
+
+        .section-title {
+            font-size: 24px;
+        }
+
+        .section-description {
+            padding: 0 3%;
+            font-size: 14px;
+        }
+
+        .maintenance-text {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .maintenance-title {
+            font-size: 20px;
+        }
+
+        .maintenance-description {
+            padding: 0 2%;
+            font-size: 12px;
+        }
+
+        .maintenance-content {
+            font-size: 10px;
+            padding: 0 0.5%;
+        }
+
+        .maintenance-summary {
+            padding: 2% 2%;
+            font-size: 10px;
+        }
+
+        .maintenance-heading {
+            font-size: 20px;
+        }
+
+        #maintenance-heading {
+            font-size: 18px;
+            padding-top: 5%;
+        }
+
+        #section-title{
+            font-size: 18px;
+        }
+
+        #section-description{
+            font-size: 1px;
+        }
+
+        .maintenance-description {
+            padding: 0 2%;
+            font-size: 12px;
+        }
+
+        #maintenance-description {
+            font-size: 16px;
+        }
+
+        .maintenance-text {
+            font-size: 10px;
+        }
+
+        .advantage-text {
+            font-size: 10px;
+        }
+
+        .section-title {
+            font-size: 20px;
+        }
+
+        .section-description {
+            padding: 0 2%;
+            font-size: 12px;
+        }
+
+        .maintenance-text {
+            font-size: 10px;
+        }
+
+        #main_header {
+            padding-top: 50%;
+        }
+    }
+
+
+    /* Base Styles */
+    /* .container-fluid {
+    padding: 0 15px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+} */
+
+    .maintenance-heading {
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #005dab;
+        padding-top: 3%;
+    }
+
+    .maintenance-description {
+        padding: 0 11%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .maintenance-content {
+        margin-top: 3%;
+    }
+
+    .maintenance-text-container {
+        padding-top: 4%;
+    }
+
+    .maintenance-subheading {
+        text-align: center;
+    }
+
+    .maintenance-text {
+        padding-top: 2%;
+        font-size: 18px;
+    }
+
+    .maintenance-image {
+        width: 100%;
+        height: auto;
+        margin-top: 8%;
+    }
+
+    .highlight {
+        color: #005dab;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .maintenance-advantage {
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .advantage-heading {
+        font-weight: 600;
+    }
+
+    .advantage-description {
+        text-align: center;
+    }
+
+    .advantage-item {
+        margin-top: 4%;
+    }
+
+    .advantage-image {
+        /* width: 100%; */
+        height: auto;
+    }
+
+    .advantage-text {
+        padding-top: 8%;
+    }
+
+    /* Media Queries */
+
+
+
+
+    .section-title {
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #005dab;
+    }
+
+    .section-description {
+        padding: 0 10%;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 2%;
+    }
+
+    .maintenance-content {
+        margin-top: 3%;
+        font-size: 17px;
+        padding: 0 5%;
+    }
+
+    .maintenance-image {
+        width: 100%;
+        height: auto;
+        margin-top: 8%;
+    }
+
+    .sub-title {
+        text-align: center;
+    }
+
+    .maintenance-text {
+        padding-top: 2%;
+        font-size: 18px;
+    }
+
+    .highlight {
+        color: #005dab;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .footer {
+        background-color: #005dab;
+        margin-bottom: -1.5%;
+        padding: 1% 0;
+        color: white;
+        text-align: center;
+    }
+
+    .footer-para {
+        padding: 0 8%;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    /* Media Queries for Footer */
+    @media (max-width: 1199px) and (min-width: 991px) {
+        .footer-para {
+            font-size: 14px;
+            padding: 0 6%;
+        }
+
+        
+    }
+
+    @media (max-width: 991px) {
+        .footer-para {
+            font-size: 13px;
+            padding: 0 5%;
+        }
+        #logo{
+            width: 60px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .footer-para {
+            font-size: 12px;
+            padding: 0 4%;
+        }
+        #logo{
+            width: 60px;
+        }
+    }
+    .dropdown-item {
+    font-size: 20px;
+    color: #005dab;
+    padding-left: 8px;
+}
+    @media (max-width: 575px) {
+        .footer-para {
+            font-size: 11px;
+            padding: 0 3%;
+        }
+        #logo{
+            width: 60px;
+        }
+        #main_section{
+            background-size: 100% 350px;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="image/new.png" alt="Logo" id="logo" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#about" style="color: #005dab;"
+                            id="aboutNav">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Residential Air.html" id="dropDown">Residential AC</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Commercial Air.html" id="dropDown">Commercial AC</a></li>
+                            <li><a class="dropdown-item" href="Commercial Refrigeration.html" id="dropDown">Commercial
+                                    Refrigeration</a>
+                            </li>
+                            <li><a class="dropdown-item" href="maintenance.html" id="dropDown">Maintenance</a>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#special" tabindex="-1" aria-disabled="true">Special</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"
+                            href="https://www.trane.com/commercial/north-america/us/en/about-us/newsroom/blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contect" tabindex="-1" aria-disabled="true">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://pgmechllc.com/customer.html"><button class="btn"
+                                id="button1">Schedule</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn" id="button2">(469) 274-6424</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0" id="main_section">
+        <div id="main_header">
+            <div class="container">
+                <div class="row" style="background-color: white;">
+                    <h1>Maintenance</h1>
+                    <p>Thorough & Comprehensive Air Conditioner Maintenance That Keep Your Unit In Peak Condition.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 5%;">
+            <h4 class="maintenance-title">Maintenance for Residential Air Conditioning and Heating</h4>
+            <p class="maintenance-description" id="maintenance-description">Don't let your air conditioner leave you hot
+                and bothered! Regular maintenance is essential to keep your system running smoothly and efficiently,
+                ensuring cool comfort throughout the summer months. Here at PG Mechanical LLC, we offer comprehensive AC
+                maintenance plans to keep your unit in peak condition.</p>
+        </div>
+
+        <div class="row">
+            <div class="container maintenance-content">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="maintenance/Maintenance 3.png" alt="Maintenance Image" class="maintenance-image">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3 class="maintenance-subtitle">Why Regular Maintenance Matters:</h3>
+                        <p class="maintenance-text">Just like any other machine, your air conditioner needs regular care
+                            to function optimally. Skipping maintenance can lead to a number of problems down the road,
+                            including:</p>
+                        <p class="maintenance-text"><span class="highlight">Increased energy bills:</span> A neglected
+                            AC unit works harder to cool your home, leading to higher energy consumption and more
+                            expensive utility bills.</p>
+                        <p class="maintenance-text"><span class="highlight">Expensive repairs:</span> Minor issues can
+                            snowball into major breakdowns if left unchecked. Regular maintenance helps identify and
+                            address potential problems before they become costly repairs.</p>
+                        <p class="maintenance-text"><span class="highlight">Reduced lifespan:</span> A well-maintained
+                            AC unit lasts longer than a neglected one. Regular tune-ups can extend the life of your
+                            system, saving you money on replacement costs.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="maintenance-summary">Regular air conditioning maintenance is an investment in your comfort and
+                your wallet. Don't wait until your AC breaks down on a hot summer day. Contact PG Mechanic today to
+                schedule your maintenance appointment and keep your cool all season long!</p>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" style="background-color: #f2f2f2; font-size: 18px;">
+        <div class="row">
+            <h4 class="maintenance-heading" id="maintenance-heading">Maintenance for Residential Air Conditioning and
+                Heating</h4>
+            <p class="maintenance-description" id="maintenance-description">
+                Maintaining a comfortable and energy-efficient environment is crucial for any business. At PG
+                Mechanical, we understand the importance of a well-functioning commercial HVAC system. Our comprehensive
+                maintenance plans keep your heating and cooling systems running smoothly, preventing costly downtime and
+                ensuring optimal comfort for your employees and customers.
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row maintenance-content">
+                <div class="col-12 col-md-6 maintenance-text-container">
+                    <h3 class="maintenance-subheading">Why Regular Maintenance is Vital:</h3>
+                    <p class="maintenance-text">Neglecting commercial HVAC maintenance can have significant
+                        consequences. Here's why regular tune-ups are essential:</p>
+                    <p class="maintenance-text"><span class="highlight">Peak Performance and Efficiency:</span> Regular
+                        maintenance ensures your system operates at peak efficiency, resulting in lower energy bills and
+                        reduced wear and tear.</p>
+                    <p class="maintenance-text"><span class="highlight">Reduced Downtime:</span> Preventative
+                        maintenance identifies potential problems before they become critical failures, minimizing
+                        disruptive downtime and costly repairs.</p>
+                    <p class="maintenance-text"><span class="highlight">Extended Equipment Lifespan:</span> Thorough
+                        cleaning and adjustments keep your system running smoothly, extending its lifespan and saving
+                        you money on premature replacements.</p>
+                    <p class="maintenance-text"><span class="highlight">Improved Indoor Air Quality:</span> Regular
+                        cleaning of air filters and other components promotes better indoor air quality for a healthier
+                        and more comfortable work environment.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="maintenance/Maintenance 1.png" alt="Maintenance Image" class="maintenance-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="maintenance-advantage">
+            <h3 class="advantage-heading">The PG Mechanical Advantage</h3>
+            <p class="advantage-description">Our commercial HVAC maintenance plans are designed to keep your business
+                running smoothly:</p>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-6 col-md-2 advantage-item">
+                        <img src="maintenance/Certified Technicians.png" alt="Certified Technicians"
+                            class="advantage-image">
+                        <p class="advantage-text">Certified Technicians</p>
+                    </div>
+                    <div class="col-6 col-md-2 advantage-item">
+                        <img src="maintenance/Detailed Inspections and Cleaning.png"
+                            alt="Detailed Inspections and Cleaning" class="advantage-image">
+                        <p class="advantage-text">Detailed Inspections and Cleaning</p>
+                    </div>
+                    <div class="col-12 col-md-3 advantage-item">
+                        <img src="maintenance/Customized Maintenance Schedules.png"
+                            alt="Customized Maintenance Schedules" class="advantage-image">
+                        <p class="advantage-text">Customized Maintenance Schedules</p>
+                    </div>
+                    <div class="col-6 col-md-2 advantage-item">
+                        <img src="maintenance/Emergency Support.png" alt="24/7 Emergency Support"
+                            class="advantage-image">
+                        <p class="advantage-text">24/7 Emergency Support</p>
+                    </div>
+                    <div class="col-6 col-md-3 advantage-item">
+                        <img src="maintenance/Preventative Adjustments and Repairs.png"
+                            alt="Preventative Adjustments and Repairs" class="advantage-image">
+                        <p class="advantage-text">Preventative Adjustments and Repairs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 5%;">
+            <h4 class="section-title" id="section-title">
+                Maintenance for Commercial Refrigeration
+            </h4>
+            <p class="section-description" id="section-description">
+                In the world of commerce, fresh products and uninterrupted operation are paramount. At PG Mechanical, we
+                understand the critical role commercial refrigeration plays in your success. That's why we offer
+                comprehensive maintenance plans designed to keep your refrigeration systems running smoothly and
+                efficiently, ensuring your products stay fresh and your business thrives.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="container maintenance-content">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="maintenance/Maintenance 2.png" alt="Maintenance Image" class="maintenance-image">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3 class="sub-title">The Importance of Regular Maintenance:</h3>
+                        <p class="maintenance-text">
+                            Failing to prioritize commercial refrigeration maintenance can have a domino effect. Here's
+                            why routine tune-ups are essential:
+                        </p>
+                        <p class="maintenance-text">
+                            <span class="highlight">Food Safety and Quality:</span> Regular cleaning and maintenance
+                            prevent the build-up of bacteria and mold, safeguarding food quality and minimizing the risk
+                            of spoilage.
+                        </p>
+                        <p class="maintenance-text">
+                            <span class="highlight">Peak Performance and Efficiency:</span> Proper maintenance optimizes
+                            system performance, leading to lower energy bills and reduced wear and tear on your
+                            equipment.
+                        </p>
+                        <p class="maintenance-text">
+                            <span class="highlight">Reduced Downtime and Lost Inventory:</span> Preventative maintenance
+                            identifies potential problems before they escalate into major breakdowns, minimizing costly
+                            downtime and potential product loss.
+                        </p>
+                        <p class="maintenance-text">
+                            <span class="highlight">Extended Equipment Lifespan:</span> Thorough cleaning and
+                            adjustments ensure your refrigeration systems operate optimally, extending their lifespan
+                            and saving you money on replacements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid contect" id="contect">
+        <div class="header text-center py-3">
+            <h1 style="font-weight: bold;color: #005dab;">Get in touch</h1>
+        </div>
+        <div class="row text-center mb-4">
+            <h6 class="mx-auto">
+                Have questions or need service? Contact us today and let our experts assist you with all your HVAC
+                needs!
+
+            </h6>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 mb-4 text-center">
+                    <img src="image/contact us.png" alt="" id="contact_image" class="img-fluid">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-lg-5 col-md-12">
+                    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="91631ac7-26e5-4657-84a8-25556e8a3843">
+                        <div class="form-group position-relative mb-3">
+                            <input type="text" id="name" class="form-control" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group position-relative mb-3">
+                            <input type="email" id="email" class="form-control" name="email" placeholder=" "
+                                style="margin-top: 6%;" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group position-relative mb-3">
+                            <textarea id="message" class="form-control" rows="6" name="message" placeholder=" " required
+                                style="margin-top: 6%;"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button class="btn btn-primary btn-block" type="submit" id="submit_button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <p class="footer-para">
+                TDLR LICENSE NO <b>TACLB51418C</b> REGULATED BY THE TEXAS DEPARTMENT OF LICENSING AND REGULATION P.O.
+                BOX 12157 AUSTIN, TX 78711, 1-800-803-9202, 512-463-6599
+                <a href="http://www.tdlr.texas.gov" style="text-decoration: none; color: white;">www.tdlr.texas.gov</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

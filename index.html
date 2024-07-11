@@ -41,7 +41,7 @@
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-image: linear-gradient(to right, #005dab, #002645);">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="image/new.png" alt="Logo" width="100px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -60,9 +60,11 @@
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="service.html" id="dropDown">Residential AC</a></li>
-                            <li><a class="dropdown-item" href="service1.html" id="dropDown">Commercial AC</a></li>
-                            <li><a class="dropdown-item" href="service3.html" id="dropDown">Commercial Refrigeration</a>
+                            <li><a class="dropdown-item" href="Residential Air.html" id="dropDown">Residential AC</a></li>
+                            <li><a class="dropdown-item" href="Commercial Air.html" id="dropDown">Commercial AC</a></li>
+                            <li><a class="dropdown-item" href="Commercial Refrigeration.html" id="dropDown">Commercial Refrigeration</a>
+                            </li>
+                            <li><a class="dropdown-item" href="maintenance.html" id="dropDown">Maintenance</a>
                             </li>
                         </ul>
                     </li>
@@ -93,7 +95,7 @@
 
     <!-- home page -->
 
-    <div class="container">
+    <div class="container" id="main">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 text-center ">
                 <div class="banner-section" id="icon">
@@ -180,7 +182,7 @@
                             brands, including Lennox, Carrier, York, Bryant, Comfort Air, Rheem, and more.
 
                         </p>
-                        <a href="service.html"><button class="btn " type="button" id="service_button">Know
+                        <a href="Residential Air.html"><button class="btn " type="button" id="service_button">Know
                                 More</button></a>
 
                         <!-- </div> -->
@@ -196,7 +198,7 @@
                         <p class="card-text">When your commercial air conditioning or heating system needs repair,
                             you need a reliable partner who understands the complexities of commercial HVAC systems.
                             At PG Machanical LLC, we provide expert repair services.</p>
-                        <a href="service1.html"><button class="btn" type="button" id="service_button">Know
+                        <a href="Commercial Air.html"><button class="btn" type="button" id="service_button">Know
                                 More</button></a>
                     </div>
                     <!-- </div> -->
@@ -216,7 +218,7 @@
                             commercial refrigeration. Our team of and certified technicians are
                             dedicated to ensuring your food products stay fresh and your business operations run
                             smoothly</p>
-                        <a href="service3.html"><button class="btn " type="button" id="service_button">Know
+                        <a href="Commercial Refrigeration.html"><button class="btn " type="button" id="service_button">Know
                                 More</button></a>
 
                     </div>
@@ -231,7 +233,7 @@
                         <p class="card-text">Thorough & Comprehensive Air Conditioner Maintenance That Keep Your
                             Unit In Peak Condition. Don't let your air conditioner leave you hot and bothered!
                             Regular maintenance is essential to keep your system running smoothly </p>
-                        <a href=""><button class="btn" type="button" id="service_button">Know More</button></a>
+                        <a href="maintenance.html"><button class="btn" type="button" id="service_button">Know More</button></a>
                     </div>
                     <!-- </div>  -->
                 </div>
@@ -654,185 +656,7 @@
         </div>
 
         <!-- Desktop view  -->
-        <!-- <div id="testimonialCarousel" class="carousel slide d-none d-md-block d-xxl-block" data-ride="carousel"
-            data-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph" class="user_para1"></p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon1"></h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user1"></h6>
-                                    <div class="user-stars user_star1">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph" class="user_para2"></p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon2"></h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user2"></h6>
-                                    <div class="user-stars">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph" class="user_para3">
-                            </p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon3">J</h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user3">John Smith</h6>
-                                    <div class="user-stars">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph" class="user_para4">
-                            </p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon4">J</h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user4">John Smith</h6>
-                                    <div class="user-stars">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">Our data center requires precise temperature control 24/7. PG Mechanical's
-                                expertise in commercial HVAC has been crucial to our operations. Pradeep Gosal and his
-                                team provide reliable service.
-                            </p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon5">H</h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user5">Hiroshi Tanaka</h6>
-                                    <div class="user-stars">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                PG Mechanical transformed the refrigeration system in our multi-story restaurant.
-                                Pradeep's approach not only improved efficiency but all kitchen space. Their
-                                maintenance keeps everything smoothly.
-                            </p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon6">I</h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user6">Isabella Rossi</h6>
-                                    <div class="user-stars">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                As new homeowners, we were clueless about HVAC maintenance. Pradeep from PG Mechanical
-                                took the time to educate us and set up a preventive maintenance plan. We're grateful for
-                                their patient, informative service.
-                            </p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon7">J</h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user7">Vikram</h6>
-                                    <div class="user-stars">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <p id="paragraph">
-                                Pradeep from PG Mechanical was a lifesaver when our AC broke during a heatwave. He came
-                                promptly, fixed the issue, and even gave us tips on maintaining our system. Highly
-                                recommend!
-                            </p>
-                            <div class="row user_credit align-items-center">
-                                <div class="col-3 text-center">
-                                    <h1 id="user_logo" class="userIcon8">M</h1>
-                                </div>
-                                <div class="col-9">
-                                    <h6 id="user_name" class="user8">Mani</h6>
-                                    <div class="user-stars">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                        <img src="image/star.png" alt="" id="user_star">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div> -->
+       
         <div id="carouselExampleAutoplaying" class="carousel slide d-none d-md-block d-xxl-block"
             data-bs-ride="carousel" data-interval="2500">
             <div class="carousel-inner">
@@ -1011,12 +835,12 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                 <span class="visually-hidden">Next</span>
             </button>
         </div>

@@ -389,14 +389,20 @@ body {
     margin-top: 10%;
 }
 
+#main {
+    padding-top: 10%;
+}
+
 /* Media query for responsiveness */
 @media (max-width: 769px) {
+   
     .card-container {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
     }
+
 
     /* #aboutNav {
         padding-left: 0px;
@@ -406,7 +412,7 @@ body {
         font-size: 34px;
     }
 
-  
+
     .btn {
         margin-top: 15px;
 
@@ -604,7 +610,7 @@ body {
     }
 
 
-    
+
 
     #coupon_3 {
         margin-left: 0px;
@@ -615,33 +621,6 @@ body {
         margin-left: 0px;
         margin-right: 0px;
     }
-/* 
-    .navbar-nav .nav-item {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-    }
-    #button2 {
-        margin-right: 0;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-    #navbarSupportedContent {
-        padding: 15px 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #button1,
-    #button2 {
-        margin-top: 10px;
-    }
-
-    #button2 {
-        padding-top: 3px;
-        padding-bottom: 8px;
-        margin-top: 10px;
-    } */
 
     .fooder_para {
         font-size: 12px;
@@ -679,6 +658,10 @@ body {
         /* width: 100%; */
         margin-top: 10px;
     }
+    #main{
+        margin-top: 1%;
+    }
+   
 }
 
 @media (max-width: 1200px) and (min-width: 991px) {
@@ -687,7 +670,8 @@ body {
         margin-left: 5%;
         margin-right: 5%;
     }
-    #card2{ 
+
+    #card2 {
         width: 40%;
         margin-left: -1%;
         margin-right: 1%;
@@ -707,6 +691,7 @@ body {
     .card-img-top {
         margin-top: 5%;
     }
+
 }
 
 
@@ -750,36 +735,44 @@ body {
         margin-bottom: 20px;
     }
 
-    #card2 {        
+    #card2 {
         width: 100%;
         margin-left: -0.5%;
     }
 
     #color {
-        
+
         margin-top: -3%;
     }
 
-    #images{
+    #images {
         width: 20%;
     }
-    .card-title{
+
+    .card-title {
         margin: 0px;
         padding: 0;
     }
 
-    
+
     #button2 {
         margin-top: 20px;
         margin-right: 0;
         padding-top: 10px;
         padding-bottom: 18px;
     }
+    #main {
+        padding-top: 14%;
+    }
 }
 
-@media(max-width:497px){
-    #card2{
+@media(max-width:497px) {
+    #card2 {
         margin-left: 0%;
+    }
+
+    #main {
+        padding-top: 40%;
     }
 }
 
@@ -793,4 +786,3 @@ body {
 button:focus:not(:focus-visible) {
     color: transparent;
 } */
-
