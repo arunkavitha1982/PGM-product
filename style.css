@@ -774,10 +774,13 @@ body {
     #main {
         padding-top: 40%;
     }
+    #logo{
+        width: 60px;
+    }
 }
 
 
-/* .navbar-toggler {
+.navbar-toggler {
     border-color: white !important;
     border-width: 1px;
     border-style: solid;
@@ -785,4 +788,4 @@ body {
 
 button:focus:not(:focus-visible) {
     color: transparent;
-} */
+}
