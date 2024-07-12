@@ -81,15 +81,14 @@
 
         .card-custom {
             box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
-
-            /* border: 2px outset; */
-            height: 480px;
+            height: 590px;
         }
 
         .card-img-custom {
             width: 80%;
             display: block;
-            margin: 4% auto 0 auto;
+            margin: 5% auto 0 auto;
+            padding: 20px;
         }
 
         .service_image_header {
@@ -98,6 +97,7 @@
             text-align: center;
             color: black;
             font-size: 42px;
+            font-weight: 600;
         }
 
         #icon {
@@ -194,15 +194,6 @@
             width: 100%;
         }
 
-        .fooder_para {
-            text-align: center;
-            padding-left: 8%;
-            padding-right: 8%;
-            color: white;
-            margin-top: -3%;
-            margin-bottom: 2%;
-            font-size: 15px;
-        }
 
         #service_page {
             background-color: #F2F2F2;
@@ -213,6 +204,17 @@
             font-size: 20px;
             color: #005dab;
             padding-left: 8px;
+        }
+
+        .card-text {
+            padding: 18px;
+            text-align: justify;
+        }
+
+        @media (max-width:1200px) {
+            #main_section {
+                margin-top: 10%;
+            }
         }
 
         @media(max-width:992px) {
@@ -264,14 +266,14 @@
             }
 
             .card-img-custom {
-                width: 70%;
+                width: 80%;
             }
 
             .service_image_header {
                 font-size: 32px;
             }
 
-            #service_image{
+            #service_image {
                 width: 80px;
             }
 
@@ -325,6 +327,17 @@
                 margin-top: 18px;
             }
 
+            #main_section {
+                background-position-y: 50px;
+                background-size: 100% 400px;
+            }
+
+
+            .footer-para {
+                padding: 0 8%;
+                font-size: 12px;
+                margin: 0;
+            }
 
         }
 
@@ -451,11 +464,14 @@
         <div class="row g-4">
             <div class="col-lg-4 col-md-6" id="card_top">
                 <div class="card card-custom">
-                    <img class="card-img-top card-img-custom" src="service 1/1.png" alt="Card image">
+                    <img class="card-img-top card-img-custom" src="service 2/Business Plan-rafiki 1.png"
+                        alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title" id="card_head">Comprehensive Service</h4>
-                        <p class="card-text">From minor fixes to major overhauls, no job is too big or too small for us.
-                            Relax and let us get your AC system back on its feet quickly and efficiently.</p>
+                        <h4 class="card-title" id="card_head">Holistic Solutions</h4>
+                        <p class="card-text">We offer a full range of services to meet all your commercial HVAC needs.
+                            From routine maintenance and minor repairs to complete system overhauls, we ensure your HVAC
+                            system operates at peak efficiency. No job is too big or too small for us; trust us to
+                            restore comfort and functionality to your business environment.</p>
                     </div>
                 </div>
             </div>
@@ -463,10 +479,11 @@
                 <div class="card card-custom" id="a">
                     <img class="card-img-top card-img-custom" src="service 1/3.png" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title" id="card_head">Expert Technicians</h4>
-                        <p class="card-text">Our team of certified professionals can repair any air conditioner,
-                            regardless of the brand or where you purchased it. We service all major brands, including
-                            Lennox, Carrier, York, Bryant, Comfort Air, Rheem, and more.</p>
+                        <h4 class="card-title" id="card_head">Skilled Professionals</h4>
+                        <p class="card-text">Our team consists of highly trained and certified professionals who are
+                            adept at handling commercial HVAC systems of all types and sizes. Whether it's a minor issue
+                            or a major malfunction, we have the expertise to service all major brands, including Lennox,
+                            Carrier, York, Bryant, Comfort Air, Rheem, and more.</p>
                     </div>
                 </div>
             </div>
@@ -474,10 +491,12 @@
                 <div class="card card-custom">
                     <img class="card-img-top card-img-custom" src="service 1/2.png" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title" id="card_head">Customer-Centric Approach</h4>
-                        <p class="card-text">Our technicians are not just skilled; they genuinely care about your
-                            comfort and satisfaction. They go above and beyond, often performing good deeds for free,
-                            because we believe in making a positive impact in our community.</p>
+                        <h4 class="card-title" id="card_head">Client-Focused Service</h4>
+                        <p class="card-text">Our technicians are not just experts in their field; they are also
+                            dedicated to providing exceptional customer service. We understand the importance of a
+                            comfortable and efficient work environment, and we strive to minimize any disruption to your
+                            operations. Our commitment to your satisfaction is reflected in the positive feedback we
+                            receive from our clients.</p>
                     </div>
                 </div>
             </div>
@@ -514,28 +533,12 @@
                 <h6 id="icon_head">Preventative Maintenance</h6>
             </div>
         </div>
-        <!-- <div class="container">
-            <div class="row" style="margin-left: 3%;">
-                <h2 class="service_image_header">Industries We Serve</h2>
-
-                <div class="col-4"><img src="service 2/1.png" alt="" style="width: 80%;" id="service_image"></div>
-                <div class="col-4"><img src="service 2/2.png" alt="" style="width: 80%;" id="service_image"></div>
-                <div class="col-4"><img src="service 2/3.png" alt="" style="width: 80%;" id="service_image"></div>
-            </div>
-        </div>
-
-        <div class="container mt-5">
-            <div class="row" style="margin-left: 3%;">
-                <div class="col-4"><img src="service 2/4.png" alt="" style="width: 80%;" id="service_image"></div>
-                <div class="col-4"><img src="service 2/5.png" alt="" style="width: 80%;" id="service_image"></div>
-                <div class="col-4"><img src="service 2/6.png" alt="" style="width: 80%;" id="service_image"></div>
-            </div>
-        </div> -->
 
         <div class="container">
+            <h2 class="service_image_header">Industries We Serve</h2>
             <div class="row" style="margin-left: 3%;">
-                <h2 class="service_image_header">Industries We Serve</h2>
-        
+
+
                 <div class="col-lg-4 col-md-4 col-12 mb-4">
                     <img src="service 2/1.png" alt="" style="width: 80%;" class="mx-auto d-block" id="service_image">
                 </div>
@@ -547,7 +550,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container mt-5">
             <div class="row" style="margin-left: 3%;">
                 <div class="col-lg-4 col-md-4 col-12 mb-4">
@@ -561,7 +564,8 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+
 
     <div class="container contect" id="contect">
         <div class="header text-center py-3">
@@ -609,7 +613,8 @@
     <div class="footer">
         <div class="footer-content">
             <p class="footer-para">
-                TDLR LICENSE NO <b>TACLB51418C</b> REGULATED BY THE TEXAS DEPARTMENT OF LICENSING AND REGULATION P.O.
+                TDLR LICENSE NO <b>TACLB51418C</b> REGULATED BY THE TEXAS DEPARTMENT OF LICENSING AND REGULATION
+                P.O.
                 BOX 12157 AUSTIN, TX 78711, 1-800-803-9202, 512-463-6599
                 <a href="http://www.tdlr.texas.gov" style="text-decoration: none; color: white;">www.tdlr.texas.gov</a>
             </p>
