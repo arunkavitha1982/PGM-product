@@ -111,3 +111,28 @@ nav {
         margin-left: 4%;
     }
 }
+
+/* 
+@media(max-width:1009px) and (min-width:995px){
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #navbarSupportedContent {
+        padding: 15px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #button1,
+    #button2 {
+        margin-top: 10px;
+    }
+
+    /* #button2 {
+        margin-top: 10px;
+        margin-left: 4%;
+    } 
+} */

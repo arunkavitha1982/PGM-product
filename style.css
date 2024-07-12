@@ -67,13 +67,7 @@ body {
 
 
 /* product page */
-.header {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 35px;
-    padding-bottom: 20px;
-    color: #005dab;
-}
+
 
 .product {
     background-color: white;
@@ -198,11 +192,7 @@ body {
     margin-bottom: 5%;
 }
 
-/* .home_content1{
-    font-size: 40px;
-} */
 
-/* Container styles */
 .contect {
     background-color: white;
     margin-bottom: 5%;
@@ -360,9 +350,11 @@ body {
 #service_header {
     text-align: center;
     font-size: 40px;
-    /* padding-top:%; */
-    /* padding-bottom: 3%; */
+    padding-top:2%;
+    padding-bottom: 1%;
     font-weight: bold;
+    color: #005dab;
+
 }
 
 .product_header {
@@ -371,7 +363,9 @@ body {
     padding-top: 3%;
     padding-bottom: 3%;
     font-weight: bold;
+    color: #005dab;
 }
+
 
 #experience {
     color: #005dab;
@@ -395,7 +389,7 @@ body {
 
 /* Media query for responsiveness */
 @media (max-width: 769px) {
-   
+
     .card-container {
         width: 50%;
         margin-left: auto;
@@ -494,7 +488,11 @@ body {
     }
 
     #blog_header {
-        font-size: 25px;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        font-weight: bold;
         margin-bottom: -30px;
     }
 
@@ -530,6 +528,7 @@ body {
         margin-bottom: -3px;
         font-size: 23px;
         font-weight: bold;
+        color: #005dab;
     }
 
     .about_header {
@@ -658,13 +657,16 @@ body {
         /* width: 100%; */
         margin-top: 10px;
     }
-    #main{
-        margin-top: 1%;
+
+    #main {
+        margin-top: 3%;
     }
-   
+
 }
 
-@media (max-width: 1200px) and (min-width: 991px) {
+
+
+@media (max-width: 1200px) and (min-width: 1010px) {
     #card {
         width: 40%;
         margin-left: 5%;
@@ -761,8 +763,9 @@ body {
         padding-top: 10px;
         padding-bottom: 18px;
     }
+
     #main {
-        padding-top: 14%;
+        padding-top: 20%;
     }
 }
 
@@ -772,12 +775,16 @@ body {
     }
 
     #main {
-        padding-top: 40%;
+        padding-top: 30%;
     }
-    #logo{
+
+    #logo {
         width: 60px;
     }
 }
+
+
+
 
 
 .navbar-toggler {
