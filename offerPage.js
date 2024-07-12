@@ -4,8 +4,8 @@ function offer() {
         let offer_content1 = document.getElementById("content_pare_1");
         let expire_date1 = document.querySelector(".footer1");
 
-        offer_title1.textContent = "AIR DUCT WHOLE HOUSE PACKAGE";
-        price1.textContent = "$79";
+        offer_title1.textContent = "A/C TUNE UP";
+        price1.textContent = "$49";
         offer_content1.textContent = "AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD";
         expire_date1.textContent = "Offer Expires: 12/16/2024";
 
@@ -24,7 +24,7 @@ function offer() {
         let expire_date2 = document.querySelector(".footer2");
 
         offer_title2.textContent = "AIR DUCT WHOLE HOUSE PACKAGE";
-        price2.textContent = "$89";
+        price2.textContent = "$99";
         offer_content2.textContent = "AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD";
         expire_date2.textContent = "Offer Expires: 12/28/2024";
 
@@ -42,8 +42,8 @@ function offer() {
         let offer_content3 = document.getElementById("content_pare_3");
         let expire_date3 = document.querySelector(".footer3");
 
-        offer_title3.textContent = "NEW AIR DUCT CLEANING PACKAGE";
-        price3.textContent = "$69";
+        offer_title3.textContent = "SAVE";
+        price3.textContent = "$55";
         offer_content3.textContent = "ADVANCED AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE LATEST HEPA AIR METHOD";
         expire_date3.textContent = "Offer Expires: 12/26/2024";
 

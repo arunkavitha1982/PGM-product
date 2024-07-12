@@ -116,6 +116,8 @@
     border: 2px solid #01427a;
 }
 
+
+
 .offer_title::before {
     left: -15px;
 }
