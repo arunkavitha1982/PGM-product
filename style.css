@@ -35,9 +35,9 @@ body {
 }
 
 
-.home_content1 {
+#home_content1 {
     color: white;
-    font-family: montserrat;
+    font-family: 'montserrat',sans-serif;
     font-weight: 600;
 }
 

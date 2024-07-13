@@ -3,8 +3,8 @@ nav {
 
 }
 
-.dropdown-item {
-    font-size: 20px;
+#dropDown {
+    font-size: 18px;
     color: #005dab;
     padding-left: 8px;
 }
