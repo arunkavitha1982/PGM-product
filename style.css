@@ -228,9 +228,8 @@ body {
     width: 100%;
 }
 
-.user {
+#user {
     background-color: #d9e7f2;
-    padding: 20px;
 }
 
 #paragraph {
