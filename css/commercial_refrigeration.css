@@ -1,0 +1,370 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+
+.footer {
+    background-color: #005dab;
+    margin-bottom: -1.5%;
+    padding: 1% 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-para {
+    padding: 0 8%;
+    font-size: 15px;
+    margin: 0;
+}
+
+.material-icons {
+    font-size: 34px;
+    color: white;
+}
+
+#button1 {
+    background-color: #fcd500;
+    color: white;
+    font-size: 20px;
+}
+
+#button2 {
+    background-color: #005dab;
+    color: white;
+    font-size: 17px;
+    margin-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+#main_section {
+    background-image: url("../service 3/main.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main_header {
+    padding-top: 13%;
+    text-align: center;
+}
+
+#main_header h1 {
+    color: #005dab;
+    font-size: 46px;
+    padding: 1.4%;
+
+}
+
+#main_header p {
+    text-align: center;
+    font-size: 18px;
+}
+
+#card,
+#card_top,
+#card2,
+#card3 {
+    margin-top: -15%;
+}
+
+#card_head {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.card-custom {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    height: 100% !important;
+}
+
+.card-text{
+    padding: 15px !important;
+    text-align: justify;
+}
+
+.card-img-custom {
+    width: 80%;
+    display: block;
+    margin: 4% auto 0 auto;
+}
+
+.service_image_header {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+    color: black;
+    font-size: 42px;
+}
+
+#icon {
+    margin-top: 12%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+#icon_head {
+    text-align: center;
+    padding-bottom: 25%;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+    padding: 0 0.25rem;
+    color: #666;
+    pointer-events: none;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: -0.75rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: gray;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: grey;
+    box-shadow: 0 0 0px;
+}
+
+.contect {
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+/* Image styles */
+#contact_image {
+    margin-bottom: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+ 
+
+
+/* Form input styles */
+#name,
+#email,
+#message {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(176, 175, 175);
+}
+
+#message {
+    resize: none;
+}
+
+/* Button styles */
+#submit_button {
+    background-color: #005dab;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 0%;
+    width: 100%;
+}
+
+
+
+#service_page {
+    background-color: #F2F2F2;
+    padding-bottom: 5%;
+}
+
+#image_service {
+    width: 80%;
+}
+
+
+
+.dropdown-item {
+    font-size: 20px;
+    color: #005dab;
+    padding-left: 8px;
+}
+
+
+ 
+
+@media (max-width: 769px) {
+    #main_header h1 {
+        font-size: 24px;
+        padding: 1.2%;
+    }
+
+    #main_header {
+        padding-top: 15%;
+    }
+
+    #main_header p {
+        font-size: 13px;
+    }
+
+    .card-custom {
+        height: auto;
+    }
+
+    .card-img-custom {
+        width: 70%;
+    }
+
+    .service_image_header {
+        font-size: 32px;
+    }
+
+    #image_service {
+        width: 130%;
+        margin-left: -15px;
+    }
+
+    #icon {
+        width: 40%;
+        margin-top: 10%;
+    }
+
+    #icon_head {
+        padding-bottom: 15%;
+        font-size: 12px;
+
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem;
+        padding-top: 1.25rem;
+    }
+
+    .form-group input:focus+label,
+    .form-group input:not(:placeholder-shown)+label,
+    .form-group textarea:focus+label,
+    .form-group textarea:not(:placeholder-shown)+label {
+        top: -0.5rem;
+        left: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .contect .header h1 {
+        font-size: 24px;
+    }
+
+    #submit_button {
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    #card_top {
+        margin-top: -21%;
+    }
+
+    #card {
+        margin-top: 0px;
+    }
+
+    #card2,
+    #card3 {
+        margin-top: 18px;
+    }
+
+    
+
+    
+
+  
+    #logo {
+        width: 60px;
+    }
+
+    .footer-para {
+        padding: 0 8%;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    #logo {
+        width: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+  
+    #main_header {
+        padding-top: 15%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width:690px) {
+    #main_header {
+        padding-top: 19%;
+
+    }
+}
+
+@media (max-width:550px) {
+    #main_header {
+        padding-top: 29%;
+
+    }
+
+    .footer-para {
+        font-size: 11px;
+        padding: 0 3%;
+    }
+
+}
+
+@media (max-width:380px) {
+    #main_header {
+        padding-top: 39%;
+
+    }
+
+    #main_section {
+        background-image: url('service 3/s3.png');
+        height: 380px;
+    }
+
+    #card_top {
+        margin-top: 12%;
+    }
+
+    #submit_button {
+        background-color: #005dab;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        margin-left: 0%;
+        width: 100%;
+    }
+}

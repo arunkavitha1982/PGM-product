@@ -1,0 +1,330 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+#main_section {
+    background-image: url('service 1/How-much-does-it-cost-to-install-central-air.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 5%;
+}
+
+#main_header {
+    /* padding-top: 5%; */
+    text-align: center;
+    padding-top: 200px;
+}
+
+#main_header h1 {
+
+    background-color: #F2F2F2;
+    color: #005dab;
+    margin: 0 15%;
+    font-size: 46px;
+    padding: 1.4%;
+    border-radius: 10px;
+}
+
+#card,
+#card_top,
+#card2,
+#card3 {
+    margin-top: -15%;
+}
+
+#card_head {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.card-custom {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+    height: 100% !important;
+}
+
+.card-img-custom {
+    width: 80%;
+    display: block;
+    margin: 4% auto 0 auto;
+}
+
+.card-text{
+    text-align: justify !important;
+    padding: 12px !important;
+}
+.service_image_header {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+    color: black;
+    font-size: 42px;
+}
+
+
+#icon {
+    margin-top: 12%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+#icon_head {
+    text-align: center;
+    padding-bottom: 25%;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+    padding: 0 0.25rem;
+    color: #666;
+    pointer-events: none;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: -0.75rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: gray;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: grey;
+    box-shadow: 0 0 0px;
+}
+
+.contect {
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+/* Image styles */
+#contact_image {
+    margin-bottom: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+ 
+
+
+.footer {
+    background-color: #005dab;
+    margin-bottom: -1.5%;
+    padding: 1% 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-para {
+    padding: 0 8%;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Form input styles */
+#name,
+#email,
+#message {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgb(176, 175, 175);
+}
+
+#message {
+    resize: none;
+}
+
+/* Button styles */
+#submit_button {
+    background-color: #005dab;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 0%;
+    width: 100%;
+}
+
+
+
+#service_page {
+    background-color: #F2F2F2;
+    padding-bottom: 5%;
+}
+
+#image_service {
+    width: 80%;
+}
+
+.dropdown-item {
+    font-size: 20px;
+    color: #005dab;
+    padding-left: 8px;
+}
+
+
+ 
+
+
+@media (max-width: 769px) {
+    #main_header h1 {
+        font-size: 24px;
+        padding: 1.2%;
+    }
+
+    #mani_header {
+        padding-top: 15%;
+    }
+
+    #main_header p {
+        font-size: 13px;
+    }
+
+    .card-custom {
+        height: auto;
+    }
+
+    .card-img-custom {
+        width: 70%;
+    }
+
+    .service_image_header {
+        font-size: 32px;
+    }
+
+    #image_service {
+        width: 130%;
+        margin-left: -15px;
+    }
+
+    #icon {
+        width: 40%;
+        margin-top: 10%;
+    }
+
+    #icon_head {
+        padding-bottom: 15%;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem;
+        padding-top: 1.25rem;
+    }
+
+    .form-group input:focus+label,
+    .form-group input:not(:placeholder-shown)+label,
+    .form-group textarea:focus+label,
+    .form-group textarea:not(:placeholder-shown)+label {
+        top: -0.5rem;
+        left: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .contect .header h1 {
+        font-size: 24px;
+    }
+
+    #submit_button {
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    /* #card_top {
+                margin-top: -1%;
+            } */
+
+    #card_top {
+        margin-top: -35%;
+    }
+
+    #card {
+        margin-top: 0px;
+    }
+
+    #card2,
+    #card3 {
+        margin-top: 18px;
+    }
+
+    #main_section {
+        background-size: 100% 450px;
+    }
+
+    #logo {
+        width: 70px;
+    }
+
+    .footer-para {
+        font-size: 11px;
+        padding: 0 3%;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    #logo {
+        width: 60px;
+    }
+
+    #main_header {
+        padding-top: 40%;
+    }
+
+    #main_section {
+        background-image: url('service 1/s1.png');
+        background-size: 100% 300px;
+        background-position-y: 20%;
+    }
+
+    #card_top {
+        margin-top: -50%;
+    }
+
+    .card-custom {
+        margin-bottom: 2%;
+    }
+
+    #submit_button {
+        background-color: #005dab;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        margin-left: 0%;
+        width: 100%;
+        /* font-weight: 600; */
+    }
+
+    #card_top {
+        margin-top: -50%;
+    }
+}
