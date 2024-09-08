@@ -7,14 +7,7 @@ body {
     font-family: 'Urbanist', sans-serif;
 }
 
-#main_section {
-    background-image: url('service 1/How-much-does-it-cost-to-install-central-air.jpg');
-    height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 5%;
-}
+
 
 #main_header {
     /* padding-top: 5%; */
