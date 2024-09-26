@@ -1,0 +1,104 @@
+.testimonial-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: justify;
+}
+
+.testimonial-box::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+    position: absolute;
+    bottom: -15px;
+    left: 40px;
+    transform: none;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-photo {
+    width: 50px;
+    height: 50px;
+    background-color: #ffcc00;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.author-rating {
+    margin-top: 5px;
+}
+
+.author-rating .star {
+    color: #ffcc00;
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.carousel-item {
+    transition: transform 4s ease !important; /* 3-second transition */
+}
+
+/* Hide carousel buttons */
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .testimonial-box {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+
+    .author-photo {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .author-name {
+        font-size: 16px;
+    }
+
+    .author-rating .star {
+        font-size: 18px;
+    }
+}

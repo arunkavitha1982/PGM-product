@@ -1,0 +1,144 @@
+#logo {
+    transition: all 0.3s ease;
+    width: 100px;
+}
+
+/* Logo size when scrolling */
+.navbar-scrolled #logo {
+    width: 70px;
+    /* Adjust the size as needed */
+}
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Adds a slight slide-up effect */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Zoom-in animation keyframes */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8); /* Starts smaller */
+        opacity: 0; /* Starts invisible */
+    }
+    100% {
+        transform: scale(1); /* Normal size */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Applying the fade-in animation to the heading and paragraph */
+#home_content1 {
+    animation: fadeIn 1.5s ease-in-out forwards; /* Use 'forwards' to keep final state */
+}
+
+#home_content3 {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+#schedule_button {
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+
+/* Applying the zoom-in animation to the image */
+.zoom-image {
+    animation: zoomIn 1.5s ease-in-out forwards; /* Use 'forwards' to keep final state */
+    margin-top: 5%; /* Maintain spacing */
+}
+
+
+/* Initial card state: hidden and translated */
+.card-container {
+    opacity: 0;
+    transform: translateY(20px); /* Slide effect */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+/* When the card becomes visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Back to normal position */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transition smoothness */
+}
+
+/* Add a slight delay for each card to appear */
+#card1 {
+    animation-delay: 0.3s;
+}
+
+#card2 {
+    animation-delay: 0.6s;
+}
+
+
+/* Initial styles for the coupons */
+.coupon {
+    opacity: 0;  /* Initially hidden */
+    transform: translateY(50px); /* Move the coupons down initially */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation for opacity and position */
+}
+
+/* When the coupon becomes visible */
+.coupon.visible {
+    opacity: 1;  /* Fully visible */
+    transform: translateY(0); /* Move it to its original position */
+}
+
+/* Optional: Add more animations */
+.coupon.visible {
+    animation: fadeInUp 1.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Other coupon-specific styles */
+.coupon {
+    border-radius: 15px;
+    width: 450px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer_title {
+    background-image: linear-gradient(to right, #005dab, #002645);
+    color: white;
+    padding: 17px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.price {
+    color: #fcd500;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 780px) {
+    .coupon {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}

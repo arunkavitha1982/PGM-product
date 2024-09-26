@@ -321,7 +321,7 @@ html {
     }
 
     #main_section {
-        background-image: url('service 2/s2.png');
+        background-image: url('../service 2/s2.png');
         background-size: 100% auto;
         background-position-y: 30%;
     }
@@ -338,7 +338,7 @@ html {
     }
 
     #main_section {
-        background-image: url('service 2/s2.png');
+        background-image: url('../service 2/s2.png');
         background-size: 100% 350px;
         background-position-y: 30%;
     }
@@ -354,7 +354,7 @@ html {
     }
 
     #main_section {
-        background-image: url('service 2/s2.png');
+        background-image: url('../service 2/s2.png');
         background-size: 100% 350px;
         background-position-y: 30%;
     }
@@ -398,7 +398,7 @@ html {
     }
 
     #main_section {
-        background-image: url('service 2/s2.png');
+        background-image: url('../service 2/s2.png');
         background-size: 100% 350px;
         background-position-y: 10%;
     }
