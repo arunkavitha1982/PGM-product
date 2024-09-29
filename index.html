@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS files -->
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/offer.css">
@@ -50,8 +51,6 @@
         background-color: white;
         padding: 20px;
     }
-
-    
 </style>
 
 <body>
@@ -115,7 +114,8 @@
                         id="home_content3">Experience top-notch HVAC services tailored to your
                         needs, ensuring comfort in every season</h5>
                     <a href="https://pgmechllc.com/customer.html">
-                        <button class="btn" type="button" id="schedule_button" style="text-align: center; font-weight: bold;">Schedule</button>
+                        <button class="btn" type="button" id="schedule_button"
+                            style="text-align: center; font-weight: bold;">Schedule</button>
                     </a>
                 </div>
             </div>
@@ -230,7 +230,7 @@
                             Regular maintenance is essential to keep your system running smoothly </p>
                         <a href="maintenance.html"><button class="btn" type="button" id="service_button">Know
                                 More</button></a>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
@@ -646,7 +646,7 @@
 
         <!-- Desktop view  -->
 
-        <div class="container-fluid">
+        <div class="container-fluid d-none d-md-block">
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
 
@@ -669,8 +669,6 @@
                                             <span class="star">★</span>
                                             <span class="star">★</span>
                                             <span class="star">★</span>
-                                            <!-- <span class="star">★</span>
-                                            <span class="star">★</span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -843,13 +841,102 @@
             </div>
         </div>
 
+
+
+        <!-- Mobile and Small Tablets View (visible on small screens) -->
+        <section id="testimonialCarousel" class="d-md-none justify-content-center">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <!-- First carousel item -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="testimonial-box">
+                                    <p class="testimonial-text">
+                                        Pradeep from PG Mechanical was a lifesaver when our AC broke during a heatwave.
+                                        He came promptly, fixed the issue, and even gave us tips on maintaining our
+                                        system. Highly recommend!
+                                    </p>
+                                </div><br>
+                                <div class="testimonial-author">
+                                    <div class="author-photo">S</div>
+                                    <div class="author-info">
+                                        <span class="author-name">~ Samantha Lee</span>
+                                        <div class="author-rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second carousel item -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="testimonial-box">
+                                    <p class="testimonial-text">
+                                        Pradeep from PG Mechanical was a lifesaver when our AC broke during a heatwave.
+                                        He came promptly, fixed the issue, and even gave us tips on maintaining our
+                                        system. Highly recommend!"
+                                    </p>
+                                </div><br>
+                                <div class="testimonial-author">
+                                    <div class="author-photo">A</div>
+                                    <div class="author-info">
+                                        <span class="author-name">~ Arun kumar</span>
+                                        <div class="author-rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third carousel item -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="testimonial-box">
+                                    <p class="testimonial-text">
+                                        PG Mechanical transformed the refrigeration system in our multi-story
+                                        restaurant. Pradeep's innovative not only improved efficiency but also
+                                        kitchen space. Their maintenance keeps everything smoothly.
+                                    </p>
+                                </div><br>
+                                <div class="testimonial-author">
+                                    <div class="author-photo">I</div>
+                                    <div class="author-info">
+                                        <span class="author-name">~ Isabella Rossi</span>
+                                        <div class="author-rating">
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                            <span class="star">★</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more carousel items as needed -->
+                </div>
+              
+            </div>
+        </section>
     </div>
 
-
-
-
     <!-- contect page -->
-
     <div class="container-fluid contect justify-content-center" id="contect">
         <div class="header text-center py-3">
             <h1 id="contect_header">Get in touch</h1>
@@ -891,14 +978,13 @@
     </div>
 
     <!-- fooder -->
-
     <div class="fooder">
         <p class="fooder_para">TDLR LICENCE NO <b>TACLB51418C</b> REGULATED BY THE TEXAS DEPARTMENT OF LICENSING AND
             REGULATION P.O.BOX 1215 AUSTIN, TX 78711,1-800-803-9202, 512-463-6599 <a href="www.tdlr.texas.gov"
                 style="text-decoration: none;color: white;">www.tdlr.texas.gov</a> </p>
     </div>
 
-     <script src="script/offerPage.js"></script>
+    <script src="script/offerPage.js"></script>
     <script src="script/userInput.js"></script>
     <script src="script/animation.js"></script>
 

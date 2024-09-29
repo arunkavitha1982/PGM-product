@@ -599,12 +599,6 @@ body {
         padding: 40px;
     }
 
-    .steps {
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     #line {
         display: none;
     }
@@ -719,6 +713,16 @@ body {
     .card-img-top {
         margin-top: 5%;
     }
+    #line {
+        width: 50% !important;
+    }
+    .steps {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+    }
 
 }
 
@@ -792,6 +796,10 @@ body {
 
     #main {
         padding-top: 20%;
+    }
+
+    #line{
+        width: 50%;
     }
 }
 
