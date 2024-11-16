@@ -803,20 +803,76 @@ body {
     }
 }
 
-@media(max-width:497px) {
+
+@media (max-width:600px) {
+    #main{
+        margin-top: 19%;
+        padding-top: 0;
+    }
+
+    #main h1{
+        font-size: 18px;
+    }
+
+    #logo{
+        width: 70px !important;
+    }
+}
+
+@media (max-width:500px) {
+    #main{
+        margin-top: 29%;
+    }
     #card2 {
         margin-left: 0%;
     }
 
-    #main {
-        padding-top: 30%;
+    #main h1{
+        font-size: 20px;
     }
 
-    #logo {
-        width: 60px;
+    #logo{
+        width: 70px;
+    }
+    #service p{
+        font-size: 14px;
+        padding-top: 14px;
+    }
+
+    #offer_header{
+        font-size: 24px;
     }
 }
 
 
+@media (max-width:375px) {
+    #main{
+        margin-top: 35%;
+    }
+
+    #main h1{
+        font-size: 18px;
+    }
+
+    #logo{
+        width: 70px;
+    }
+
+    #service p{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}
+@media (max-width:290px) {
+    #main{
+        margin-top: 41% !important;
+    }
+    #main h1{
+        font-size: 16px !important;
+    }
+    #logo{
+        width: 60px !important;
+    }
+}
 
 

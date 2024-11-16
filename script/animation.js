@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             // If the coupon is in view
             if (entry.isIntersecting) {
-                console.log("Coupon in view:", entry.target); // Debugging log
                 entry.target.classList.add('visible'); // Add the animation class
                 observer.unobserve(entry.target); // Stop observing this coupon once it's animated
             }

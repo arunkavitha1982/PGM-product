@@ -6,8 +6,8 @@ function offer() {
             content: "AGITATING & AIR WASHING OF SUPPLY DUCTS, USING THE HEPA AIR METHOD",
             expireDate: "Offer Expires: 12/16/2024",
             elements: {
-                title: "#coupon_1 .offer_title_1", // Corrected selector
-                price: "#coupon_1 .price1", // Corrected selector
+                title: "#coupon_1 .offer_title_1",
+                price: "#coupon_1 .price1",
                 content: "#content_pare_1",
                 expireDate: "#coupon_1 .footer1"
             }
@@ -50,11 +50,17 @@ function offer() {
         }
     ];
 
-    offers.forEach(offer => {
-        document.querySelector(offer.elements.title).textContent = offer.title;
-        document.querySelector(offer.elements.price).textContent = offer.price;
-        document.querySelector(offer.elements.content).textContent = offer.content;
-        document.querySelector(offer.elements.expireDate).textContent = offer.expireDate;
+    offers.forEach(({ title, price, content, expireDate, elements }) => {
+        // Safely update DOM elements if they exist
+        const titleEl = document.querySelector(elements.title);
+        const priceEl = document.querySelector(elements.price);
+        const contentEl = document.querySelector(elements.content);
+        const expireDateEl = document.querySelector(elements.expireDate);
+
+        if (titleEl) titleEl.textContent = title;
+        if (priceEl) priceEl.textContent = price;
+        if (contentEl) contentEl.textContent = content;
+        if (expireDateEl) expireDateEl.textContent = expireDate;
     });
 }
 
