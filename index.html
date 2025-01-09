@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/offer.css">
     <link rel="stylesheet" href="css/testimonial.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="stylesheet" href="css/success.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,6 +119,7 @@
 </style>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#main"><img src="image/new.png" alt="Logo" id="logo"></a>
@@ -176,10 +179,10 @@
                     <h5 style="color: white; font-weight: normal; padding-top: 10px; padding-bottom: 20px; text-align: center;"
                         id="home_content3">Experience top-notch HVAC services tailored to your
                         needs, ensuring comfort in every season</h5>
-                    <a href="https://pgmechllc.com/customer.html">
-                        <button class="btn" type="button" id="schedule_button"
-                            style="text-align: center; font-weight: bold;">Schedule</button>
-                    </a>
+
+                    <button class="btn" type="button" id="schedule_button" data-toggle="modal"
+                        data-target="#exampleModalLong" style="text-align: center; font-weight: bold;">Schedule</button>
+
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 text-center">
@@ -1041,7 +1044,7 @@
     </div>
 
     <!-- fooder -->
-    <div class="fooder">
+    <div class="fooder d-flex justify-content-center ">
         <p class="fooder_para">TDLR LICENCE NO <b>TACLB51418C</b> REGULATED BY THE TEXAS DEPARTMENT OF LICENSING AND
             REGULATION P.O.BOX 1215 AUSTIN, TX 78711,1-800-803-9202, 512-463-6599 <a href="www.tdlr.texas.gov"
                 style="text-decoration: none;color: white;">www.tdlr.texas.gov</a> </p>
@@ -1056,12 +1059,20 @@
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content custom-modal-content" style="width: 80%;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <div class="modal-header custom-modal-header">
+                    <div>
+                        <h6 class="modal-title" id="exampleModalLongTitle">Schedule Your AC Repair Today</h6>
+                        <p class="modal-subtitle">
+                            Book a hassle-free repair appointment in just a few steps. Provide your details, describe
+                            the issue, and choose a convenient time—we’ll take care of the rest!
+                        </p>
+                    </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+
+
                 <div class="modal-body" style="padding: 30px;">
                     <div class="form-group position-relative mb-3">
                         <input type="text" id="CustomerName" class="form-control" name="name" placeholder=" " required>
@@ -1071,27 +1082,14 @@
                         <input type="text" id="phone_number" class="form-control" name="name" placeholder=" " required>
                         <label for="name">Phone</label>
                     </div>
+                    <div class="form-group position-relative mb-3">
+                        <select class="form">
+                            <option value="">Issue Type</option>
+                            <option value="AC">AC</option>
+                            <option value="Refrigerator">Refrigerator</option>
+                        </select>
+                    </div>
 
-                    <div class="form-group position-relative mb-3">
-                        <textarea id="Address" class="form-control" rows="2" name="Address" placeholder=" "
-                            required></textarea>
-                        <label for="Address">Address</label>
-                    </div>
-                    <div class="form-group position-relative mb-3">
-                        <input type="text" id="name" class="form-control" name="name" placeholder=" " required>
-                        <label for="name">City</label>
-                    </div>
-                    <div class="dropdown">
-                        <button id="selectedValues">Select Options</button>
-                        <div class="dropdown-content">
-                            <label>
-                                <input type="checkbox" value="AC" class="checkbox"> AC
-                            </label>
-                            <label>
-                                <input type="checkbox" value="Refrigerator " class="checkbox"> Refrigerator
-                            </label>
-                        </div>
-                    </div>
                     <div class="dropdown dropdown1">
                         <button id="selectedValues1">available_slots</button>
                         <div class="dropdown-content dropdown-content1">
@@ -1109,16 +1107,20 @@
 
 
                     <div class="form-group position-relative mt-3 mb-3">
-                        <textarea id="Discription" class="form-control" rows="2" name="Discription" placeholder=" "
+                        <textarea id="Description" class="form-control" rows="2" name="Description" placeholder=" "
                             required></textarea>
-                        <label for="Discription">Discription</label>
+                        <label for="Description">Description</label>
                     </div>
-                    <div class="form-group position-relative mb-3">
+                    <div class="form-group position-relative mb-3" style="width: 100%; max-width: 400px;">
                         <input type="file" id="image" class="form-control" name="image" placeholder=" " multiple
-                            required>
-                        <label for="name">Your Name</label>
+                            required style="height: 60px; font-size: 16px; padding: 20px;">
+                        <label for="image">Photo</label>
+                        <div id="preview" style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;"></div>
+                        <small id="fileError" style="color: red; display: none;">You can only upload up to 3
+                            images.</small>
+                        <small id="fileMessage" style="color: #262a9e; display: block;">You can select up to 3
+                            images</small>
                     </div>
-
 
                     <div class="form-group position-relative mb-3">
                         <input id="street" placeholder=" " class="form-control" type="text" required>
@@ -1145,11 +1147,33 @@
 
             </div>
         </div>
+        <div id="popupModal">
+            <div class="modal-content">
+                <h3>Success!</h3>
+                <p>Your Complaint has been Registered. Our Team will contact you!</p>
+                <div class="checkmark-container">
+                    <svg viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path class="circle"
+                                d="M13 1C6.372583 1 1 6.372583 1 13s5.372583 12 12 12 12-5.372583 12-12S19.627417 1 13 1z" />
+                            <path class="tick" d="M6.5 13.5L10 17 l8.808621-8.308621" />
+                        </g>
+                    </svg>
+                </div>
+                <button class="close-btn  " id="closePopup">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading" id="l">
+        <div class="spinner"></div>
     </div>
 
     <script src="script/offerPage.js"></script>
     <script src="script/userInput.js"></script>
     <script src="script/animation.js"></script>
+    <script src="script/modal.js"></script>
 
     <script>
         document.getElementById('submit_button').addEventListener('click', function (event) {
@@ -1274,7 +1298,7 @@
             const complain_raised_date = `${String(day).padStart(2, '0')}-${String(month).padStart(2, '0')}-${year}`;
             const complain_raised_date1 = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
             console.log(complain_raised_date); // Output: 21-11-2024 (or the current date)
-            console.log(typeof complain_raised_date); 
+            console.log(typeof complain_raised_date);
 
             // Gather the data for the POST request
             const data = {

@@ -14,11 +14,10 @@
 }
 
 
-/* Fade-in animation keyframes */
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Optional: Adds a slight slide-up effect */
+        transform: translateY(20px); 
     }
     100% {
         opacity: 1;
@@ -26,21 +25,20 @@
     }
 }
 
-/* Zoom-in animation keyframes */
 @keyframes zoomIn {
     0% {
-        transform: scale(0.8); /* Starts smaller */
-        opacity: 0; /* Starts invisible */
+        transform: scale(0.8);
+        opacity: 0; 
     }
     100% {
-        transform: scale(1); /* Normal size */
-        opacity: 1; /* Fully visible */
+        transform: scale(1); 
+        opacity: 1; 
     }
 }
 
-/* Applying the fade-in animation to the heading and paragraph */
+
 #home_content1 {
-    animation: fadeIn 1.5s ease-in-out forwards; /* Use 'forwards' to keep final state */
+    animation: fadeIn 1.5s ease-in-out forwards; 
 }
 
 #home_content3 {
@@ -51,28 +49,27 @@
     animation: fadeIn 2.5s ease-in-out forwards;
 }
 
-/* Applying the zoom-in animation to the image */
+
 .zoom-image {
-    animation: zoomIn 1.5s ease-in-out forwards; /* Use 'forwards' to keep final state */
-    margin-top: 5%; /* Maintain spacing */
+    animation: zoomIn 1.5s ease-in-out forwards;
+    margin-top: 5%; 
 }
 
 
-/* Initial card state: hidden and translated */
+
 .card-container {
     opacity: 0;
-    transform: translateY(20px); /* Slide effect */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
 }
 
-/* When the card becomes visible */
+
 .visible {
     opacity: 1;
-    transform: translateY(0); /* Back to normal position */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transition smoothness */
+    transform: translateY(0);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-/* Add a slight delay for each card to appear */
 #card1 {
     animation-delay: 0.3s;
 }
@@ -82,20 +79,17 @@
 }
 
 
-/* Initial styles for the coupons */
 .coupon {
-    opacity: 0;  /* Initially hidden */
-    transform: translateY(50px); /* Move the coupons down initially */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation for opacity and position */
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
 }
 
-/* When the coupon becomes visible */
 .coupon.visible {
-    opacity: 1;  /* Fully visible */
-    transform: translateY(0); /* Move it to its original position */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
-/* Optional: Add more animations */
 .coupon.visible {
     animation: fadeInUp 1.6s ease-out;
 }
@@ -111,7 +105,7 @@
     }
 }
 
-/* Other coupon-specific styles */
+
 .coupon {
     border-radius: 15px;
     width: 450px;
@@ -136,9 +130,14 @@
     font-size: 1.2em;
 }
 
-/* Responsive adjustments */
 @media (max-width: 780px) {
     .coupon {
-        width: 100%; /* Adjust width for smaller screens */
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    .navbar-scrolled #logo {
+        width: 50px !important;
     }
 }

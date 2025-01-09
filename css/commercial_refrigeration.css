@@ -1,5 +1,7 @@
-body {
-    font-family: 'Urbanist', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif
 }
 
 
@@ -85,7 +87,7 @@ html {
     height: 100% !important;
 }
 
-.card-text{
+.card-text {
     padding: 15px !important;
     text-align: justify;
 }
@@ -165,7 +167,7 @@ html {
 }
 
 
- 
+
 
 
 /* Form input styles */
@@ -211,7 +213,7 @@ html {
 }
 
 
- 
+
 
 @media (max-width: 769px) {
     #main_header h1 {
@@ -296,11 +298,11 @@ html {
         margin-top: 18px;
     }
 
-    
 
-    
 
-  
+
+
+
     #logo {
         width: 60px;
     }
@@ -317,7 +319,7 @@ html {
 }
 
 @media (max-width: 1200px) {
-  
+
     #main_header {
         padding-top: 15%;
         margin-bottom: 5%;
@@ -342,6 +344,9 @@ html {
         padding: 0 3%;
     }
 
+    .card-body {
+        padding: 0 !important;
+    }
 }
 
 @media (max-width:380px) {

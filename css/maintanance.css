@@ -1,5 +1,7 @@
-body {
-    font-family: 'Urbanist', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif
 }
 
 #main_section {
@@ -640,7 +642,7 @@ body {
 
 @media(max-width:400px) {
     #main_section {
-        background-image: url("maintenance/s4.png");
+        background-image: url("../maintenance/s4.png");
     }
 
     #main_header {
@@ -659,5 +661,9 @@ body {
 
     #card_top {
         margin-top: 12%;
+    }
+
+    .card-body{
+        padding: 0 !important;
     }
 }
